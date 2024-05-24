@@ -220,7 +220,13 @@ This is where the M's truly sets themselves apart. To say that they are stingy w
 
 ## What on Earth is BAPIPING Here?<br>
 
-So this special little stat is supposed to indicate how lucky a pitcher is.  A high BABIP rate indicates that an inordinate number of balls that are put in play (not counting home runs) are finding tera firma. Of course it's not just the fickle finger of fate.  A pitcher that has a bad defense behind him  and or a pitcher that has a high Hard Hit Rate should definitely be more suseptable.  
+```sql castillo_hard_hit_rate
+    SELECT
+        Hard_Hit_Percent
+    FROM mariners_pitching_data
+    Where Name LIKE '%Castillo'
+```
+So this special little stat is supposed to demonstrate how lucky a pitcher is.  A high BABIP rate indicates that an inordinate number of balls that are put in play (not counting home runs) are finding tera firma. Of course, it's not just the fickle finger of fate. A pitcher that has a bad defense behind him and or a pitcher that has a high Hard Hit Rate should definitely be more suseptable. For the M's, on the high end are Castillo and Kirby.  Castillo, if you recall, has a Hard_Hit_Rate of <Value data={castillo_hard_hit_rate}/>, which puts him north of league average.  Kirby, inexplicably, has the lowest Hard Hit Percentage on the team yet does not seem to be benifiting from it much in regards to BABIP.  On the lower end are Gilbert and Miller.  Gilbert's Hard Hit Percent was right at league average so what you see is what you get with him.  And then there is the enigma Bryce Miller. Miller, if you recall, is the guy that likes his balls hit hard yet he has a BABIP near the best in the league. It's like the pitches he's throwing are turning into heat seeking missles and the defensive gloves are white-hot targets.  This is probably not sustainable and we'll see a marked increase in ERA as his luck runs out. I, however, am pulling for him to lower his Hard Hit Percentage in order to make his low BABIP rate more palatable.  
 
 <BarChart 
     data={mariners_babip} 
@@ -244,3 +250,8 @@ So this special little stat is supposed to indicate how lucky a pitcher is.  A h
     y=BABIP_Rank
     title="BABIP Rank"
 />
+
+
+## Final Thoughs
+
+Is the Mariners Staff Elite?  Sort of. They are very good at limiting walks and 
