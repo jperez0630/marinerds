@@ -226,7 +226,7 @@ This is where the M's truly sets themselves apart. To say that they are stingy w
     FROM mariners_pitching_data
     Where Name LIKE '%Castillo'
 ```
-So this special little stat is supposed to demonstrate how lucky a pitcher is.  A high BABIP rate indicates that an inordinate number of balls that are put in play (not counting home runs) are finding tera firma. Of course, it's not just the fickle finger of fate. A pitcher that has a bad defense behind him and or a pitcher that has a high Hard Hit Rate should definitely be more suseptable. For the M's, on the high end are Castillo and Kirby.  Castillo, if you recall, has a Hard_Hit_Rate of <Value data={castillo_hard_hit_rate}/>, which puts him north of league average.  Kirby, inexplicably, has the lowest Hard Hit Percentage on the team yet does not seem to be benifiting from it much in regards to BABIP.  On the lower end are Gilbert and Miller.  Gilbert's Hard Hit Percent was right at league average so what you see is what you get with him.  And then there is the enigma Bryce Miller. Miller, if you recall, is the guy that likes his balls hit hard yet he has a BABIP near the best in the league. It's like the pitches he's throwing are turning into heat seeking missles and the defensive gloves are white-hot targets.  This is probably not sustainable and we'll see a marked increase in ERA as his luck runs out. I, however, am pulling for him to lower his Hard Hit Percentage in order to make his low BABIP rate more palatable.  
+This special little stat is supposed to demonstrate how lucky a pitcher is. A high BABIP rate indicates that an inordinate number of balls that are put in play (not counting home runs) are finding tera firma. Of course, it's not just the fault of the fickle finger of fate. A pitcher that has a pourus defense behind him and or a pitcher that has a high Hard Hit Rate should definitely be more suseptable. For the M's, on the high end are Castillo and Kirby.  Castillo, if you recall, has a Hard_Hit_Rate of <Value data={castillo_hard_hit_rate}/>, which puts him north of league average.  Kirby, inexplicably, has the lowest Hard Hit Percentage on the team yet does not seem to be benifiting from it much in regards to BABIP.  On the lower end are Gilbert and Miller.  Gilbert's Hard Hit Percent was right at league average so what you see is what you get with him.  And then there is the enigma Bryce Miller. Miller, if you recall, is the guy that likes his balls hit hard yet he has a BABIP near the best in the league. It's like the pitches he's throwing are turning into heat seeking missles and the defensive gloves are white-hot targets.  This is probably not sustainable and we'll see a marked increase in ERA as his luck runs out. I, however, am pulling for him to lower his Hard Hit Percentage in order to make his low BABIP rate more intellectually palatable.  
 
 <BarChart 
     data={mariners_babip} 
@@ -252,6 +252,22 @@ So this special little stat is supposed to demonstrate how lucky a pitcher is.  
 />
 
 
-## Final Thoughs
+## Making since of the non-sense
 
-Is the Mariners Staff Elite?  Sort of. They are very good at limiting walks and 
+Is the Mariners Staff Elite? Sort of. They are very good at limiting walks and rationing hits, but the hits they do give up tend to be too much of the screaming line drive variety. The advanced stats xERA and BAPIP seem to indicate that the M's will finish with an ERA somewhere in the low to mid 3's, which lines up with what they did last year. They could definitely veer toward the lower 3's once Woo get's enough starts, assuming that he manages to maintain anything close to his recent production.<br>
+
+All told, the M's staff is young and it's a scary prospect for MLB hitters to consider how good they are considering how early most of them are in their careers.  Ain't nothin' to Fuck with, indeed!
+
+## Nerd Musings
+
+I would be remiss if I did not mention something about the tools I'm using to create this little blog of mine.<br> 
+
+First of all, I'm using a Python package called PyBaseball to pull in the data. The genius's at Pybaseball have taken away the heavy-lifting of scraping various websites like Baseball Savant and Fangraphs and allow a lazy person like myself to pull in data with simple Python functions that drop the data conveniently into data frames.  Freaking awesome!<br>
+
+Secondly, after doing a bit of transformation aggregation magic, I'm using DuckDB to store the data. DuckDB, if you are not familiar, is an inprocess OLAP database system.  Translation: it allows you to create databases that are easy to create and update without the hassle of a server.  And it's fast.
+
+Lastly, I'm using Evidence.dev to pull everything together. Evidence.dev is the bedrock on which the blog stands. It is an ingenious invention that allows a would be developer to use SQL inside a markdown file. They have a simple syntax to add things like tables and graphs and you can even reference SQL queryies inside paragrahs of text. For example, I took the output of a SQL query that produces Kirby's Bases on Balls per 9 innings and I embed that value inside of a paragraph. The power of that is that the value updates dynamically as the data in the table changes<br>
+
+Bottomline, Evidence.dev makes it super simple to make what I think are quality interactive data presentations without the burden of having to know a lot of javascript. They even have a straighforward method of publishing through their Evidence.dev cloud.  I cannot reccomend it enough.
+ 
+
