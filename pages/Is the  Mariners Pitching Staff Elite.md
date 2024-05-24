@@ -218,7 +218,7 @@ This is where the M's truly set themselves apart. To say that they are stingy wi
     FROM mariners_pitching_data
 ```
 
-## What on Earth is BAPIPING Here?<br>
+## Follow the bouncing ball in play<br>
 
 ```sql castillo_hard_hit_rate
     SELECT
