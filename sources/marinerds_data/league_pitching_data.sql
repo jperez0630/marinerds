@@ -1,0 +1,1 @@
+SELECT * FROM league_pitching_data;
