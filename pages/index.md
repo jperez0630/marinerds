@@ -2,9 +2,6 @@
 title: Marinerds Blog
 ---
 
-```sql get_mariners_staff_data
-SELECT * FROM mariners_pitching_data
-```
 ## Greetings baseball fans and long suffering Mariners faithful<br>Wecome to the inaugural edition of the of the Marinerds BLOG<br>
 
 insert photo
