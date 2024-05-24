@@ -162,7 +162,8 @@ Until the M's pichers put an end to that shit. Kirby and Castillo are right at l
 ```
 
 <BarChart 
-    data={mariners_hits_per_9_rank} 
+    data={mariners_hits_per_9_rank}
+    swapXY=true
     x=Name
     y=H_per_9_Rank
     title="Hits Per 9 Innings Rank"
@@ -176,8 +177,14 @@ Until the M's pichers put an end to that shit. Kirby and Castillo are right at l
     FROM mariners_pitching_data
 ```
 
+## You've Got Big Balls, He's Got Big Balls, She's Got Big Balls but the M's Have the least Bases On Balls of All<br>
+
+The M's staff is like 
+
+
 <BarChart 
-    data={mariners_BB_per_9_data} 
+    data={mariners_BB_per_9_data}
+    swapXY=true
     x=Name
     y=BB_per_9
     title="Bases on Balls Per 9 Innings"
@@ -191,7 +198,8 @@ Until the M's pichers put an end to that shit. Kirby and Castillo are right at l
 ```
 
 <BarChart 
-    data={mariners_BB_per_9_rank} 
+    data={mariners_BB_per_9_rank}
+    swapXY=true 
     x=Name
     y=BB_per_9_Rank
     title="Bases on Balls Per 9 Innings Rank"
@@ -206,6 +214,7 @@ Until the M's pichers put an end to that shit. Kirby and Castillo are right at l
 
 <BarChart 
     data={mariners_babip} 
+    swapXY=true
     x=Name
     y=BABIP
     title="Batting Average On Balls in Play"
@@ -220,6 +229,7 @@ Until the M's pichers put an end to that shit. Kirby and Castillo are right at l
 
 <BarChart 
     data={mariners_babip_rank} 
+    swapXY=true
     x=Name
     y=BABIP_Rank
     title="BABIP Rank"
