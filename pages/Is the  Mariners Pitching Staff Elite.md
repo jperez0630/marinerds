@@ -178,8 +178,14 @@ Until the M's pichers put an end to that shit. Kirby and Castillo are right at l
 ```
 
 ## You've Got Big Balls, He's Got Big Balls, She's Got Big Balls but the M's Have the least Bases On Balls of All<br>
+```sql kirbys_rank
+    SELECT 
+        BB_per_9_Rank
+    FROM mariners_pitching_data
+    WHERE Name LIKE '%Kirby'
+```
 
-The M's staff is like 
+This is where the M's truly sets themselves apart. To say that they are stingy with Walks is an understatement. All of their guys are at or below league average, one guy is in the top 25 and Kirby is truly special at number <Value data={kirbys_rank}/>. If anything if might be argued that they are a little too much in the zone, which allows hitters to sit on pitches a little too much.  Still, it can't be overstated how well the M's are doing in this category  
 
 
 <BarChart 
@@ -211,6 +217,10 @@ The M's staff is like
         BABIP
     FROM mariners_pitching_data
 ```
+
+## What on Earth is BAPIPING Here?<br>
+
+So this special little stat is supposed to indicate how lucky a pitcher is.  A high BABIP rate indicates that an inordinate number of balls that are put in play (not counting home runs) are finding tera firma. Of course it's not just the fickle finger of fate.  A pitcher that has a bad defense behind him  and or a pitcher that has a high Hard Hit Rate should definitely be more suseptable.  
 
 <BarChart 
     data={mariners_babip} 
