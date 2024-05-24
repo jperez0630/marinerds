@@ -1,5 +1,5 @@
 ---
-title: Is the Mariners Pitching Staff Elite?
+title: Is the Mariners Pitching Staff
 ---
 
 I want to preface this article by articulating what a joy it is to watch this current iteration of the Seattle Mariners pitching staff. Especially in the context of Mariner’s pitching history.  In 1997, the Mariners scored more runs than any other team in baseball, yet they did not make the playoffs that year.  Why, you ask?  Because their pitching staff freaking sucked!  Their closer, Bobby Ayala, blew so many saves that year that it created a raging debate whether or not he possessed compromising pictures of Lou Pinella, the then and forever missed former M’s Manager, doing unspeakable acts with farm animals.  This was the only logical explanation for why he was being inflicted upon the Mariner fanbase over and over again.<br>
@@ -37,7 +37,8 @@ What are the fancy bars telling us? Brian Miller and Logan Gilbert are the stand
 ``` 
 
 <BarChart 
-    data={mariners_era_xera_data} 
+    data={mariners_era_xera_data}
+    swapXY=true 
     x=Name
     y1=ERA
     type=grouped
@@ -53,14 +54,16 @@ What are the fancy bars telling us? Brian Miller and Logan Gilbert are the stand
 ```
 
 <BarChart 
-    data={mariners_era_xera_rank} 
+    data={mariners_era_xera_rank}
+    swapXY=true 
     x=Name
     y=ERA_Rank
     title="ERA Rank"
 />
 
 <BarChart 
-    data={mariners_era_xera_rank} 
+    data={mariners_era_xera_rank}
+    swapXY=true 
     x=Name
     y=xERA_Rank
     title="xERA Rank"
@@ -77,7 +80,8 @@ What are the fancy bars telling us? Brian Miller and Logan Gilbert are the stand
 And we are gonna WHIP it good! WHIP, for the uninitiated, is Walks + hits per Inning Pitched. It's a good indicator of a pitchers effieciency and a staff that posssess a reasonably decent WHIP, should prove to have longer staying power than a crew that does not. So far, the M's starters are proving to have quite the staying power, as it were, given the fact that they have three guys below league average and one guy right at league average. In fact, they have three guys in the top 20 and one guy in the top ten.  Devo would be proud.  
 
 <BarChart 
-    data={mariners_whip_data} 
+    data={mariners_whip_data}
+    swapXY=true
     x=Name
     y=WHIP
     title="WHIP"
@@ -92,7 +96,8 @@ And we are gonna WHIP it good! WHIP, for the uninitiated, is Walks + hits per In
 
 
 <BarChart 
-    data={mariners_whip_rank} 
+    data={mariners_whip_rank}
+    swapXY=true 
     x=Name
     y=WHIP_Rank
     title="WHIP Rank"
@@ -110,7 +115,8 @@ Unfortunately, Miller has had his balls hit harder and more often than Iron Ball
 Then there is the chosen one, Mr. Kirby.  He of unassailable control and command. He lives more on the edge than an 80's hair band. Hitters will hit him from time to time, but since he's so affective at nibbling at the corners, a hitter rarely gets good wood on it.  
 
 <BarChart 
-    data={mariners_hard_hit_percent_data} 
+    data={mariners_hard_hit_percent_data}
+    swapXY=true 
     x=Name
     y=Hard_Hit_Percent
     title="Hard Hit Percent"
@@ -124,7 +130,8 @@ Then there is the chosen one, Mr. Kirby.  He of unassailable control and command
 ```
 
 <BarChart 
-    data={hard_hit_percentage_rank} 
+    data={hard_hit_percentage_rank}
+    swapXY=true 
     x=Name
     y=Hard_Hit_Percent_Rank
     title="Hard Hit Percent Rank"
@@ -140,7 +147,8 @@ Then there is the chosen one, Mr. Kirby.  He of unassailable control and command
 Until the M's pichers put an end to that shit. Kirby and Castillo are right at league average when it comes to this metric. Kirby being a tad worse than Castillo.  However, Kirby can be forgiven given the fact that he has such a low hard hit percentage and a miniscule walk rate (sorry, gave it away). Castillo definitely has to watch his hard hit rate but not as much as Miller. Miller, thank goodness, has a decent whiff (swing and miss rate), so he is looking good here. And now it's time for Walter aka Logan Gilbert to shine, with a Hits Per Nine Innings that ranks in the top ten.    
 
 <BarChart 
-    data={mariners_hits_per_9_data} 
+    data={mariners_hits_per_9_data}
+    swapXY=true
     x=Name
     y=H_per_9
     title="Hits Per 9 Innings"
