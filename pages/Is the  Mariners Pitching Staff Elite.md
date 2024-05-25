@@ -1,5 +1,5 @@
 ---
-title: Is the Mariners Pitching Staff
+title: Is the Mariners Pitching Staff Elite?
 ---
 
 I want to preface this article by articulating what a joy it is to watch this current iteration of the Seattle Mariners pitching staff. Especially in the context of Mariner’s pitching history. In 1997, the Mariners scored more runs than any other team in baseball, yet they did not make the playoffs that year.  Why, you ask? Because their pitching staff freaking sucked! Their closer, Bobby Ayala, blew so many saves that year that it created a raging debate whether or not he possessed compromising pictures of Lou Pinella, the then and forever missed former M’s Manager, doing unspeakable acts with farm animals. This was the only logical explanation for why he was being inflicted upon the Mariner fanbase over and over again.<br>
