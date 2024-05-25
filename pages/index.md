@@ -2,4 +2,8 @@
 title: Marinerds Blog
 ---
 
-# Articles
+# A nerdy and little bit dirty Seattle Mariners Blog. 
+
+## Articles
+
+
