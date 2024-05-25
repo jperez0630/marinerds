@@ -6,4 +6,6 @@ title: Marinerds Blog
 
 ## Articles
 
-
+<LinkButton url='/introduction.md'>
+  My Link Button
+</LinkButton>
