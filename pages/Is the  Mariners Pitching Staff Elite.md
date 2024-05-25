@@ -2,6 +2,8 @@
 title: Is the Mariners Pitching Staff Elite?
 ---
 
+
+
 I want to preface this article by articulating what a joy it is to watch this current iteration of the Seattle Mariners pitching staff. Especially in the context of Mariner’s pitching history. In 1997, the Mariners scored more runs than any other team in baseball, yet they did not make the playoffs that year.  Why, you ask? Because their pitching staff freaking sucked! Their closer, Bobby Ayala, blew so many saves that year that it created a raging debate whether or not he possessed compromising pictures of Lou Pinella, the then and forever missed former M’s Manager, doing unspeakable acts with farm animals. This was the only logical explanation for why he was being inflicted upon the Mariner fanbase over and over again.<br>
 ## Not an Ayala in the Bunch
 This crop of Mariners arms does not illicit such consternation. Castillo, with cat-like grace and viper-like accuracy is anyone’s definition of a staff ace. Kirby, with his inhuman precision paints the corners with the aplomb of a master artist. Lanky Logan Gilbert, by the time he releases the ball, it’s practically down the batter's throat. Bryce Miller spins the four-seam fastball like nobody's business and when he gets it up in the zone, it comes at the batter like a Texas-twister. Last among the starters, but certainly not least, Brian Woo. Listen. Brian Woo Tang Clan ain't nothin' to fuck with. Unfortunately, he has not thrown enough pitches to qualify for statistical analysis, but he is definitely one to keep an eye on.<br> 

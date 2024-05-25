@@ -4,7 +4,6 @@ title: Marinerds Blog
 
 ## Greetings baseball fans and long suffering Mariners faithful<br>Wecome to the inaugural edition of the of the Marinerds BLOG<br>
 
-insert photo
 
 In the grand scheme of things, with all the competing interests out there, perhaps the world isn't exactly pining for another sports blog.
 Be that as it may, I'm going to take advantage of what I feel is a lull in quality distractions right now. In fact, the way I see it, 
