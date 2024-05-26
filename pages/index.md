@@ -6,4 +6,4 @@ title: Marinerds Blog
 
 ## Articles
 
-[Let Me Introduce Myself](introduction.md)
+[Let Me Introduce Myself](./pages/introduction.md)
