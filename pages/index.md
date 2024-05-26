@@ -6,4 +6,4 @@ title: Marinerds Blog
 
 ## Articles
 
-My favorite search engine is [Introduction](introduction.md)
+[Introduction](introduction.md)
