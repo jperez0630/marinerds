@@ -6,6 +6,4 @@ title: Marinerds Blog
 
 ## Articles
 
-<LinkButton url='/pages/introduction.md'>
-  My Link Button
-</LinkButton>
+My favorite search engine is [Duck Duck Go](https://duckduckgo.com)
