@@ -22,15 +22,16 @@ cornucopia of delectable statistical tidbits that were impossible to resist.  Ho
 since last Wednesday, is he still the frontrunner for the batting title? Is Griffey Jr. still flirting with an MVP season?  These were
 some of the many swirling inquiries that only the Grand Oracle of statistical knowledge could reveal.<br><br>
 <b>My current lack of employment</b><br>
-Well, turns out that gainful employment in tech right now is tough sledding. I feel like I’m just one of the faceless proletariat howling into the void trying to convince our overlords that I am not imminently expendable in the face of AI. In that, I'm playing the long game. Knowing that Artificial Intelligence
+Well, turns out that gainful employment in tech right now is tough sledding. I feel like I’m just one of the faceless proletariat
+howling into the void trying to convince our overlords that I am not imminently expendable in the face of AI. In that, I'm playing the long game. Knowing that Artificial Intelligence
 is nothing of the sort, but is instead just the collective regurgitated knowledge of the masses, 
 skillfully collected, marketed and packaged by billionaires and then sold back to us at a premium.<br> 
-Furthermore, as we become more and more reliant on said "Artificial Intelligence" we, as a society, will contribute less and less to to our collective body
-of knowledge, thus creating a viscous downward-spiral of diminishing returns. In the end, finally bringing about the Idiocracy that the great Mike Judge
+Furthermore, I am armed with the fact that, as we become more and more reliant on said "Artificial Intelligence", we, as a society, will contribute less and less to to our collective body
+of knowledge, thus creating a viscous cycle of diminishing returns. In the end, finally bringing about the Idiocracy that the great Mike Judge
 prognosticated many moons ago.  And no, I did not ask Chat-GPT to give me a fancy word for predicted. Ok. Fuck you. I did!<br><br>
 Anyway, I find myself with a little more time on my hands than I'm used to. And I'm banking on the fact that there are at least a few out of work
 nerds, perhaps even some Marinerds (see what I did there?) that, like me, are sitting around waiting for the gravy train to stop and pick them up. 
-In the meantime, we might as well gorge on baseball minutiae while we suckle on the teat of unemployment.<br><br>
+In the meantime, we might as well gorge on baseball minutiae while we suckle on the teat of unemployment.<br>
 
 <b>With all that being said</b><br>
 I hope that I captured your attention and perhaps even your imagination as we dive down the rabbit hole together. The plan for this blog is to
