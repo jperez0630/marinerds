@@ -9,7 +9,7 @@ In the grand scheme of things, with all the competing interests out there, perha
 Be that as it may, I'm going to take advantage of what I feel is a lull in quality distractions right now. In fact, the way I see it, 
 Marvel can't make a decent movie to save its proverbial life. The vast majority of popular music is indecipherable noise. 
 Books? Who reads books anymore? TV, once a huge time suck, now ruined by the proliferation of streaming services that have managed to 
-recreate the bloated and expensive cable company piecemeal. Right now, I think my only competition for your attention are dancing cats
+recreate the bloated and expensive cable paradigm piecemeal. Right now, I think my only competition for your attention are dancing cats
 and people falling on their faces. Also, I believe I have a few things going for me that I hope will prevent this Blog from going into oblivion.
 <b>My undying love for my home team the Mariners</b>.
 <br>Sometimes it feels more like undead than undying.  Like a mutilated zombie long relieved of appendages, dragging itself along like 
