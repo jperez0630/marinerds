@@ -31,7 +31,7 @@ of knowledge, thus creating a viscous cycle of diminishing returns. In the end, 
 prognosticated many moons ago.  And no, I did not ask Chat-GPT to give me a fancy word for predicted. Ok. Fuck you. I did!<br><br>
 Anyway, I find myself with a little more time on my hands than I'm used to. And I'm banking on the fact that there are at least a few out of work
 nerds, perhaps even some Marinerds (see what I did there?) that, like me, are sitting around waiting for the gravy train to stop and pick them up. 
-In the meantime, we might as well gorge on baseball minutiae while we suckle on the teat of unemployment.<br>
+In the meantime, we might as well gorge on baseball minutiae while we suckle on the teat of unemployment.<br><br>
 
 <b>With all that being said</b><br>
 I hope that I captured your attention and perhaps even your imagination as we dive down the rabbit hole together. The plan for this blog is to
