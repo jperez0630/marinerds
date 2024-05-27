@@ -25,7 +25,7 @@ some of the many swirling inquiries that only the Grand Oracle of statistical kn
 Well, turns out that gainful employment in tech right now is tough sledding. I feel like I’m just one of the faceless proletariat
 howling into the void trying to convince our overlords that I am not imminently expendable in the face of AI. In that, I'm playing the long game. Knowing that Artificial Intelligence
 is nothing of the sort, but is instead just the collective regurgitated knowledge of the masses, 
-skillfully collected, marketed and packaged by billionaires and then sold back to us at a premium.<br> 
+skillfully collected, marketed and packaged by billionaires and then sold back to us at a premium.<br><br> 
 Furthermore, I am armed with the fact that, as we become more and more reliant on said "Artificial Intelligence", we, as a society, will contribute less and less to to our collective body
 of knowledge, thus creating a viscous cycle of diminishing returns. In the end, finally bringing about the Idiocracy that the great Mike Judge
 prognosticated many moons ago.  And no, I did not ask Chat-GPT to give me a fancy word for predicted. Ok. Fuck you. I did!<br><br>
