@@ -2,7 +2,7 @@
 title: Introduction
 ---
 
-## Greetings baseball fans and long suffering Mariners faithful.<br>Wecome to the inaugural edition of the of the Marinerds BLOG<br>
+## Greetings baseball fans and long suffering Seattle Mariners faithful.<br>Wecome to the inaugural edition of the of the Marinerds BLOG<br>
 
 
 In the grand scheme of things, with all the competing interests out there, perhaps the world isn't exactly pining for another sports blog.
