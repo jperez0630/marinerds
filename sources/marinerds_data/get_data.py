@@ -1,11 +1,11 @@
-from pybaseball import statcast, pitching_stats
+from pybaseball import statcast,pitching_stats,batting_stats, team_game_logs
 import time, datetime
 import pandas as pd
 import os
 from pathlib import Path
 import duckdb
 
-con = duckdb.connect(f'{Path.cwd()}/sources/marinerds_data/marinerds_data.duckdb')
+con = duckdb.connect(f'{Path.cwd()}/marinerds_data.duckdb')
 local_con = con.cursor()
 
 
@@ -14,6 +14,18 @@ def get_most_recent_date():
     yesterday = datetime.date.today() - datetime.timedelta(days=1)
     yesterday = yesterday.strftime("%Y-%m-%d")
     return yesterday
+
+
+def get_rbi_rolling_avg():
+    batting_logs = team_game_logs(2024, "SEA")
+    batting_logs['Date'] = batting_logs['Date'].str.replace(r'\s\(\d+\)', '', regex=True)
+    batting_logs['Date'] = pd.to_datetime(batting_logs['Date'] + ' 2024')
+    batting_logs['rbi_rolling_avg'] = batting_logs['RBI'].rolling(window=5).mean()
+    data = batting_logs[['Date','rbi_rolling_avg']]
+    return data
+
+df_rbi_rolling_avg = get_rbi_rolling_avg()
+
 
 def get_pitching_stats():
     data = pitching_stats(2024)
@@ -126,4 +138,9 @@ SELECT * FROM df_mariners_staff
 local_con.sql('''
 CREATE OR REPLACE TABLE league_pitching_data AS
 SELECT * FROM df_filtered_pitching_stats
+''')
+
+local_con.sql('''
+CREATE OR REPLACE TABLE rbi_rolling_average_data AS
+SELECT * FROM df_rbi_rolling_avg
 ''')

@@ -1,0 +1,1 @@
+SELECT * FROM rbi_rolling_average_data;
