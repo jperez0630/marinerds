@@ -12,4 +12,5 @@ title: Marinerds Blog
     data={rbi_rolling_avg}  
     x=Date
     y=rbi_rolling_avg
+    title='RBI Rolling Average'
 />
