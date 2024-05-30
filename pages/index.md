@@ -8,16 +8,14 @@ title: Marinerds Blog
     SELECT * FROM team_batting_data_columns
 ```
 
-<Dropdown name=selected_column>
-    <DropdownOption valueLabel="RBI" value="RBI" />
-</Dropdown>
+
 
 <Dropdown
     data={selected_team_batting_data} 
     name=selected_column
     value=index
     multiple=true
-	defaultValue={['RBI']}
+	defaultValue={['Team']}
 />
 
 
