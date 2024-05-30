@@ -4,6 +4,9 @@ title: Marinerds Blog
 
 # A nerdy down and dirty data analysis of all things Seattle Mariners
 
+<DimensionGrid data={team_batting_data} />
+
+
 ```sql selected_team_batting_data
     SELECT * FROM team_batting_data_columns
 ```
