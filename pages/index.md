@@ -15,7 +15,6 @@ title: Marinerds Blog
     name=selected_column
     value=index
     multiple=true
-	defaultValue={['Team']}
 />
 
 
@@ -26,7 +25,7 @@ title: Marinerds Blog
 <BarChart 
     data={selected_team_batting} 
     x=Team 
-    y=RBI
+    y='${inputs.selected_column.value}'
 />
 
 
