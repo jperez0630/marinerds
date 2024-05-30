@@ -24,7 +24,7 @@ title: Marinerds Blog
 <BarChart 
     data={selected_team_batting_data} 
     x=Team 
-    y=RBI
+    y=team_batting_data_columns
 />
 
 
@@ -35,6 +35,6 @@ title: Marinerds Blog
 <LineChart 
     data={rbi_rolling_avg}  
     x=Date
-    y=rbi_rolling_avg
+    y='${inputs.name_of_dropdown.value}'
     title='RBI Rolling Average'
 />
