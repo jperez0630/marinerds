@@ -16,6 +16,21 @@ title: Marinerds Blog
 />
 
 
+```sql selected_team_batting
+    SELECT 
+        Team,
+        {{selected_column.value}}
+    FROM team_batting_data
+```
+
+<BarChart 
+    data={selected_team_batting} 
+    x=Team 
+    y
+/>
+
+
+
 ```sql rbi_rolling_avg
     SELECT * FROM rbi_rolling_average_data
 ```
