@@ -11,7 +11,7 @@ title: Marinerds Blog
 
 
 <Dropdown
-    data={selected_team_batting_data} 
+    data={team_batting_data} 
     name=selected_column
     value=index
     multiple=true
@@ -22,7 +22,7 @@ title: Marinerds Blog
 <BarChart 
     data={team_batting_data} 
     x=Team 
-    y={input.selected_column.value}
+    y={{input.selected_column.value}}
 />
 
 
