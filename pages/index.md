@@ -22,7 +22,7 @@ title: Marinerds Blog
 <BarChart 
     data={team_batting_data} 
     x=Team 
-    y={selected_column.value}
+    y={input.selected_column.value}
 />
 
 
