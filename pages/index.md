@@ -16,6 +16,7 @@ title: Marinerds Blog
 ```sql
 select * from team_batting_data
 where column_name in (${inputs.team_batting_data_input})
+```
 
 <BarChart 
  data={selected_team_batting_data} 
