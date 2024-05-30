@@ -9,18 +9,18 @@ title: Marinerds Blog
 
 <Dropdown
     data={team_batting_data} 
-    name=name_of_dropdown
-    value=column_name
+    name=team_batting_data_input
+    value={inputs.team_batting_data_input}
 />
 
-```sql selected_team_batting_data
-    SELECT * FROM team_batting_data
-```
+```sql
+select * from team_batting_data
+where column_name in (${inputs.team_batting_data_input})
 
- <BarChart 
-    data={selected_team_batting_data} 
-    x=Team 
-    y=column_name
+<BarChart 
+ data={selected_team_batting_data} 
+ x="Team" 
+ y="${inputs.team_batting_data_input}"
 />
 
 
