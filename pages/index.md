@@ -5,7 +5,7 @@ title: Marinerds Blog
 # A nerdy down and dirty data analysis of all things Seattle Mariners
 
 ```sql team_batting_data_dim_grid
-    SELECT Team, ERA FROM team_batting_data
+    SELECT Team, H, RBI FROM team_batting_data
 ```
 
 <DimensionGrid data={team_batting_data_dim_grid} />
