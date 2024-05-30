@@ -27,7 +27,7 @@ title: Marinerds Blog
 <BarChart 
     data={selected_team_batting} 
     x=Team 
-    y
+    y=RBI
 />
 
 
