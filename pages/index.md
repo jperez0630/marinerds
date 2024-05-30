@@ -17,7 +17,7 @@ title: Marinerds Blog
     name=selected_column
     value=index
     multiple=true
-	defaultValue={['value1']}
+	defaultValue={['RBI']}
 />
 
 
