@@ -17,7 +17,7 @@ title: Marinerds Blog
  <BarChart 
     data={selected_team_batting_data} 
     x=Team 
-    y=value
+    y=column_name
 />
 
 
