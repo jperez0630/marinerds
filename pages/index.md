@@ -8,11 +8,14 @@ title: Marinerds Blog
  
 
 <Dropdown
-    data={team_batting_data_columns} 
+    data={team_batting_data} 
     name=name_of_dropdown
     value=column_name
 />
 
+```sql selected_team_batting_data
+    SELECT * FROM team_batting_data
+```
 
  <BarChart 
     data={selected_team_batting_data} 
