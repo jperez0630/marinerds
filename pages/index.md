@@ -11,7 +11,7 @@ title: Marinerds Blog
 <DimensionGrid data={team_batting_data_dim_grid} />
 
 ```sql rbi_rolling_avg
-    SELECT * FROM rbi_rolling_average_data
+    SELECT Team,RBI FROM rbi_rolling_average_data
 ```
 
 <LineChart 
