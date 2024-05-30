@@ -22,7 +22,7 @@ title: Marinerds Blog
 ```sql selected_team_batting
     SELECT 
         Team,
-        {{selected_column.value}}
+        {selected_column.value}
     FROM team_batting_data
 ```
 
