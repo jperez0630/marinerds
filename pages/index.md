@@ -5,7 +5,7 @@ title: Marinerds Blog
 # A nerdy down and dirty data analysis of all things Seattle Mariners
 
 
-'''sql team_batting_data_columns
+```sql team_batting_data_columns
     SELECT * FROM team_batting_data_columns
 ```
 
