@@ -1,4 +1,4 @@
-from pybaseball import statcast,pitching_stats,batting_stats, team_game_logs
+from pybaseball import statcast,pitching_stats,batting_stats, team_game_logs, team_batting, team_pitching
 import time, datetime
 import pandas as pd
 import os
@@ -14,6 +14,24 @@ def get_most_recent_date():
     yesterday = datetime.date.today() - datetime.timedelta(days=1)
     yesterday = yesterday.strftime("%Y-%m-%d")
     return yesterday
+
+
+def get_team_batting_stats():
+    data = team_batting(2024)
+    return data
+
+df_team_batting_stats = get_team_batting_stats()
+
+
+def get_team_batting_columns():
+    data = df_team_batting_stats.columns.to_frame().reset_index()
+    truncated_data = data[['index']].copy()
+    return truncated_data
+
+df_team_batting_stats_columns = get_team_batting_columns()
+
+
+
 
 
 def get_rbi_rolling_avg():
@@ -143,4 +161,14 @@ SELECT * FROM df_filtered_pitching_stats
 local_con.sql('''
 CREATE OR REPLACE TABLE rbi_rolling_average_data AS
 SELECT * FROM df_rbi_rolling_avg
+''')
+
+local_con.sql('''
+CREATE OR REPLACE TABLE team_batting_data AS
+SELECT * FROM df_team_batting_stats
+''')
+
+local_con.sql('''
+CREATE OR REPLACE TABLE team_batting_data_columns AS
+SELECT * FROM df_team_batting_stats_columns
 ''')
