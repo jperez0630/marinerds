@@ -20,8 +20,7 @@ title: Marinerds Blog
 
 
 ```sql selected_team_batting
-    SELECT * FROM 
-    FROM team_batting_data
+    SELECT * FROM team_batting_data
     where column_name in ${inputs.selected_column.value}
 ```
 
