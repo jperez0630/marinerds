@@ -18,9 +18,16 @@ title: Marinerds Blog
 
 
 ```sql team_batting_data
-    SELECT * FROM team_batting_data
+    SELECT 
+        Team,
+        '${inputs.team_batting_data_columns.value}' as "selected_value"
 ```
 
+<BarChart 
+    data={team_batting_data} 
+    x=Team 
+    y=selected_value
+/>
 
 
 ```sql rbi_rolling_avg
