@@ -18,14 +18,11 @@ title: Marinerds Blog
 />
 
 
-```sql selected_team_batting
-    SELECT * FROM team_batting_data
-```
 
 <BarChart 
-    data={selected_team_batting} 
+    data={team_batting_data} 
     x=Team 
-    y='${inputs.selected_column.value}'
+    y={selected_column.value}
 />
 
 
