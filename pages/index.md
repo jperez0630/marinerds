@@ -8,8 +8,8 @@ title: Marinerds Blog
     SELECT * FROM team_batting_data_columns
 ```
 
-<Dropdown name=name_of_dropdown>
-    <DropdownOption valueLabel="Option One" value="RBI" />
+<Dropdown name=selected_column>
+    <DropdownOption valueLabel="RBI" value="RBI" />
 </Dropdown>
 
 <Dropdown
