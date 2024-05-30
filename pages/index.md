@@ -5,8 +5,6 @@ title: Marinerds Blog
 # A nerdy down and dirty data analysis of all things Seattle Mariners
 
 
- 
-
 <Dropdown
     data={team_batting_data} 
     name=team_batting_data_input
