@@ -21,7 +21,7 @@ title: Marinerds Blog
 
 ```sql selected_team_batting
     SELECT * FROM team_batting_data
-    where column_name in ${inputs.selected_column.value}
+    where column_name in '${inputs.selected_column.value}'
 ```
 
 <BarChart 
