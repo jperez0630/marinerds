@@ -21,13 +21,12 @@ title: Marinerds Blog
 
 ```sql selected_team_batting
     SELECT * FROM team_batting_data
-    where column_name in '${inputs.selected_column.value}'
 ```
 
 <BarChart 
     data={selected_team_batting} 
     x=Team 
-    y=RBI
+    y
 />
 
 
