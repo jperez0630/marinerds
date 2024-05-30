@@ -4,7 +4,6 @@ title: Marinerds Blog
 
 # A nerdy down and dirty data analysis of all things Seattle Mariners
 
-<DimensionGrid data={team_batting_data} />
 
 
 ```sql rbi_rolling_avg
