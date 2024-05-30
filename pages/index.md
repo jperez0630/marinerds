@@ -10,7 +10,7 @@ title: Marinerds Blog
 <Dropdown
     data={team_batting_data} 
     name=team_batting_data_input
-    value={inputs.team_batting_data_input}
+    value=column_name
 />
 
 
