@@ -13,17 +13,6 @@ title: Marinerds Blog
     value={inputs.team_batting_data_input}
 />
 
-```sql
-select * from team_batting_data
-where column_name in (${inputs.team_batting_data_input})
-```
-
-<BarChart 
- data={selected_team_batting_data} 
- x="Team" 
- y="${inputs.team_batting_data_input}"
-/>
-
 
 ```sql rbi_rolling_avg
     SELECT * FROM rbi_rolling_average_data
