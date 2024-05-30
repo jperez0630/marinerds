@@ -5,24 +5,16 @@ title: Marinerds Blog
 # A nerdy down and dirty data analysis of all things Seattle Mariners
 
 
-```sql team_batting_data_columns
-    SELECT * FROM team_batting_data_columns
-```
-
+ 
 
 <Dropdown
     data={team_batting_data_columns} 
-    name="Team Batting Data Columns"
-    value=index
+    name=name_of_dropdown
+    value=column_name
 />
 
 
-```sql selected_team_batting_data
-    SELECT Team,
-    '${inputs.team_batting_data_columns.value}'
-    FROM team_batting_data
-
-<BarChart 
+ <BarChart 
     data={selected_team_batting_data} 
     x=Team 
     y=value
