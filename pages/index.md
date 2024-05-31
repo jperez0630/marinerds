@@ -19,7 +19,8 @@ title: Marinerds Blog
 ```
 
 <BarChart 
-    data={team_batting_data} 
+    data={team_batting_data}
+    swapXY=true 
     x=Team
     y={inputs.team_batting_column_selector.value}
     title="Team Batting Stats"
