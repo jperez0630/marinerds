@@ -4,6 +4,8 @@ title: Marinerds Blog
 
 # A nerdy down and dirty data analysis of all things Seattle Mariners
 
+## Want to see how the Seattle Mariners stack up?  Select the drop-downs below and watch as the pretty litle charts materialize before your eyes.
+
 ```sql team_batting_columns
     SELECT * FROM team_batting_data_columns
 ```

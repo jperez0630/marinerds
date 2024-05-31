@@ -9,7 +9,6 @@ con = duckdb.connect(f'{Path.cwd()}/marinerds_data.duckdb')
 local_con = con.cursor()
 
 
-
 def get_most_recent_date():
     yesterday = datetime.date.today() - datetime.timedelta(days=1)
     yesterday = yesterday.strftime("%Y-%m-%d")
@@ -29,9 +28,6 @@ def get_team_batting_columns():
     return truncated_data
 
 df_team_batting_stats_columns = get_team_batting_columns()
-
-
-
 
 
 def get_rbi_rolling_avg():
@@ -115,9 +111,6 @@ def get_league_worst_stats():
         'BABIP':league_worst_babip
     }
     return league_worst_dict
-
-
-
 
 
 df_filtered_pitching_stats = get_pitching_stats()
