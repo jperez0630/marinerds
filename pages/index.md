@@ -4,12 +4,15 @@ title: Marinerds Blog
 
 # A nerdy down and dirty data analysis of all things Seattle Mariners
 
-
-```sql filtered_query
-select *
-from team_batting_data
-where ${inputs.selected_dimensions}
+```sql team_batting_columns
+    SELECT * FROM team_batting_data_columns
 ```
+
+<Dropdown
+    data={team_batting_columns} 
+    name=team_batting_column_selector
+    value=index
+/>
 
 ```sql rbi_rolling_avg
     SELECT * FROM rbi_rolling_average_data
