@@ -65,3 +65,5 @@ title: Marinerds Blog
     y=rbi_rolling_avg
     title="RBI Rolling Average"
 />
+
+# Pitching stats coming soon. Stay tuned...
