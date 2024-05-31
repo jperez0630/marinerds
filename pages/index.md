@@ -48,6 +48,7 @@ title: Marinerds Blog
     series=Team
     xAxisTitle=true 
     yAxisTitle=true
+    title="Team Batting Scatter Chart"
 />
 
 
@@ -60,5 +61,5 @@ title: Marinerds Blog
     data={rbi_rolling_avg}  
     x=Date
     y=rbi_rolling_avg
-    title='RBI Rolling Average'
+    title="RBI Rolling Average"
 />
