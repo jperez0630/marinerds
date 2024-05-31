@@ -45,7 +45,7 @@ title: Marinerds Blog
     data={team_batting_data} 
     x={inputs.team_batting_column_scatter_selector_x.value}
     y={inputs.team_batting_column_scatter_selector_y.value}
-    series=Teams
+    series=Team
     xAxisTitle=true 
     yAxisTitle=true
 />
