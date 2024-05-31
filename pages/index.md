@@ -12,6 +12,7 @@ title: Marinerds Blog
     data={team_batting_columns} 
     name=team_batting_column_selector
     value=index
+    title="Select 
 />
 
 ```sql team_batting_data
@@ -25,6 +26,30 @@ title: Marinerds Blog
     y={inputs.team_batting_column_selector.value}
     title="Team Batting Stats"
 />
+
+<Dropdown
+    data={team_batting_columns} 
+    name=team_batting_column_scatter_selector_x
+    value=index
+    title="Select X Axis Dropdown for Scatter Plot" 
+/>
+
+<Dropdown
+    data={team_batting_columns} 
+    name=team_batting_column_scatter_selector_y
+    value=index
+    title="Select Y Axis Dropdown for Scatter Plot" 
+/>
+
+<ScatterPlot 
+    data={team_batting_data} 
+    x={inputs.team_batting_column_scatter_selector_x.value}
+    y={inputs.team_batting_column_scatter_selector_y.value}
+    series=Teams
+    xAxisTitle=true 
+    yAxisTitle=true
+/>
+
 
 ```sql rbi_rolling_avg
     SELECT * FROM rbi_rolling_average_data
