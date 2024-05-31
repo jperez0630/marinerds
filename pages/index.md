@@ -14,8 +14,12 @@ title: Marinerds Blog
     value=index
 />
 
+```sql team_batting_data
+   SELECT * FROM team_batting_data
+```
+
 <BarChart 
-    data={query_name} 
+    data={team_batting_data} 
     x=Team
     y={inputs.team_batting_column_selector.value}
 />
