@@ -12,7 +12,7 @@ title: Marinerds Blog
     data={team_batting_columns} 
     name=team_batting_column_selector
     value=index
-    title="Select 
+    title="Select Critera for Team Batting "
 />
 
 ```sql team_batting_data
