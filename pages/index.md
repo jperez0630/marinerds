@@ -4,11 +4,12 @@ title: Marinerds Blog
 
 # A nerdy down and dirty data analysis of all things Seattle Mariners
 
-```sql team_batting_data_dim_grid
-    SELECT Team, RBI FROM team_batting_data
-```
 
-<DimensionGrid data={team_batting_data_dim_grid} />
+```sql filtered_query
+select *
+from team_batting_data
+where ${inputs.selected_dimensions}
+```
 
 ```sql rbi_rolling_avg
     SELECT * FROM rbi_rolling_average_data
