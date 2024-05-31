@@ -22,6 +22,7 @@ title: Marinerds Blog
     data={team_batting_data} 
     x=Team
     y={inputs.team_batting_column_selector.value}
+    title="Team Batting Stats"
 />
 
 ```sql rbi_rolling_avg
