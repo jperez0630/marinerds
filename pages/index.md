@@ -34,6 +34,21 @@ title: Marinerds Blog
     title="Select X Axis Dropdown for Scatter Plot" 
 />
 
+<Dropdown
+    data={team_batting_columns} 
+    name=team_batting_column_scatter_selector_y
+    value=index
+    title="Select Y Axis Dropdown for Scatter Plot" 
+/>
+
+<ScatterPlot 
+    data={team_batting_data} 
+    x={inputs.team_batting_column_scatter_selector_x.value}
+    y={inputs.team_batting_column_scatter_selector_y.value}
+    series=Teams
+    xAxisTitle=true 
+    yAxisTitle=true
+/>
 
 
 
