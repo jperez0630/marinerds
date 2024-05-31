@@ -14,6 +14,12 @@ title: Marinerds Blog
     value=index
 />
 
+<BarChart 
+    data={query_name} 
+    x=Team
+    y={inputs.team_batting_column_selector.value}
+/>
+
 ```sql rbi_rolling_avg
     SELECT * FROM rbi_rolling_average_data
 ```
