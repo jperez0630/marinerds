@@ -34,14 +34,21 @@ title: Marinerds Blog
     data={team_batting_columns} 
     name=team_batting_column_scatter_selector_x
     value=index
-    title="Select X Axis Dropdown for Scatter Plot" 
+    title="X Axis Dropdown for Scatter/Bubble Chart" 
 />
 
 <Dropdown
     data={team_batting_columns} 
     name=team_batting_column_scatter_selector_y
     value=index
-    title="Select Y Axis Dropdown for Scatter Plot" 
+    title="Y Axis Dropdown for Scatter/Bubble Chart" 
+/>
+
+<Dropdown
+    data={team_batting_columns} 
+    name=team_batting_column_scatter_selector_size
+    value=index
+    title="Size Dropdown for Scatter/Bubble Chart" 
 />
 
 <ScatterPlot 
@@ -55,6 +62,13 @@ title: Marinerds Blog
 />
 
 
+<BubbleChart 
+    data={team_batting_data} 
+    x={inputs.team_batting_column_scatter_selector_x.value}
+    y={inputs.team_batting_column_scatter_selector_y.value}
+    size={inputs.team_batting_column_scatter_selector_size.value}
+    series=Team
+/>  
 
 ```sql rbi_rolling_avg
     SELECT * FROM rbi_rolling_average_data
