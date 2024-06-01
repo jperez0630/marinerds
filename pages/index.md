@@ -56,7 +56,7 @@ comparisonTitle="vs. Last Month"
     data={team_batting_columns} 
     name=team_batting_column_scatter_selector_y
     value=index
-    defaultValue='RBI'
+    defaultValue='R'
     title="Y Axis Dropdown for Scatter/Bubble Chart" 
 />
 
@@ -68,6 +68,12 @@ comparisonTitle="vs. Last Month"
     title="Size Dropdown for Scatter/Bubble Chart" 
 />
 
+
+Here we are looking at the correlation between On Base Percentage (OBP) and the the amount of runs a team has scored (R)
+Feel free to monkey around with the dropdowns to devise your own scenarios
+*Note: I will be changing this to runs per game to give a more accurate account*
+
+
 <ScatterPlot 
     data={team_batting_data} 
     x={inputs.team_batting_column_scatter_selector_x.value}
@@ -78,6 +84,8 @@ comparisonTitle="vs. Last Month"
     title="Team Batting Scatter Chart"
 />
 
+This bubble plot shows the same thing as the scatter plot above except it adds in HardHit% (Percentage of Balls Hit >= 95 MPH), which is supposed to be represented by the bubble size
+*Note: Size of the bubbles do not seem to be rendering like I expected. Trouble shooting is on-going. In the meantime, you can still hover over the bubbles to see the HardHit%*
 
 <BubbleChart 
     data={team_batting_data} 
