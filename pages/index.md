@@ -8,8 +8,12 @@ title: Marinerds Blog
    SELECT * FROM team_batting_data
 ```
 
+```sql rbi_rolling_avg
+    SELECT * FROM rbi_rolling_average_data
+```
+
 <BigValue 
-data={team_batting_data} 
+data={rbi_rolling_avg} 
 value=AVG
 sparkline=Date
 comparisonTitle="vs. Last Month"
@@ -83,9 +87,7 @@ comparisonTitle="vs. Last Month"
     series=Team
 />  
 
-```sql rbi_rolling_avg
-    SELECT * FROM rbi_rolling_average_data
-```
+
 
 <LineChart 
     data={rbi_rolling_avg}  
