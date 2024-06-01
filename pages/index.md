@@ -48,7 +48,7 @@ comparisonTitle="vs. Last Month"
     data={team_batting_columns} 
     name=team_batting_column_scatter_selector_x
     value=index
-    defaultValue='HardHit%'
+    defaultValue='OBP'
     title="X Axis Dropdown for Scatter/Bubble Chart" 
 />
 
@@ -56,7 +56,7 @@ comparisonTitle="vs. Last Month"
     data={team_batting_columns} 
     name=team_batting_column_scatter_selector_y
     value=index
-    defaultValue='BAPIP'
+    defaultValue='RBI'
     title="Y Axis Dropdown for Scatter/Bubble Chart" 
 />
 
@@ -64,7 +64,7 @@ comparisonTitle="vs. Last Month"
     data={team_batting_columns} 
     name=team_batting_column_scatter_selector_size
     value=index
-    defaultValue='AVG'
+    defaultValue='HardHit%'
     title="Size Dropdown for Scatter/Bubble Chart" 
 />
 
