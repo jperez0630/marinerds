@@ -14,6 +14,7 @@ title: Marinerds Blog
     data={team_batting_columns} 
     name=team_batting_column_selector
     value=index
+    defaultValue='AVG'
     title="Select Critera for Team Batting "
 />
 
