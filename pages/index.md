@@ -34,6 +34,7 @@ title: Marinerds Blog
     data={team_batting_columns} 
     name=team_batting_column_scatter_selector_x
     value=index
+    defaultValue='HardHit%'
     title="X Axis Dropdown for Scatter/Bubble Chart" 
 />
 
@@ -41,6 +42,7 @@ title: Marinerds Blog
     data={team_batting_columns} 
     name=team_batting_column_scatter_selector_y
     value=index
+    defaultValue='BAPIP'
     title="Y Axis Dropdown for Scatter/Bubble Chart" 
 />
 
@@ -48,6 +50,7 @@ title: Marinerds Blog
     data={team_batting_columns} 
     name=team_batting_column_scatter_selector_size
     value=index
+    defaultValue='AVG'
     title="Size Dropdown for Scatter/Bubble Chart" 
 />
 
