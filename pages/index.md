@@ -4,6 +4,18 @@ title: Marinerds Blog
 
 # A nerdy down and dirty data analysis of all things Seattle Mariners
 
+```sql team_batting_data
+   SELECT * FROM team_batting_data
+```
+
+<BigValue 
+data={team_batting_data} 
+value=AVG
+sparkline=Date
+comparisonTitle="vs. Last Month"
+/>
+
+
 ## Want to see how the Seattle Mariners stack up?  Select the drop-downs below and watch as the pretty litle charts materialize before your eyes.
 
 ```sql team_batting_columns
@@ -18,9 +30,7 @@ title: Marinerds Blog
     title="Select Critera for Team Batting "
 />
 
-```sql team_batting_data
-   SELECT * FROM team_batting_data
-```
+
 
 <BarChart 
     data={team_batting_data}
