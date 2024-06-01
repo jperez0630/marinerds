@@ -1,0 +1,1 @@
+SELECT * FROM mariners_game_logs;
