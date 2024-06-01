@@ -69,7 +69,8 @@ comparisonTitle="vs. Last Month"
 />
 
 
-Here we are looking at the correlation between On Base Percentage (OBP) and the the amount of runs a team has scored (R)
+Here we are looking at the correlation between On Base Percentage (OBP) and the the amount of runs a team has scored (R).<br>
+What is striking here is the lockstep connection between OBP and how runs scored.<br>
 Feel free to monkey around with the dropdowns to devise your own scenarios
 *Note: I will be changing this to runs per game to give a more accurate account*
 
@@ -85,6 +86,7 @@ Feel free to monkey around with the dropdowns to devise your own scenarios
 />
 
 This bubble plot shows the same thing as the scatter plot above except it adds in HardHit% (Percentage of Balls Hit >= 95 MPH), which is supposed to be represented by the bubble size
+Here the added aspect of HardHit% explains why maybe some outliers teams are able to utilize HardHit% to make-up for a lackluster OBP
 *Note: Size of the bubbles do not seem to be rendering like I expected. Trouble shooting is on-going. In the meantime, you can still hover over the bubbles to see the HardHit%*
 
 <BubbleChart 
