@@ -1,4 +1,4 @@
-from pybaseball import statcast,pitching_stats,batting_stats, team_game_logs, team_batting, team_pitching
+from pybaseball import statcast,pitching_stats,batting_stats, team_game_logs, team_batting, team_pitching, schedule_and_record
 import time, datetime
 import pandas as pd
 import os
