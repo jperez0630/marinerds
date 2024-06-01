@@ -12,12 +12,6 @@ title: Marinerds Blog
     SELECT * FROM rbi_rolling_average_data
 ```
 
-<BigValue 
-data={mariner_game_logs} 
-value=RBI
-sparkline=Date
-comparisonTitle="vs. Last Month"
-/>
 
 ## Want to see how the Seattle Mariners stack up?  Select the drop-downs below and watch as the pretty litle charts materialize before your eyes.
 
