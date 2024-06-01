@@ -14,7 +14,7 @@ title: Marinerds Blog
 
 <BigValue 
 data={rbi_rolling_avg} 
-value=AVG
+value=RBI
 sparkline=Date
 comparisonTitle="vs. Last Month"
 />
