@@ -13,14 +13,6 @@ title: Marinerds Blog
 ```
 
 <BigValue 
-data={rbi_rolling_avg} 
-value=rbi_rolling_avg
-sparkline=Date
-comparisonTitle="vs. Last Month"
-/>
-
-
-<BigValue 
 data={mariner_game_logs} 
 value=RBI
 sparkline=Date
