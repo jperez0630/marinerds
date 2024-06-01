@@ -4,7 +4,7 @@ title: Marinerds Blog
 
 # A nerdy down and dirty data analysis of all things Seattle Mariners
 
-```sql mariners_game_logs
+```sql mariner_game_logs
    SELECT * FROM mariner_game_logs
 ```
 
@@ -13,7 +13,7 @@ title: Marinerds Blog
 ```
 
 <BigValue 
-data={team_batting_data} 
+data={rbi_rolling_avg} 
 value=rbi_rolling_avg
 sparkline=Date
 comparisonTitle="vs. Last Month"
@@ -21,8 +21,8 @@ comparisonTitle="vs. Last Month"
 
 
 <BigValue 
-data={rbi_rolling_avg} 
-value=rbi_rolling_avg
+data={mariner_game_logs} 
+value=RBI
 sparkline=Date
 comparisonTitle="vs. Last Month"
 />
