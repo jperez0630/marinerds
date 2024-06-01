@@ -5,7 +5,7 @@ title: Marinerds Blog
 # A nerdy down and dirty data analysis of all things Seattle Mariners
 
 ```sql mariners_game_logs
-   SELECT * FROM mariners_game_logs
+   SELECT * FROM mariner_game_logs
 ```
 
 ```sql rbi_rolling_avg
@@ -13,12 +13,19 @@ title: Marinerds Blog
 ```
 
 <BigValue 
-data={mariners_game_logs} 
-value=RBI
+data={team_batting_data} 
+value=rbi_rolling_avg
 sparkline=Date
 comparisonTitle="vs. Last Month"
 />
 
+
+<BigValue 
+data={rbi_rolling_avg} 
+value=rbi_rolling_avg
+sparkline=Date
+comparisonTitle="vs. Last Month"
+/>
 
 ## Want to see how the Seattle Mariners stack up?  Select the drop-downs below and watch as the pretty litle charts materialize before your eyes.
 
