@@ -1,7 +1,8 @@
 ---
-title: Marinerds Blog\: A Nerdy Down and Dirty Analysis of Seattle Mariners Baseball
+title: Marinerds Blog 
 ---
 
+## A Nerdy Down and Dirty Analysis of Seattle Mariners Baseball
  
 
 ```sql mariner_game_logs
@@ -26,7 +27,12 @@ A miscarriage of justice; such a strange turn of phrase.  It conjures an image o
 That’s sums it up for the Mariners team and fanbase.  We aren’t going to be able to take too much more of this shit!
 Until that fateful day when the M’s develop and or acquire the kind of hitting talent that is compatible with the elite pitching that they possess, this particular page will continue to be a statistical indictment of how anemic their offense is.  No one is looking forward more to changing the title than I am.  I already have a revised title ready:  Hey, these guys aren’t so freaking bad after all!
 
-
+<BigValue 
+data={mariner_game_logs} 
+value=OBP
+sparkline=Date
+comparisonTitle="vs. Last Month"
+/>
 
 
 <Dropdown
