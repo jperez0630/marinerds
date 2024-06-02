@@ -4,7 +4,6 @@ title: Marinerds Blog
 
 ```sql mariner_game_logs
     SELECT * FROM mariner_game_logs
-    
 ```
 
 ```sql rbi_rolling_avg
@@ -28,7 +27,7 @@ comparisonTitle="vs. Last Month"
 
 <BigValue 
 data={mariner_game_logs} 
-value=HardHit%
+value=BABIP
 sparkline=Date
 comparisonTitle="vs. Last Month"
 />
