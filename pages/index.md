@@ -2,7 +2,7 @@
 title: Marinerds Blog 
 ---
 
-```sql mariner_OBP_big_value
+```sql mariner_game_logs
     SELECT 
          Date, 
          OBP as "OBP"
@@ -25,8 +25,15 @@ title: Marinerds Blog
 ```
 
 <BigValue 
-data={mariner_OBP_big_value} 
+data={mariner_game_logs} 
 value=OBP
+sparkline=Date
+comparisonTitle="vs. Last Month"
+/>
+
+<BigValue 
+data={mariner_game_logs} 
+value=BAPIP
 sparkline=Date
 comparisonTitle="vs. Last Month"
 />
