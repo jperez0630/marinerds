@@ -33,7 +33,7 @@ comparisonTitle="vs. Last Month"
 
 <BigValue 
 data={mariner_game_logs} 
-value=BAPIP
+value=BABIP
 sparkline=Date
 comparisonTitle="vs. Last Month"
 />
