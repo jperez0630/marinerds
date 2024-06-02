@@ -20,17 +20,11 @@ title: Marinerds Blog
 
 <BigValue 
 data={mariner_game_logs} 
-value=OBP
+value=OBP[-1]
 sparkline=Date
 comparisonTitle="vs. Last Month"
 />
 
-<BigValue 
-data={mariner_game_logs} 
-value=BABIP
-sparkline=Date
-comparisonTitle="vs. Last Month"
-/>
 
 
 ## A Nerdy Down and Dirty Analysis of Seattle Mariners Baseball
