@@ -5,12 +5,11 @@ title: Marinerds Blog
 ```sql mariner_OBP_big_value
     SELECT 
          Date, 
-         OBP 
+         OBP as "OBP"
     
     FROM 
         mariner_game_logs
-
-    ORDER BY OBP DESC    
+    
 ```
 
 ```sql rbi_rolling_avg
