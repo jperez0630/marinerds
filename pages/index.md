@@ -3,12 +3,7 @@ title: Marinerds Blog
 ---
 
 ```sql mariner_game_logs
-    SELECT 
-         Date, 
-         OBP as "OBP"
-    
-    FROM 
-        mariner_game_logs
+    SELECT * FROM mariner_game_logs
     
 ```
 
@@ -33,7 +28,7 @@ comparisonTitle="vs. Last Month"
 
 <BigValue 
 data={mariner_game_logs} 
-value=HARDHit%
+value=BABIP
 sparkline=Date
 comparisonTitle="vs. Last Month"
 />
