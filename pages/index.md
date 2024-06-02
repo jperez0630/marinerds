@@ -20,7 +20,7 @@ title: Marinerds Blog
 
 <BigValue 
 data={mariner_game_logs} 
-value=OBP[-1]
+value=OBP
 sparkline=Date
 comparisonTitle="vs. Last Month"
 />
