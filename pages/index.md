@@ -1,8 +1,8 @@
 ---
-title: Marinerds Blog
+title: Marinerds Blog\: A Nerdy Down and Dirty Analysis of Seattle Mariners Baseball
 ---
 
-# A nerdy down and dirty data analysis of all things Seattle Mariners
+ 
 
 ```sql mariner_game_logs
    SELECT * FROM mariner_game_logs
