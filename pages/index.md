@@ -12,12 +12,22 @@ title: Marinerds Blog
     SELECT * FROM rbi_rolling_average_data
 ```
 
-
-## Want to see how the Seattle Mariners stack up?  Select the drop-downs below and watch as the pretty litle charts materialize before your eyes.
+```sql team_batting_data
+    SELECT * FROM team_batting_data
+```
 
 ```sql team_batting_columns
     SELECT * FROM team_batting_data_columns
 ```
+A Miscarriage of Justice
+The above is a working title that refers to how the Seattle Mariners management is, in many ways, wasting an elite, pay-roll friendly pitching staff by refusing to open the purse strings and acquire stud hitters.<br>  
+It could just as easily be: An in-depth examination of why the Seattle Mariners offense sucks balls.<br><br>
+A miscarriage of justice; such a strange turn of phrase.  It conjures an image of poor little Justice Junior, fighting for his little life as he develops in the womb.  Malnourished, he kicks on his mother’s abdomen as if to say, “Hello?  Hey, what the fuck is going on out there?”  Oh no!  Mommy just grabbed the crack pipe and as she sucks in that sweet intoxicating vapor, it turns Junior Justice’s temporary domicile into a gas chamber.  He’s not going to be able to take too much more of this shit!<br><br>
+That’s sums it up for the Mariners team and fanbase.  We aren’t going to be able to take too much more of this shit!
+Until that fateful day when the M’s develop and or acquire the kind of hitting talent that is compatible with the elite pitching that they possess, this particular page will continue to be a statistical indictment of how anemic their offense is.  No one is looking forward more to changing the title than I am.  I already have a revised title ready:  Hey, these guys aren’t so freaking bad after all!
+
+
+
 
 <Dropdown
     data={team_batting_columns} 
