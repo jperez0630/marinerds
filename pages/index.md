@@ -19,12 +19,12 @@ title: Marinerds Blog
 ```
 
 ```sql avg_score_in_wins
-    SELECT ROUND(avg(Rslt_Score_A), 2) as Avg_Rslt_Win FROM df_mariner_game_logs
+    SELECT ROUND(avg(Rslt_Score_A), 2) as Avg_Rslt_Win
     FROM mariner_game_logs
 ```
 
 ```sql avg_score_in_loss
-    SELECT ROUND(avg(Rslt_Score_B), 2) as Avg_Rslt_Win FROM df_mariner_game_logs
+    SELECT ROUND(avg(Rslt_Score_B), 2) as Avg_Rslt_Win
     FROM mariner_game_logs
 ```
 
