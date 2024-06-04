@@ -30,7 +30,7 @@ title: Marinerds Blog
 
 
 <BigValue 
-data={mariner_game_logs} 
+data={avg_score_in_wins} 
 value=Avg_Rslt_Win
 comparisonTitle="vs. Last Month"
 />
