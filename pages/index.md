@@ -32,7 +32,7 @@ title: Marinerds Blog
     SELECT 
         ROUND(CAST(SUM(CASE WHEN Rslt_Score_B <= 3 THEN 1 ELSE 0 END) AS FLOAT) / COUNT(*) * 100, 2) || '%' as Quality_Start_Percentage 
     FROM 
-        df_mariner_game_logs;
+        mariner_game_logs
 ```
 
 ## A Nerdy Down and Dirty Analysis of Seattle Mariners Baseball
