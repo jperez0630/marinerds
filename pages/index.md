@@ -70,7 +70,7 @@ Bottomline, Evidence.dev makes it super simple to make what I think are quality 
 
 ## Now on with the show<br>
 
-
+Avert your eyes Mariners fans, it's not pretty.  The charts below show how the M's stack up offensively and in many ways they fall short. Hopefully things will turn around soon as the schedule lighens up a bit.<br>
 
 
 
