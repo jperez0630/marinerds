@@ -35,6 +35,12 @@ title: Marinerds Blog
         mariner_game_logs
 ```
 
+```sql scoring_histogram
+SELECT Rslt_Score_A, COUNT(*) as score_counts
+FROM mariner_game_logs
+GROUP BY Rslt_Score_A
+```
+
 ## A Nerdy Down and Dirty Analysis of Seattle Mariners Baseball
 
 <BigValue 
@@ -49,11 +55,7 @@ value=Avg_Score_Loss
 comparisonTitle="vs. Last Month"
 />
 
-<BigValue 
-data={quality_start_percentage} 
-value=Quality_Start_Percentage
-comparisonTitle="vs. Last Month"
-/>
+<Sparkline data={score_counts} dateCol=Rslt_Score_A valueCol=score_counts type=bar connectGroup=mysparkline/>
 
 
  ## A brief word...
