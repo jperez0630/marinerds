@@ -55,7 +55,7 @@ value=Avg_Score_Loss
 comparisonTitle="vs. Last Month"
 />
 
-<Sparkline data={score_counts} dateCol=Rslt_Score_A valueCol=score_counts type=bar connectGroup=mysparkline/>
+<Sparkline data={scoring_histogram} dateCol=Rslt_Score_A valueCol=score_counts type=bar connectGroup=mysparkline/>
 
 
  ## A brief word...
