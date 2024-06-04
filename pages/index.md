@@ -30,9 +30,11 @@ title: Marinerds Blog
 
 ```sql quality_start_percentage
     SELECT 
-        ROUND(CAST(SUM(CASE WHEN Rslt_Score_B <= 3 THEN 1 ELSE 0 END) AS FLOAT) / COUNT(*), 2) as Quality_Start_Percentage 
+        ROUND(CAST(SUM(CASE WHEN Rslt_Score_B <= 3 THEN 1 ELSE 0 END) AS FLOAT) / COUNT(*), 2) as Quality_Start_Per
     FROM mariner_game_logs
 ```
+
+## A Nerdy Down and Dirty Analysis of Seattle Mariners Baseball
 
 <BigValue 
 data={avg_score_in_wins} 
@@ -52,7 +54,7 @@ value=Quality_Start_Percentage
 comparisonTitle="vs. Last Month"
 />
 
-## A Nerdy Down and Dirty Analysis of Seattle Mariners Baseball
+
  
 
 
