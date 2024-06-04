@@ -55,7 +55,13 @@ value=Avg_Score_Loss
 comparisonTitle="vs. Last Month"
 />
 
-<Sparkline data={scoring_histogram} dateCol=Rslt_Score_A valueCol=score_counts type=bar connectGroup=mysparkline/>
+<BigValue 
+data={scoring_histogram}
+value=score_counts
+title="Category Sales"
+sparkline=score_counts
+sparklineType=area
+/>
 
 
  ## A brief word...
