@@ -55,13 +55,7 @@ value=Avg_Score_Loss
 comparisonTitle="vs. Last Month"
 />
 
-<BigValue 
-data={scoring_histogram}
-value=score_counts
-title="Category Sales"
-sparkline=score_counts
-sparklineType=area
-/>
+
 
 
  ## A brief word...
@@ -162,6 +156,12 @@ This Line graph shows the Moving Average for Runs Batted In. The window size is 
     x=Date
     y=rbi_rolling_avg
     title="RBI Rolling Average"
+/>
+
+<Histogram 
+    data={quality_start_percentage} 
+    x=score_counts 
+    xAxisTitle="Count of Runs Scored"
 />
 
 # Pitching stats coming soon. Stay tuned...
