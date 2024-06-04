@@ -18,10 +18,20 @@ title: Marinerds Blog
     SELECT * FROM team_batting_data_columns
 ```
 
+```sql avg_score_in_wins
+    SELECT ROUND(avg(Rslt_Score_A), 2) as Avg_Rslt_Win FROM df_mariner_game_logs
+    FROM mariner_game_logs
+```
+
+```sql avg_score_in_loss
+    SELECT ROUND(avg(Rslt_Score_B), 2) as Avg_Rslt_Win FROM df_mariner_game_logs
+    FROM mariner_game_logs
+```
+
+
 <BigValue 
 data={mariner_game_logs} 
-value=OBP
-sparkline=Date
+value=Avg_Rslt_Win
 comparisonTitle="vs. Last Month"
 />
 
@@ -32,7 +42,7 @@ comparisonTitle="vs. Last Month"
 
 
 ### A Miscarriage of Justice<br><br>
-The above is a working title that refers to how the Seattle Mariners management is, in many ways, wasting an elite, pay-roll friendly pitching staff by refusing to open the purse strings and acquire stud hitters.<br>  
+The above is a working title that refers to how the Seattle Mariners management is, in many ways, wasting an elite, pay-roll friendly pitching staff by refusing to open their purse strings and acquire stud hitters.<br>  
 It could just as easily be: An in-depth examination of why the Seattle Mariners offense sucks balls.<br><br>
 A miscarriage of justice; such a strange turn of phrase.  It conjures an image of poor little Justice Junior, fighting for his little life as he develops in the womb.  Malnourished, he kicks on his mother’s abdomen as if to say, “Hello?  Hey, what the fuck is going on out there?”  Oh no!  Mommy just grabbed the crack pipe and as she sucks in that sweet intoxicating vapor, it turns Junior Justice’s temporary domicile into a gas chamber.  He’s not going to be able to take too much more of this shit!<br><br>
 That’s sums it up for the Mariners team and fanbase.  We aren’t going to be able to take too much more of this shit!

@@ -46,9 +46,28 @@ def get_mariner_game_logs():
     game_logs = team_game_logs(2024, "SEA")
     game_logs['Date'] = game_logs['Date'].str.replace(r'\s\(\d+\)', '', regex=True)
     game_logs['Date'] = pd.to_datetime(game_logs['Date'] + ' 2024')
+    game_logs.insert(4, 'Rslt_Outcome', game_logs['Rslt'].str.split(',', expand=True)[0])
+    game_logs.insert(5, 'Rslt_Score', game_logs['Rslt'].str.split(',', expand=True)[1])
+    game_logs.insert(5, 'Rslt_Score_A', game_logs['Rslt_Score'].str.split('-', expand=True)[0])
+    game_logs.insert(6, 'Rslt_Score_B', game_logs['Rslt_Score'].str.split('-', expand=True)[1])
+    game_logs[['Rslt_Score_A', 'Rslt_Score_B']] = game_logs[['Rslt_Score_A', 'Rslt_Score_B']].astype(int)
+    game_logs.drop(['Rslt', 'Rslt_Score'], axis=1, inplace=True)
+
     return game_logs
 
 df_mariner_game_logs = get_mariner_game_logs()
+
+df_mariner_game_logs.loc[(
+    df_mariner_game_logs[
+        'Rslt_Outcome'
+    ] == 'W'
+)
+&(
+    df_mariner_game_logs[
+        'Rslt_Score_A'
+    ] <= 3
+)
+]
 
 # def get_obp_rolling_avg():
 #     batting_logs = team_game_logs(2024, "SEA")
