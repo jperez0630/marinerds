@@ -50,7 +50,7 @@ comparisonTitle="vs. Last Month"
 
 <BigValue 
 data={quality_start_percentage} 
-value=Quality_Start_Percentage
+value=Quality_Start_Per
 comparisonTitle="vs. Last Month"
 />
 
