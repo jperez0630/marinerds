@@ -28,10 +28,21 @@ title: Marinerds Blog
     FROM mariner_game_logs
 ```
 
+```sql quality_start_percentage
+    SELECT 
+        ROUND(CAST(SUM(CASE WHEN Rslt_Score_B <= 3 THEN 1 ELSE 0 END) AS FLOAT) / COUNT(*), 2) as Quality_Start_Percentage 
+    FROM df_mariner_game_logs;
+```
 
 <BigValue 
 data={avg_score_in_wins} 
 value=Avg_Score_Win
+comparisonTitle="vs. Last Month"
+/>
+
+<BigValue 
+data={quality_start_percentage} 
+value=Quality_Start_Percentage
 comparisonTitle="vs. Last Month"
 />
 
