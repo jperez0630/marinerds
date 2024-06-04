@@ -19,22 +19,27 @@ title: Marinerds Blog
 ```
 
 ```sql avg_score_in_wins
-    SELECT ROUND(avg(Rslt_Score_A), 2) as Avg_Rslt_Win
+    SELECT ROUND(avg(Rslt_Score_A), 2) as Avg_Score_Win
     FROM mariner_game_logs
 ```
 
 ```sql avg_score_in_loss
-    SELECT ROUND(avg(Rslt_Score_B), 2) as Avg_Rslt_Win
+    SELECT ROUND(avg(Rslt_Score_B), 2) as Avg_Score_Loss
     FROM mariner_game_logs
 ```
 
 
 <BigValue 
 data={avg_score_in_wins} 
-value=Avg_Rslt_Win
+value=Avg_Score_Win
 comparisonTitle="vs. Last Month"
 />
 
+<BigValue 
+data={avg_score_in_loss} 
+value=Avg_Score_Loss
+comparisonTitle="vs. Last Month"
+/>
 
 
 ## A Nerdy Down and Dirty Analysis of Seattle Mariners Baseball
