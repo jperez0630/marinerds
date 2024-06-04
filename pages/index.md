@@ -147,7 +147,7 @@ Note: Size of the bubbles do not seem to be rendering like I expected. Trouble s
     series=Team
 />  
 
-
+This Line graph shows the Moving Average for Runs Batted In. The window size is 5; therefore each point represents the average score the Mariners have produced over multiple 5 game sets   
 
 <LineChart 
     data={rbi_rolling_avg}  
