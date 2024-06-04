@@ -30,7 +30,7 @@ title: Marinerds Blog
 
 ```sql quality_start_percentage
     SELECT 
-        ROUND(CAST(SUM(CASE WHEN Rslt_Score_B <= 3 THEN 1 ELSE 0 END) AS FLOAT) / COUNT(*), 2) as Quality_Start_Per
+        ROUND(CAST(SUM(CASE WHEN Rslt_Score_B <= 3 THEN 1 ELSE 0 END) AS FLOAT) / COUNT(*), 2) as Quality_Start_Perc
     FROM mariner_game_logs
 ```
 
