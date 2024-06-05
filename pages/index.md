@@ -36,9 +36,8 @@ title: Marinerds Blog
 ```
 
 ```sql run_differential
-SELECT SUM(Run_Differential) as "Run_Differential" FROM game_logs
- 
-```
+SELECT SUM(Run_Differential) as "Run_Differential" FROM mariner_game_logs
+ ```
 
 ## A Nerdy Down and Dirty Analysis of Seattle Mariners Baseball
 
@@ -162,10 +161,5 @@ This Line graph shows the Moving Average for Runs Batted In. The window size is 
     title="RBI Rolling Average"
 />
 
-<Histogram 
-    data={scoring_histogram} 
-    x=score_counts 
-    xAxisTitle="Count of Runs Scored"
-/>
 
 # Pitching stats coming soon. Stay tuned...
