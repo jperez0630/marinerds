@@ -168,10 +168,18 @@ This Line graph shows the Moving Average for Runs Batted In. The window size is 
 
 # And now some good news
 
+<Dropdown
+    data={team_pitching_columns} 
+    name=team_pitching_column_selector
+    value=index
+    defaultValue='ERA'
+    title="Select Critera for Team Pitching"
+/>
+
 <BarChart 
     data={team_pitching_data}
     swapXY=true 
     x=Team
-    y=ERA
+    y={inputs.team_pitching_column_selector.value}
     title="Team Pitching Stats"
 />

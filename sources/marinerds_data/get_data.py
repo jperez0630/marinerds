@@ -18,6 +18,13 @@ def get_team_pitching_stats():
     data = team_pitching(2024)
     return data
 
+def get_team_pitching_columns():
+    data = df_team_batting_stats.columns.to_frame().reset_index()
+    truncated_data = data[['index']].copy()
+    return truncated_data
+
+df_team_pitching_stats_columns = get_team_pitching_columns()
+
 df_team_pitching_stats =   get_team_pitching_stats()
 
 def get_team_batting_stats():
@@ -218,3 +225,7 @@ CREATE OR REPLACE TABLE team_pitching_data AS
 SELECT * FROM df_team_pitching_stats
 ''')
 
+local_con.sql('''
+CREATE OR REPLACE TABLE team_pitching_data_columns AS
+SELECT * FROM df_team_pitching_stats_columns
+''')
