@@ -11,11 +11,11 @@ Marvel can't make a decent movie to save its proverbial life. The vast majority 
 Books? Who reads books anymore? TV, once a huge time suck, now ruined by the proliferation of streaming services that have managed to 
 recreate the bloated and expensive cable paradigm piecemeal. Right now, I think my only competition for your attention are dancing cats
 and people falling on their faces. Also, I believe I have a few things going for me that I hope will prevent this Blog from going into oblivion.
-<b>My undying love for my home team the Mariners</b>.
+<b>My undying love for my home team the Mariners</b>
 <br>Sometimes it feels more like undead than undying.  Like a mutilated zombie long relieved of appendages, dragging itself along like 
 a self-propelled ball and chain. However, despite the few ups and the many downs, I just can't give up hope that one day I'm going to 
 experience again something akin to the 116 win season of 2001 or the Refuse to Lose magic of '95. Yes, I am that old.<br><br> 
-<b>My fascination with data and my small talent for it</b>.<br>
+<b>My fascination with data and my small talent for it</b><br>
 I'm a Data Analyst by trade and a nerd by birth. As I've already dated myself, I can comfortably relate how, as a young man, I would
 anxiously anticipate the arrival of the Wednesday edition of the Seattle Times because it contained what seemed like at the time a 
 cornucopia of delectable statistical tidbits that were impossible to resist.  How much did Edgar Martinez's batting average climb 
