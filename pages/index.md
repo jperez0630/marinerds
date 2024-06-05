@@ -39,6 +39,10 @@ title: Marinerds Blog
 SELECT SUM(Run_Differential) as "Run_Differential" FROM mariner_game_logs
  ```
 
+ ```sql team_pitching_data
+     SELECT * FROM team_pitching_data
+ ```
+
 ## A Nerdy Down and Dirty Analysis of Seattle Mariners Baseball
 
 <BigValue 
@@ -162,4 +166,12 @@ This Line graph shows the Moving Average for Runs Batted In. The window size is 
 />
 
 
-# Pitching stats coming soon. Stay tuned...
+# And now some good news
+
+<BarChart 
+    data={team_pitching_data}
+    swapXY=true 
+    x=Team
+    y=ERA
+    title="Team Pitching Stats"
+/>

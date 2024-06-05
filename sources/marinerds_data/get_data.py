@@ -14,6 +14,11 @@ def get_most_recent_date():
     yesterday = yesterday.strftime("%Y-%m-%d")
     return yesterday
 
+def get_team_pitching_stats():
+    data = team_pitching(2024)
+    return data
+
+df_team_pitching_stats =   get_team_pitching_stats()
 
 def get_team_batting_stats():
     data = team_batting(2024)
@@ -208,4 +213,8 @@ CREATE OR REPLACE TABLE mariner_game_logs AS
 SELECT * FROM df_mariner_game_logs
 ''')
 
+local_con.sql('''
+CREATE OR REPLACE TABLE team_pitching_data AS
+SELECT * FROM df_team_pitching_stats
+''')
 
