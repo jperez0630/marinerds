@@ -35,10 +35,9 @@ title: Marinerds Blog
         mariner_game_logs
 ```
 
-```sql scoring_histogram
-SELECT Rslt_Score_A, COUNT(*) as score_counts
-FROM mariner_game_logs
-GROUP BY Rslt_Score_A
+```sql run_differential
+SELECT SUM(Run_Differential) as "Run_Differential" FROM game_logs
+ 
 ```
 
 ## A Nerdy Down and Dirty Analysis of Seattle Mariners Baseball
@@ -56,9 +55,8 @@ comparisonTitle="vs. Last Month"
 />
 
 <BigValue 
-data={rbi_rolling_avg} 
-value=rbi_rolling_avg
-sparkline=Date
+data={run_differential} 
+value=run_differential 
 />
 
 

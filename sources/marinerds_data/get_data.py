@@ -51,7 +51,8 @@ def get_mariner_game_logs():
     game_logs.insert(5, 'Rslt_Score_A', game_logs['Rslt_Score'].str.split('-', expand=True)[0])
     game_logs.insert(6, 'Rslt_Score_B', game_logs['Rslt_Score'].str.split('-', expand=True)[1])
     game_logs[['Rslt_Score_A', 'Rslt_Score_B']] = game_logs[['Rslt_Score_A', 'Rslt_Score_B']].astype(int)
-    game_logs.drop(['Rslt', 'Rslt_Score'], axis=1, inplace=True)
+    game_logs.insert(9, 'Run_Differential', '') 
+    game_logs['Run_Differential'] = game_logs['Rslt_Score_A'] - game_logs['Rslt_Score_B']
 
     return game_logs
 
