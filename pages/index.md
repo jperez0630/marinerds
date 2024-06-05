@@ -61,7 +61,6 @@ value=rbi_rolling_avg
 sparkline=Date
 />
 
-<Sparkline data={rbi_rolling_avg} dateCol=Date valueCol=rbi_rolling_avg type=line color=purple dateFmt=mmm connectGroup=mysparkline/>
 
 
 
