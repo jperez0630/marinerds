@@ -159,7 +159,7 @@ This Line graph shows the Moving Average for Runs Batted In. The window size is 
 />
 
 <Histogram 
-    data={quality_start_percentage} 
+    data={scoring_histogram} 
     x=score_counts 
     xAxisTitle="Count of Runs Scored"
 />
