@@ -55,6 +55,12 @@ value=Avg_Score_Loss
 comparisonTitle="vs. Last Month"
 />
 
+<BigValue 
+data={rbi_rolling_avg} 
+value=rbi_rolling_avg
+comparisonTitle="vs. Last Month"
+/>
+
 <Sparkline data={rbi_rolling_avg} dateCol=Date valueCol=rbi_rolling_avg type=line color=purple dateFmt=mmm connectGroup=mysparkline/>
 
 
