@@ -55,7 +55,7 @@ comparisonTitle="vs. Last Month"
 
 <BigValue 
 data={run_differential} 
-value=run_differential 
+value=Run_Differential 
 />
 
 
