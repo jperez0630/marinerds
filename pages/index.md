@@ -133,8 +133,8 @@ Avert your eyes Mariners fans, it's not pretty.  The charts below show how the M
 
 
 Here we are looking at the correlation between On Base Percentage (OBP) and the the amount of runs a team has scored (R).<br>
-What is striking here is the lockstep connection between OBP and how runs scored.<br>
-Feel free to monkey around with the dropdowns to devise your own scenarios<br>
+What is striking here is the lockstep connection between the two.<br>
+Feel free to adjust the dropdowns to devise your own scenarios<br>
 Note: I will be changing this to runs per game to give a more accurate account
 
 
@@ -149,7 +149,7 @@ Note: I will be changing this to runs per game to give a more accurate account
 />
 
 This bubble plot shows the same thing as the scatter plot above except it adds in HardHit% (Percentage of Balls Hit >= 95 MPH), which is supposed to be represented by the bubble size<br>
-Here the added aspect of HardHit% explains why maybe some outliers teams are able to utilize HardHit% to make-up for a lackluster OBP<br>
+Here the added aspect of HardHit% explains why perhaps some outlier teams are able to utilize HardHit% to make-up for a lackluster OBP<br>
 Note: Size of the bubbles do not seem to be rendering like I expected. Trouble shooting is on-going. In the meantime, you can still hover over the bubbles to see the HardHit%
 
 <BubbleChart 
@@ -160,7 +160,7 @@ Note: Size of the bubbles do not seem to be rendering like I expected. Trouble s
     series=Team
 />  
 
-This Line graph shows the Moving Average for Runs Batted In. The window size is 5; therefore each point represents the average score the Mariners have produced over multiple 5 game sets   
+This Line graph shows the Moving Average for Runs Batted In. The window size is 5; therefore each point represents the average score the Mariners have produced over multiple 5 game sets  
 
 <LineChart 
     data={rbi_rolling_avg}  
@@ -170,7 +170,10 @@ This Line graph shows the Moving Average for Runs Batted In. The window size is 
 />
 
 
-# And now some good news
+## And now some good news<br>
+
+As bad as the Mariners look on offense, they look even better when it comes to pitching.  They do everything remarkably well with the exception of HardHit%, for which they still are middle of the pack.  
+
 
 <Dropdown
     data={team_pitching_columns} 
