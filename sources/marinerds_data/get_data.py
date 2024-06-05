@@ -18,14 +18,16 @@ def get_team_pitching_stats():
     data = team_pitching(2024)
     return data
 
+df_team_pitching_stats =   get_team_pitching_stats()
+
 def get_team_pitching_columns():
-    data = df_team_batting_stats.columns.to_frame().reset_index()
+    data = df_team_pitching_stats.columns.to_frame().reset_index()
     truncated_data = data[['index']].copy()
     return truncated_data
 
 df_team_pitching_stats_columns = get_team_pitching_columns()
 
-df_team_pitching_stats =   get_team_pitching_stats()
+
 
 def get_team_batting_stats():
     data = team_batting(2024)
