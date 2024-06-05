@@ -43,6 +43,10 @@ SELECT SUM(Run_Differential) as "Run_Differential" FROM mariner_game_logs
      SELECT * FROM team_pitching_data
  ```
 
+ ```sql team_pitching_columns
+    SELECT * FROM team_pitching_data_columns
+```
+
 ## A Nerdy Down and Dirty Analysis of Seattle Mariners Baseball
 
 <BigValue 
