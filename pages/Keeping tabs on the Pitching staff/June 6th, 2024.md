@@ -2,7 +2,7 @@
 title: June 5th, 2024
 ---
 
-Another day another loss where the Mariners gave up 3 runs or less. Six and counting. 
+
 
 <Dropdown
     data={team_batting_columns} 
