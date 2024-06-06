@@ -23,16 +23,15 @@ Furthermore, we must take some time to consider what exactly is elite.  In my mi
 
 Do the Mariners have anybody like a Pedro Martinez, a Randy Johnson or a Greg Maddux? There has been some radio-chatter but it’s all mental masturbation until the sweet release of statistical ejaculation. <br>
 
-
 ## Part one: Starters Individual Stats<br>
 In the first step on our quest toward baseball pitching enlightenment, we will focus on the individual numbers of the Mariner’s starters. We will be diving into a mix of stats and so-called advanced stats to see where the Mariners staff stack up. These are ERA, xERA, WHIP, Hits Per Nine Innings, Walks Per Nine Innings, Hard Hit Percentage and BAPIP.  I will be going into detail for each metric as we merrily stroll along.<br>
 
 We'll start off with the most pedestrian of pitching stats, ERA, and then quickly pivot to its sexier cousin xERA. Both are focused on the average amount of earned runs a pitcher gives up in a nine inning stretch, but xERA factors in strikeouts, walks, hit by pitch, exit velocity and launch angle to paint a more robust picture of how effective a picture is at preventing runs.<br>
 
-What are the fancy bars telling us? Brian Miller and Logan Gilbert are the standard bearers for ERA so far this season with a 3.08 and 3.07 ERA respectively, which ranks them just ahead of league average. That league average will go up as the temperatures soar, so if they stay in the low 3's, it will be a hell of a year for those two. However, despite the similar ERA's, if you factor in xERA, it tells a little bit different story.  Logan Gilbert's xERA is just four one-hundredth's higher that his ERA, which indicates that he is not giving up a preponderance of hard-hit balls (95 MPH or greater) with launch angles that lead to moon shots.  Unfortunately, the opposite seems to be true for Miller.  He seems to be getting away with some pitches that may prove problematic down the line.  Castillo's ERA and xERA, like Gilbert's, are neck and neck, so what you see is what you get with him, which is par for the course for La Piedra.<br> 
 
-Then there is poor unfortunate soul Kirby, who finds himself the yen to Miller's yang. The good news is, if he continues to pitch the way he has and our good friend regression to mean works like it's supposed to, he should be in the low 3's for ERA when it's all said and done.  So, bottom line, at the rate the starters are going, we have three guys looking like low 3 ERA guys and one guy with a high 3 to low 4 ERA. Plus, Woo, the X-Factor, has only given up one run in his first three starts since coming back. 
-      
+
+June 5th, 2024
+The M's are doing quite well so far this season in this category with the majority of pitchers at or above league average in ERA and xERA. Nobody is lights-out but nobody is stinking up the joint either.  Castillo is leading the charge, followed by Miller and Gilbert, who are all better than league aveerage.  George Kirby has been the victim of some soft bloopers that somehow are finding the cracks in the defense, which is pushing up his ERA a bit.  His xERA is the best on the team, which gives us hope that he will end up somewhere in the mid to low 3's in ERA. 
 
 
 ```sql mariners_era_xera_data
