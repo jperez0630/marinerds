@@ -49,7 +49,15 @@ We'll start off with the most pedestrian of pitching stats, ERA, and then quickl
 <Tab label="5th Tab">
         Content of the Second Tab
 </Tab>
-
+<Tab label="6th Tab">
+        Content of the Second Tab
+</Tab>
+<Tab label="7th Tab">
+        Content of the Second Tab
+</Tab>
+<Tab label="8th Tab">
+        Content of the Second Tab
+</Tab>
 </Tabs>
 
  
