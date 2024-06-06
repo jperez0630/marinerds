@@ -30,16 +30,18 @@ We'll start off with the most pedestrian of pitching stats, ERA, and then quickl
 
 
 <Tabs color=#ff0000>
-    <Tab label="June 5th, 2024">
+
+<Tab label="June 5th, 2024">
         The M's are doing quite well so far this season in this category with the majority of pitchers at or above league average in ERA and xERA. Nobody is lights-out but nobody is stinking up the joint either. Castillo is leading the charge, followed by Miller and Gilbert, who are all better than league aveerage.  George Kirby has been the victim of some soft bloopers that somehow are finding the cracks in the defense, which is pushing his ERA up a bit. His xERA is the best on the team, which gives us hope that he will end up somewhere in the mid to low 3's in ERA.  
-    </Tab>
-    <Tab label="Second Tab">
+</Tab>
+
+<Tab label="Second Tab">
         Content of the Second Tab
-    </Tab>
-        </Tab>
-    <Tab label="Third Tab">
+</Tab>
+    
+<Tab label="Third Tab">
         Content of the Second Tab
-    </Tab>
+</Tab>
 
 </Tabs>
 
