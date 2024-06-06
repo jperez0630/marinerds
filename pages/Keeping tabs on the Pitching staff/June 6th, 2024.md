@@ -1,5 +1,5 @@
 ---
-title: June 5th, 2024
+title: June 6th, 2024
 ---
 
 
