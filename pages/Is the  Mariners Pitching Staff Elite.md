@@ -36,6 +36,10 @@ We'll start off with the most pedestrian of pitching stats, ERA, and then quickl
     <Tab label="Second Tab">
         Content of the Second Tab
     </Tab>
+        </Tab>
+    <Tab label="Third Tab">
+        Content of the Second Tab
+    </Tab>
 
 </Tabs>
 
