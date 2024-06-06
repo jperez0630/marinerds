@@ -24,7 +24,7 @@ Furthermore, we must take some time to consider what exactly is elite.  In my mi
 Do the Mariners have anybody like a Pedro Martinez, a Randy Johnson or a Greg Maddux? There has been some radio-chatter but it’s all mental masturbation until the sweet release of statistical ejaculation. <br>
 
 
-The plan for this particular article is to hopefully chronicle the M's pitching staff path to greatness. In the first step on our quest, we will focus on the individual numbers of the Mariner’s starters. We will be diving into a mix of stats and so-called advanced stats to see how the Mariners staff stacks up. These are ERA, xERA, WHIP, Hits Per Nine Innings, Walks Per Nine Innings, Hard Hit Percentage and BAPIP.  I will be going into detail for each metric as we merrily stroll along.<br>
+The plan for this particular article is to hopefully chronicle the M's pitching staff rise to greatness. In the first step on our quest, we will focus on the individual numbers of the Mariner’s starters. We will be diving into a mix of stats and so-called advanced stats to see how the Mariners staff stacks up. These are ERA, xERA, WHIP, Hits Per Nine Innings, Walks Per Nine Innings, Hard Hit Percentage and BAPIP.  I will be going into detail for each metric as we merrily stroll along.<br>
 
 We'll start off with the most pedestrian of pitching stats, ERA, and then quickly pivot to its sexier cousin xERA. Both are focused on the average amount of earned runs a pitcher gives up in a nine inning stretch, but xERA factors in strikeouts, walks, hit by pitch, exit velocity and launch angle to paint a more robust picture of how effective a picture is at preventing runs.<br>
 
@@ -33,6 +33,46 @@ We'll start off with the most pedestrian of pitching stats, ERA, and then quickl
     <Tab label="June 5th, 2024">
         The M's are doing quite well so far this season in this category with the majority of pitchers at or above league average in ERA and xERA. Nobody is lights-out but nobody is stinking up the joint either.  Castillo is leading the charge, followed by Miller and Gilbert, who are all better than league aveerage.  George Kirby has been the victim of some soft bloopers that somehow are finding the cracks in the defense, which is pushing up his ERA a bit.  His xERA is the best on the team, which gives us hope that he will end up somewhere in the mid to low 3's in ERA. 
     </Tab>
+    <Tab label="Second Tab">
+        Content of the Second Tab
+    </Tab>
+      </Tab>
+    <Tab label="Second Tab">
+        Content of the Second Tab
+    </Tab>
+      </Tab>
+    <Tab label="Second Tab">
+        Content of the Second Tab
+    </Tab>
+      </Tab>
+    <Tab label="Second Tab">
+        Content of the Second Tab
+    </Tab>
+      </Tab>
+    <Tab label="Second Tab">
+        Content of the Second Tab
+    </Tab>
+      </Tab>
+    <Tab label="Second Tab">
+        Content of the Second Tab
+    </Tab>
+      </Tab>
+    <Tab label="Second Tab">
+        Content of the Second Tab
+    </Tab>
+      </Tab>
+    <Tab label="Second Tab">
+        Content of the Second Tab
+    </Tab>
+      </Tab>
+    <Tab label="Second Tab">
+        Content of the Second Tab
+    </Tab>
+      </Tab>
+    <Tab label="Second Tab">
+        Content of the Second Tab
+    </Tab>
+      </Tab>
     <Tab label="Second Tab">
         Content of the Second Tab
     </Tab>
