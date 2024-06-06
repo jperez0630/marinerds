@@ -1,64 +1,113 @@
 ---
-title: June 6th, 2024
+title: June 5th, 2024
 ---
 
+Another day another loss where the Mariners gave up 3 runs or less. Six and counting. 
+
+<Dropdown
+    data={team_batting_columns} 
+    name=team_batting_column_selector
+    value=index
+    defaultValue='AVG'
+    title="Select Critera for Team Batting "
+/>
 
 
-I want to preface this initial article by articulating what a joy it is to watch this current iteration of the Seattle Mariners pitching staff. Especially in the context of Mariner’s pitching history. In 1997, the Mariners scored more runs than any other team in baseball, yet they did not make the playoffs that year.  Why, you ask? Because their pitching staff freaking sucked! Their closer, Bobby Ayala, blew so many saves that year that it created a raging debate whether or not he possessed compromising pictures of Lou Pinella, the then and forever missed former M’s Manager, doing unspeakable acts with farm animals. This was the only logical explanation for why he was being inflicted upon the Mariner fanbase over and over again.<br>
-## Not an Ayala in the Bunch
-This crop of Mariners arms does not illicit such consternation. Castillo, with cat-like grace and viper-like accuracy is anyone’s definition of a staff ace. Kirby, with his inhuman precision paints the corners with the aplomb of a master artist. Lanky Logan Gilbert, by the time he releases the ball, it’s practically down the batter's throat. Bryce Miller spins the four-seam fastball like nobody's business and when he gets it up in the zone, it comes at the batter like a Texas-twister. Last among the starters, but certainly not least, Brian Woo. Listen. Brian Woo Tang Clan ain't nothin' to fuck with. Unfortunately, he has not thrown enough pitches to qualify for statistical analysis, but he is definitely one to keep an eye on.<br> 
+<BarChart 
+    data={team_batting_data}
+    swapXY=true 
+    x=Team
+    y={inputs.team_batting_column_selector.value}
+    title="Team Batting Stats"
+/>
 
-Now, finally, the bullpen. The Mariners bullpen has been a revelation. Not an Ayala in the bunch. Munos is electricity personified. His one-two punch of slider that bites harder than a ravenous crocodile and triple digit fastball with movement, is a devastating combo.  In addition, the way management keeps finding these diamonds in the rough is a miracle. Paul Sewald, was an also-ran with an ERA of 13.50 the year before he arrived. Sorry to see him go but as memory serves, we got Rojas and Canzone for him so I can’t be too upset about his departure.        
-## Don't be Hasty
-Ok, with that out of the way. On with the question at hand: Is the Mariner’s pitching staff elite? The initial knee-jerk response to that question might possibly be: duh! Afterall, the Mariners staff is top ten in ERA and top five in BAA (Batting Average Against), WHIP (Walks Hist Per Innings Pitched) and Walks allowed. <br>
+<Dropdown
+    data={team_batting_columns} 
+    name=team_batting_column_scatter_selector_x
+    value=index
+    defaultValue='OBP'
+    title="X Axis Dropdown for Scatter/Bubble Chart" 
+/>
 
-However, in the immortal words of Treebeard the Ent, “Don’t be hasty, little Hobbits”. There is a host of criteria that determine the effectiveness of a team’s pitching staff such as defense, quality of opponent and regression to mean, which are just fancy words for luck. 
-Furthermore, we must take some time to consider what exactly is elite.  In my mind, elite means best of the best. Gun to your head, you need somebody to blow the ball passed Shohei Ohtani with runners on the corners or some lunatic is going to blow your brains out the back of your head and create a modern art masterpiece on the back wall. Who you gonna pick to save that precious cranium of yours? Going back in my time machine, I’m picking Pedro Martinez. That dude had a 1.90 ERA in a year where the top five RBI guys were:
+<Dropdown
+    data={team_batting_columns} 
+    name=team_batting_column_scatter_selector_y
+    value=index
+    defaultValue='R'
+    title="Y Axis Dropdown for Scatter/Bubble Chart" 
+/>
 
-1.	Ken Griffey Jr: 147
-2.	Tino Martinex: 141
-3.	Andres Galaraga: 140
-4.	Jeff Bagwell: 135
-5.	Juan Gonzalez: 131<br>
-
-Do the Mariners have anybody like a Pedro Martinez, a Randy Johnson or a Greg Maddux? There has been some radio-chatter but it’s all mental masturbation until the sweet release of statistical ejaculation. <br>
-
-
-The plan for this particular series is to hopefully chronicle the M's pitching staff rise to greatness. In the first step on our quest, we will focus on the individual numbers of the Mariner’s starters. We will be diving into a mix of stats and so-called advanced stats to see how the Mariners staff stacks up. These are ERA, xERA, WHIP, Hits Per Nine Innings, Walks Per Nine Innings, Hard Hit Percentage and BAPIP.  I will be going into detail for each metric as we merrily stroll along.<br>
-
-We'll start off with the most pedestrian of pitching stats, ERA, and then quickly pivot to its sexier cousin xERA. Both are focused on the average amount of earned runs a pitcher gives up in a nine inning stretch, but xERA factors in strikeouts, walks, hit by pitch, exit velocity and launch angle to paint a more robust picture of how effective a picture is at preventing runs.<br>
+<Dropdown
+    data={team_batting_columns} 
+    name=team_batting_column_scatter_selector_size
+    value=index
+    defaultValue='HardHit%'
+    title="Size Dropdown for Scatter/Bubble Chart" 
+/>
 
 
-<Tabs color=#ff0000>
+Here we are looking at the correlation between On Base Percentage (OBP) and the the amount of runs a team has scored (R).<br>
+What is striking here is the lockstep connection between the two.<br>
+Feel free to adjust the dropdowns to devise your own scenarios<br>
+Note: I will be changing this to runs per game to give a more accurate account
 
-<Tab label="June 5th, 2024">
-        The M's are doing quite well so far this season in this category with the majority of pitchers at or above league average in ERA and xERA. Nobody is lights-out but nobody is stinking up the joint either. Castillo is leading the charge, followed by Miller and Gilbert, who are all better than league aveerage.  George Kirby has been the victim of some soft bloopers that somehow are finding the cracks in the defense, which is pushing his ERA up a bit. His xERA is the best on the team, which gives us hope that he will end up somewhere in the mid to low 3's in ERA.  
-</Tab>
 
-<Tab label="Second Tab">
-        Content of the Second Tab
-</Tab>
-    
-<Tab label="Third Tab">
-        Content of the Second Tab
-</Tab>
+<ScatterPlot 
+    data={team_batting_data} 
+    x={inputs.team_batting_column_scatter_selector_x.value}
+    y={inputs.team_batting_column_scatter_selector_y.value}
+    series=Team
+    xAxisTitle=true 
+    yAxisTitle=true
+    title="Team Batting Scatter Chart"
+/>
 
-<Tab label="4th Tab">
-        Content of the Second Tab
-</Tab>
-<Tab label="5th Tab">
-        Content of the Second Tab
-</Tab>
-<Tab label="6th Tab">
-        Content of the Second Tab
-</Tab>
-<Tab label="7th Tab">
-        Content of the Second Tab
-</Tab>
-<Tab label="8th Tab">
-        Content of the Second Tab
-</Tab>
-</Tabs>
+This bubble plot shows the same thing as the scatter plot above except it adds in HardHit% (Percentage of Balls Hit >= 95 MPH), which is supposed to be represented by the bubble size<br>
+Here the added aspect of HardHit% explains why perhaps some outlier teams are able to utilize HardHit% to make-up for a lackluster OBP<br>
+Note: Size of the bubbles do not seem to be rendering like I expected. Trouble shooting is on-going. In the meantime, you can still hover over the bubbles to see the HardHit%
+
+<BubbleChart 
+    data={team_batting_data} 
+    x={inputs.team_batting_column_scatter_selector_x.value}
+    y={inputs.team_batting_column_scatter_selector_y.value}
+    size={inputs.team_batting_column_scatter_selector_size.value}
+    series=Team
+/>  
+
+This Line graph shows the Moving Average for Runs Batted In. The window size is 5; therefore each point represents the average score the Mariners have produced over multiple 5 game sets  
+
+<LineChart 
+    data={rbi_rolling_avg}  
+    x=Date
+    y=rbi_rolling_avg
+    title="RBI Rolling Average"
+/>
+
+
+## And now some good news<br>
+
+As bad as the Mariners look on offense, they look even better when it comes to pitching.  They do everything remarkably well with the exception of HardHit%, for which they still are middle of the pack.  
+
+
+<Dropdown
+    data={team_pitching_columns} 
+    name=team_pitching_column_selector
+    value=index
+    defaultValue='ERA'
+    title="Select Critera for Team Pitching"
+/>
+
+<BarChart 
+    data={team_pitching_data}
+    swapXY=true 
+    x=Team
+    y={inputs.team_pitching_column_selector.value}
+    title="Team Pitching Stats"
+/>
+
+
+The M's are doing quite well so far this season in this category with the majority of pitchers at or above league average in ERA and xERA. Nobody is lights-out but nobody is stinking up the joint either. Castillo is leading the charge, followed by Miller and Gilbert, who are all better than league aveerage.  George Kirby has been the victim of some soft bloopers that somehow are finding the cracks in the defense, which is pushing his ERA up a bit. His xERA is the best on the team, which gives us hope that he will end up somewhere in the mid to low 3's in ERA.  
+
 
  
 ```sql mariners_era_xera_data
