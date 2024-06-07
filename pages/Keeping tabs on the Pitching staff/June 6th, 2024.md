@@ -18,6 +18,6 @@ Scatter Plot
 <ScatterPlot 
     data={pitch_type_perc}
     x=pitch_name
-    y=proportion
+    y=Percent_Thrown
     series=player_name
 />
