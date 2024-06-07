@@ -75,6 +75,14 @@ value=Run_Differential
     title="Select Critera for Team Batting "
 />
 
+<Dropdown
+    data={team_pitching_columns} 
+    name=team_pitching_column_selector
+    value=index
+    defaultValue='ERA'
+    title="Select Critera for Team Pitching"
+/>
+
 
 <Tabs>
     <Tab label="Team Batting">
@@ -148,10 +156,15 @@ value=Run_Differential
             title="RBI Rolling Average"
         />
     </Tab>
-    <Tab label="Second Tab">
-        Content of the Second Tab
+    <Tab label="Team Pitching">
+        <BarChart 
+        data={team_pitching_data}
+        swapXY=true 
+        x=Team
+        y={inputs.team_pitching_column_selector.value}
+        title="Team Pitching Stats"
+    />
 
-        Here's a [link](https://www.google.com)
     </Tab>
 </Tabs>
 
@@ -160,23 +173,10 @@ value=Run_Differential
 
 
 
-## And now some good news<br>
+## Team Pitching<br>
 
 As bad as the Mariners look on offense, they look even better when it comes to pitching. They do everything remarkably well with the exception of HardHit%, for which they still are middle of the pack.  
 
 
-<Dropdown
-    data={team_pitching_columns} 
-    name=team_pitching_column_selector
-    value=index
-    defaultValue='ERA'
-    title="Select Critera for Team Pitching"
-/>
 
-<BarChart 
-    data={team_pitching_data}
-    swapXY=true 
-    x=Team
-    y={inputs.team_pitching_column_selector.value}
-    title="Team Pitching Stats"
-/>
+
