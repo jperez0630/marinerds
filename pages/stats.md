@@ -67,13 +67,7 @@ value=Run_Differential
 
 <br>
 
-<Dropdown
-    data={team_batting_columns} 
-    name=team_batting_column_selector
-    value=index
-    defaultValue='AVG'
-    title="Select Critera for Team Batting "
-/>
+
 
 <Dropdown
     data={team_pitching_columns} 
@@ -86,6 +80,13 @@ value=Run_Differential
 
 <Tabs>
     <Tab label="Team Batting">
+        <Dropdown
+        data={team_batting_columns} 
+        name=team_batting_column_selector
+        value=index
+        defaultValue='AVG'
+        title="Select Critera for Team Batting "
+/>
         <BarChart 
             data={team_batting_data}
             swapXY=true 
@@ -168,14 +169,6 @@ value=Run_Differential
     </Tab>
 </Tabs>
 
-
-
-
-
-
-## Team Pitching<br>
-
-As bad as the Mariners look on offense, they look even better when it comes to pitching. They do everything remarkably well with the exception of HardHit%, for which they still are middle of the pack.  
 
 
 
