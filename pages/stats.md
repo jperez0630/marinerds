@@ -67,17 +67,6 @@ value=Run_Differential
 
 <br>
 
-
-
-<Dropdown
-    data={team_pitching_columns} 
-    name=team_pitching_column_selector
-    value=index
-    defaultValue='ERA'
-    title="Select Critera for Team Pitching"
-/>
-
-
 <Tabs>
     <Tab label="Team Batting">
         <Dropdown
@@ -158,6 +147,13 @@ value=Run_Differential
         />
     </Tab>
     <Tab label="Team Pitching">
+        <Dropdown
+        data={team_pitching_columns} 
+        name=team_pitching_column_selector
+        value=index
+        defaultValue='ERA'
+        title="Select Critera for Team Pitching"
+/>
         <BarChart 
         data={team_pitching_data}
         swapXY=true 
