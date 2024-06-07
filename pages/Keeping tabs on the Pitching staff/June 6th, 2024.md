@@ -21,3 +21,12 @@ Scatter Plot
     y=proportion
     series=player_name
 />
+
+<BubbleChart 
+    data={pitch_type_perc}
+    x=pitch_name
+    y=proportion
+    xFmt=usd0
+    series=player_name
+    size=player_name
+/>
