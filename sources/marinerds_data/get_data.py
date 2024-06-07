@@ -192,6 +192,14 @@ def get_mariners_staff_data():
 
 df_mariners_staff = get_mariners_staff_data()
 
+def get_game_data():
+    data = statcast(start_dt='2024-06-06', end_dt='2024-06-06', team='SEA')
+    return data
+
+df_game_data = get_game_data()
+
+
+
 local_con.sql('''
 CREATE OR REPLACE TABLE mariners_pitching_data AS
 SELECT * FROM df_mariners_staff
@@ -230,4 +238,8 @@ SELECT * FROM df_team_pitching_stats
 local_con.sql('''
 CREATE OR REPLACE TABLE team_pitching_data_columns AS
 SELECT * FROM df_team_pitching_stats_columns
+''')
+
+local_con.sql('''
+INSERT INTO game_data SELECT * FROM df_game_data
 ''')
