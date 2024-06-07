@@ -65,6 +65,8 @@ data={run_differential}
 value=Run_Differential 
 />
 
+<br>
+
 <Dropdown
     data={team_batting_columns} 
     name=team_batting_column_selector
