@@ -18,6 +18,19 @@ FROM game_data
 GROUP BY player_name, pitch_name
 ```
 
+```sql pitch_zone
+    SELECT 
+    player_name, 
+    pitch_name, 
+    zone, 
+    ROUND(COUNT(*) * 100.0 / SUM(COUNT(*)) OVER (PARTITION BY player_name, pitch_name), 2) || '%' AS proportion
+
+FROM 
+    df_statcast
+GROUP BY 
+    player_name, pitch_name, zone
+```
+
 
 <DataTable data={pitch_type_perc} search=true/>
 
@@ -33,3 +46,5 @@ GROUP BY player_name, pitch_name
 <DataTable data={pitch_speed_agg} search=true/>
 
 ![Zones](/zones.png)
+
+<DataTable data={pitch_zone} search=true/>
