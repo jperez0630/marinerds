@@ -12,15 +12,7 @@ title: June 6th, 2024
 <DataTable data={pitch_type_perc} search=true/>
 
 
-Scatter Plot
 
-
-<ScatterPlot 
-    data={pitch_type_perc}
-    x=pitch_name
-    y=Percent_Thrown
-    series=player_name
-/>
 
 <BarChart 
     data={orders_by_category_2021}
