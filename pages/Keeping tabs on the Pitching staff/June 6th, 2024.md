@@ -32,10 +32,10 @@ GROUP BY player_name, pitch_name
 
 <BarChart 
     data={pitch_speed_agg}
-    x=player_name
+    x=pitch_name
     y1=mean
     y2=min
     y3=max
-    series=pitch_name
+    series=player_name
     type=grouped
 />
