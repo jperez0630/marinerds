@@ -53,6 +53,6 @@ GROUP BY
     data={pitch_zone}
     x=player_name
     y=proportion
-    series=Zone
+    series=zone
     type=grouped
 />
