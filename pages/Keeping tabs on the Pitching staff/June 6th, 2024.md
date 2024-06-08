@@ -23,7 +23,7 @@ GROUP BY player_name, pitch_name
     player_name, 
     pitch_name, 
     zone, 
-    ROUND(COUNT(*) * 100.0 / SUM(COUNT(*)) OVER (PARTITION BY player_name, pitch_name), 2) || '%' AS proportion
+    ROUND(COUNT(*) * 100.0 / SUM(COUNT(*)) OVER (PARTITION BY player_name, pitch_name), 2) AS proportion
 
 FROM 
     game_data
