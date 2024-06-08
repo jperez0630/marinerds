@@ -31,3 +31,5 @@ GROUP BY player_name, pitch_name
 />
 
 <DataTable data={pitch_speed_agg} search=true/>
+
+![Zones](/zones.png)
