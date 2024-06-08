@@ -15,8 +15,8 @@ title: June 6th, 2024
 
 
 <BarChart 
-    data={orders_by_category_2021}
-    x=player
+    data={pitch_type_perc}
+    x=player_name
     y=Percent_Thrown
     series=pitch_name
     type=grouped
