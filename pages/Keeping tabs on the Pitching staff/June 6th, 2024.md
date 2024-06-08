@@ -39,3 +39,5 @@ GROUP BY player_name, pitch_name
     series=player_name
     type=grouped
 />
+
+test
