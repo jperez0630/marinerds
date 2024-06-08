@@ -21,3 +21,11 @@ Scatter Plot
     y=Percent_Thrown
     series=player_name
 />
+
+<BarChart 
+    data={orders_by_category_2021}
+    x=player
+    y=Percent_Thrown
+    series=pitch_name
+    type=grouped
+/>
