@@ -48,3 +48,11 @@ GROUP BY
 ![Zones](/zones.png)
 
 <DataTable data={pitch_zone} search=true/>
+
+<BarChart 
+    data={pitch_zone}
+    x=player_name
+    y=proportion
+    series=Zone
+    type=grouped
+/>
