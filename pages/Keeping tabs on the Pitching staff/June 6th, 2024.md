@@ -30,14 +30,4 @@ GROUP BY player_name, pitch_name
     type=grouped
 />
 
-<BarChart 
-    data={pitch_speed_agg}
-    x=pitch_name
-    y1=mean
-    y2=min
-    y3=max
-    series=player_name
-    type=grouped
-/>
-
-test
+<DataTable data={pitch_speed_agg} search=true/>
