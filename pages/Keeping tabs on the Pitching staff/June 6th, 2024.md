@@ -10,7 +10,7 @@ title: June 6th, 2024
     FROM 
         game_data 
     
-    WHERE game_date = '2024-06-06
+    WHERE game_date = '2024-06-06'
 
     GROUP BY player_name, pitch_name
 ```
@@ -31,7 +31,7 @@ GROUP BY player_name, pitch_name
 FROM 
     game_data
 
-WHERE game_date = '2024-06-06
+WHERE game_date = '2024-06-06'
 
 GROUP BY 
     player_name, pitch_name, zone
