@@ -32,6 +32,8 @@ GROUP BY
 ```
 
 
+
+
 <DataTable data={pitch_type_perc} search=true/>
 
 
