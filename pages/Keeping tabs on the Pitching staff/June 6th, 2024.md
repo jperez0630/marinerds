@@ -2,6 +2,7 @@
 title: June 6th, 2024
 ---
 
+
 ```sql pitch_type_perc
     SELECT 
         player_name, pitch_name, ROUND(COUNT(*) * 100.0 / SUM(COUNT(*)) OVER (PARTITION BY player_name), 2) AS Percent_Thrown
@@ -9,6 +10,8 @@ title: June 6th, 2024
     FROM 
         game_data 
     
+    WHERE game_date = '2024-06-06
+
     GROUP BY player_name, pitch_name
 ```
 
@@ -27,9 +30,13 @@ GROUP BY player_name, pitch_name
 
 FROM 
     game_data
+
+WHERE game_date = '2024-06-06
+
 GROUP BY 
     player_name, pitch_name, zone
 ```
+
 
 
 
