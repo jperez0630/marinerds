@@ -58,7 +58,6 @@ GROUP BY
 
 ![Zones](/zones.png)
 
-<DataTable data={pitch_zone} search=true/>
 
 <DataTable data={pitch_zone} groupBy=player_name groupsOpen=false>
  	<Column id=player_name/> 
@@ -68,12 +67,3 @@ GROUP BY
 </DataTable>
 
 
-<BarChart 
-    data={pitch_zone}
-    x=player_name
-    y=proportion
-    series=zone
-    type=grouped
-/>
-
-test
