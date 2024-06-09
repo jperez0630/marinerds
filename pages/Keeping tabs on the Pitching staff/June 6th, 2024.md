@@ -38,7 +38,7 @@ GROUP BY
 ```
 
 
-<DataTable data={pitch_type_perc} groupBy=player_name>
+<DataTable data={pitch_type_perc} groupBy=player_name groupsOpen=false>
  	<Column id=player_name/> 
 	<Column id=pitch_name totalAgg=""/> 
 	<Column id=Percent_Thrown totalAgg=""/> 
@@ -60,10 +60,11 @@ GROUP BY
 
 <DataTable data={pitch_zone} search=true/>
 
-<DataTable data={pitch_zone} groupBy=player_name>
+<DataTable data={pitch_zone} groupBy=player_name groupsOpen=false>
  	<Column id=player_name/> 
 	<Column id=pitch_name totalAgg=""/> 
-	<Column id=zone totalAgg=""/> 
+	<Column id=zone totalAgg=""/>
+    <Column id=proportion totalAgg=""/>
 </DataTable>
 
 
