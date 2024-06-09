@@ -56,11 +56,16 @@ GROUP BY
     type=grouped
 />
 
-<DataTable data={pitch_speed_agg} search=true/>
-
 ![Zones](/zones.png)
 
 <DataTable data={pitch_zone} search=true/>
+
+<DataTable data={pitch_zone} groupBy=player_name>
+ 	<Column id=player_name/> 
+	<Column id=pitch_name totalAgg=""/> 
+	<Column id=zone totalAgg=""/> 
+</DataTable>
+
 
 <BarChart 
     data={pitch_zone}
