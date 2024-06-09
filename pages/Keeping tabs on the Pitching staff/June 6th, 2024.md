@@ -69,3 +69,5 @@ GROUP BY
     series=zone
     type=grouped
 />
+
+test
