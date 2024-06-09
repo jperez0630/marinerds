@@ -45,9 +45,6 @@ GROUP BY
 </DataTable>
 
 
-<DataTable data={pitch_type_perc} search=true/>
-
-
 <BarChart 
     data={pitch_type_perc}
     x=player_name
