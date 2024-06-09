@@ -38,7 +38,11 @@ GROUP BY
 ```
 
 
-
+<DataTable data={pitch_type_perc} groupBy=player_name>
+ 	<Column id=player_name/> 
+	<Column id=pitch_name totalAgg=""/> 
+	<Column id=percent_thrown totalAgg=""/> 
+</DataTable>
 
 
 <DataTable data={pitch_type_perc} search=true/>
