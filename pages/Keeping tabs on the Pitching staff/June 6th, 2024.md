@@ -10,15 +10,27 @@ title: June 6th, 2024
     FROM 
         game_data 
     
-    WHERE game_date = '2024-06-06'
+    WHERE 
+        game_date = '2024-06-06'
 
-    GROUP BY player_name, pitch_name
+    GROUP BY 
+        player_name, pitch_name
+
+    ORDER BY 
+        player_name, Percent_Thrown
 ```
 
 ```sql pitch_speed_agg
-SELECT player_name, pitch_name, AVG(release_speed) AS mean, MIN(release_speed) AS min, MAX(release_speed) AS max, COUNT(release_speed) AS count
-FROM game_data
-GROUP BY player_name, pitch_name
+SELECT 
+    player_name, pitch_name, AVG(release_speed) AS mean, MIN(release_speed) AS min, MAX(release_speed) AS max, COUNT(release_speed) AS count
+
+FROM 
+    game_data
+
+GROUP BY 
+    player_name, pitch_name
+
+
 ```
 
 ```sql pitch_zone
@@ -35,6 +47,8 @@ WHERE game_date = '2024-06-06'
 
 GROUP BY 
     player_name, pitch_name, zone
+
+
 ```
 
 
