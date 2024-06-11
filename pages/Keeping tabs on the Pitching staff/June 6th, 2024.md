@@ -48,7 +48,20 @@ WHERE game_date = '2024-06-06'
 GROUP BY 
     player_name, pitch_name, zone
 
+```
 
+```sql pitch_speed
+SELECT 
+    player_name, pitch_name, AVG(release_speed) AS mean, 
+    MIN(release_speed) AS min, 
+    MAX(release_speed) AS max, 
+    COUNT(release_speed) AS count
+
+FROM 
+    game_data
+
+GROUP BY 
+    player_name, pitch_name
 ```
 
 
@@ -76,6 +89,14 @@ GROUP BY
 	<Column id=pitch_name totalAgg=""/> 
 	<Column id=zone totalAgg=""/>
     <Column id=proportion totalAgg=""/>
+</DataTable>
+
+<DataTable data={pitch_zone} groupBy=player_name groupsOpen=false>
+ 	<Column id=player_name/> 
+	<Column id=pitch_name totalAgg=""/> 
+	<Column id=mean totalAgg=""/>
+    <Column id=min totalAgg=""/>
+    <Column id=max totalAgg=""/>
 </DataTable>
 
 
