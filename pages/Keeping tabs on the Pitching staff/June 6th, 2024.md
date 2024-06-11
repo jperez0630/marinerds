@@ -64,6 +64,7 @@ GROUP BY
     x=player_name
     y=Percent_Thrown
     series=pitch_name
+    sort=false
     type=grouped
 />
 
