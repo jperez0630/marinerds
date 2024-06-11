@@ -17,7 +17,7 @@ title: June 6th, 2024
         player_name, pitch_name
 
     ORDER BY 
-        Percent_Thrown
+        player_name,Percent_Thrown
 ```
 
 ```sql pitch_speed_agg
