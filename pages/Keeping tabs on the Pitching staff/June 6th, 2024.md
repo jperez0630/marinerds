@@ -32,8 +32,6 @@ WHERE
 
 GROUP BY 
     player_name, pitch_name
-
-
 ```
 
 ```sql pitch_zone
@@ -89,6 +87,17 @@ GROUP BY
         player_name, pitch_name
 ```
 
+```sql pitch_result
+    SELECT 
+        player_name, pitch_name, description, ROUND(COUNT(*) * 100.0 / SUM(COUNT(*)) OVER (PARTITION BY player_name, pitch_name), 2) || '%' AS proportion
+    
+    FROM 
+        game_data
+
+    GROUP BY 
+        player_name, pitch_name, description
+```
+
 <DataTable data={pitch_type_perc} groupBy=player_name groupsOpen=false>
  	<Column id=player_name/> 
 	<Column id=pitch_name totalAgg=""/> 
@@ -131,6 +140,13 @@ GROUP BY
     <Column id=min totalAgg=""/>
     <Column id=max totalAgg=""/>
     <Column id=count totalAgg=""/>
+</DataTable>
+
+<DataTable data={pitch_result} groupBy=player_name groupsOpen=false>
+ 	<Column id=player_name/> 
+	<Column id=pitch_name totalAgg=""/> 
+	<Column id=result totalAgg=""/>
+    <Column id=proportion totalAgg=""/>
 </DataTable>
 
 
