@@ -103,6 +103,7 @@ GROUP BY
 	<Column id=mean totalAgg=""/>
     <Column id=min totalAgg=""/>
     <Column id=max totalAgg=""/>
+    <Column id=count totalAgg=""/>
 </DataTable>
 
 
