@@ -94,9 +94,9 @@ GROUP BY
 <DataTable data={pitch_zone} groupBy=player_name groupsOpen=false>
  	<Column id=player_name/> 
 	<Column id=pitch_name totalAgg=""/> 
-	<Column id=mean totalAgg=""/>
-    <Column id=min totalAgg=""/>
-    <Column id=max totalAgg=""/>
+	<Column id=MEAN totalAgg=""/>
+    <Column id=MIN totalAgg=""/>
+    <Column id=MAX totalAgg=""/>
 </DataTable>
 
 
