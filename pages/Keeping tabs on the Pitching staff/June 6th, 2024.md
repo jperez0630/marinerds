@@ -82,6 +82,9 @@ GROUP BY
     FROM 
         game_data 
     
+    WHERE 
+    game_date = '2024-06-06'
+
     GROUP BY 
         player_name, pitch_name
 ```
