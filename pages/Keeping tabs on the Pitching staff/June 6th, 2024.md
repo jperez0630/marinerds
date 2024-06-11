@@ -70,6 +70,21 @@ GROUP BY
     player_name, pitch_name
 ```
 
+```sql pitch_spin
+    SELECT 
+        player_name, 
+        pitch_name, 
+        ROUND(AVG(release_spin_rate), 2) AS mean, 
+        MIN(release_spin_rate) AS min, 
+        MAX(release_spin_rate) AS max, 
+        COUNT(release_spin_rate) AS count 
+    
+    FROM 
+        game_data 
+    
+    GROUP BY 
+        player_name, pitch_name
+```
 
 <DataTable data={pitch_type_perc} groupBy=player_name groupsOpen=false>
  	<Column id=player_name/> 
@@ -98,6 +113,15 @@ GROUP BY
 </DataTable>
 
 <DataTable data={pitch_speed} groupBy=player_name groupsOpen=false>
+ 	<Column id=player_name/> 
+	<Column id=pitch_name totalAgg=""/> 
+	<Column id=mean totalAgg=""/>
+    <Column id=min totalAgg=""/>
+    <Column id=max totalAgg=""/>
+    <Column id=count totalAgg=""/>
+</DataTable>
+
+<DataTable data={pitch_spin} groupBy=player_name groupsOpen=false>
  	<Column id=player_name/> 
 	<Column id=pitch_name totalAgg=""/> 
 	<Column id=mean totalAgg=""/>
