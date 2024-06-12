@@ -165,11 +165,4 @@ GROUP BY
     <Column id=proportion totalAgg=""/>
 </DataTable>
 
-<BarChart 
-    data={pitch_result}
-    x=player_name
-    y=proportion
-    series=pitch_name
-    type=grouped
-/>
 
