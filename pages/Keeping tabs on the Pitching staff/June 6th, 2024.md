@@ -167,8 +167,7 @@ GROUP BY
 
 <BarChart 
     data={pitch_result} 
-    x={inputs.team_batting_column_scatter_selector_x.value}
-    y={inputs.team_batting_column_scatter_selector_y.value}
-    size={inputs.team_batting_column_scatter_selector_size.value}
-    series=Team
+    x=pitch_name
+    y=proportion
+    series=player_name
 />  
