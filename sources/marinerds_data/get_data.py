@@ -84,13 +84,13 @@ df_mariner_game_logs.loc[(
 )
 ]
 
-# def get_obp_rolling_avg():
-#     batting_logs = team_game_logs(2024, "SEA")
-#     batting_logs['Date'] = batting_logs['Date'].str.replace(r'\s\(\d+\)', '', regex=True)
-#     batting_logs['Date'] = pd.to_datetime(batting_logs['Date'] + ' 2024')
-#     batting_logs['obp_rolling_avg'] = batting_logs['OBP'].rolling(window=5).mean()
-#     data = batting_logs[['Date','rbi_rolling_avg']]
-#     return data
+def get_pitch_name_columns():
+    data = df_mariner_game_logs.columns.to_frame().reset_index()
+    truncated_data = data[['index']].copy()
+    return truncated_data
+
+df_pitch_name_columns = get_pitch_name_columns()
+
 
 def get_pitching_stats():
     data = pitching_stats(2024)
@@ -193,7 +193,7 @@ def get_mariners_staff_data():
 df_mariners_staff = get_mariners_staff_data()
 
 def get_game_data():
-    data = statcast(start_dt='2024-06-08', end_dt='2024-06-08', team='SEA')
+    data = statcast(start_dt='2024-06-09', end_dt='2024-06-09', team='SEA')
     return data
 
 df_game_data = get_game_data()
@@ -242,4 +242,9 @@ SELECT * FROM df_team_pitching_stats_columns
 
 local_con.sql('''
 INSERT INTO game_data SELECT * FROM df_game_data
+''')
+
+local_con.sql('''
+CREATE OR REPLACE TABLE pitch_name_columns AS
+SELECT * FROM df_pitch_name_columns
 ''')

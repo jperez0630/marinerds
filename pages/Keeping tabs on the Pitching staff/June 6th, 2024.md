@@ -87,6 +87,10 @@ GROUP BY
         player_name, pitch_name
 ```
 
+```sql pitch_name_columns
+   SELECT * FROM pitch_name_columns
+```
+
 ```sql pitch_result
     SELECT 
         player_name, pitch_name, description, ROUND(COUNT(*) * 100.0 / SUM(COUNT(*)) OVER (PARTITION BY player_name, pitch_name), 2) || '%' AS proportion
@@ -145,6 +149,15 @@ GROUP BY
     <Column id=count totalAgg=""/>
 </DataTable>
 
+
+<Dropdown
+    data={pitch_name_columns} 
+    name=pitch_name_selector
+    value=index
+    defaultValue='4-Seam Fastball'
+    title="Pitch Name Selector" 
+/>
+
 <DataTable data={pitch_result} groupBy=player_name groupsOpen=false>
  	<Column id=player_name/> 
 	<Column id=pitch_name totalAgg=""/> 
@@ -152,4 +165,10 @@ GROUP BY
     <Column id=proportion totalAgg=""/>
 </DataTable>
 
-
+<BarChart 
+    data={pitch_result} 
+    x={inputs.team_batting_column_scatter_selector_x.value}
+    y={inputs.team_batting_column_scatter_selector_y.value}
+    size={inputs.team_batting_column_scatter_selector_size.value}
+    series=Team
+/>  
