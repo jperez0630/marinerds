@@ -100,7 +100,19 @@ GROUP BY
         player_name, pitch_name, description
 ```
 
-##Recap<br>
+```sql bb_type
+    SELECT 
+        player_name, 
+        pitch_name, 
+        bb_type, ROUND(CAST(COUNT(*) AS FLOAT) / SUM(COUNT(*)) OVER (PARTITION BY player_name, pitch_name) * 100, 2) || '%' AS proportion
+    FROM 
+       game_data
+    
+    GROUP BY 
+        player_name, pitch_name, bb_type
+```
+
+## Recap<br>
 Bryan Woo Tang Clan, once again, was nothing to fuck with. He threw 67% 4-Seam Fastballs, averaging 94.3, bottoming out at 92.7 and topping out at 96. The majority of his pitches were located in the upper portion of the strike zone. It's interesting to see how little he is moving his 4-seamer around. Despite this, it was only hit into play 12.28%. The only other pitch thrown with any major statistical significance was his 2-Seamer. That pitch ended up in the center of the plate 21% of the time; therefore, it was hit into play at a higher rate than the 4-Seamer. 
 
 <DataTable data={pitch_type_perc} groupBy=player_name groupsOpen=false>
@@ -154,5 +166,14 @@ Bryan Woo Tang Clan, once again, was nothing to fuck with. He threw 67% 4-Seam F
 	<Column id=description totalAgg=""/>
     <Column id=proportion totalAgg=""/>
 </DataTable>
+
+<DataTable data={bb_type} groupBy=player_name groupsOpen=false>
+ 	<Column id=player_name/> 
+	<Column id=pitch_name totalAgg=""/> 
+	<Column id=bb_type totalAgg=""/>
+    <Column id=proportion totalAgg=""/>
+</DataTable>
+
+
 
 
