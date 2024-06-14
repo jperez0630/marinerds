@@ -88,7 +88,9 @@ GROUP BY
 
 ```sql pitch_result
     SELECT 
-        player_name, pitch_name, description, ROUND(COUNT(*) * 100.0 / SUM(COUNT(*)) OVER (PARTITION BY player_name, pitch_name), 2) || '%' AS proportion
+        player_name, 
+        pitch_name, 
+        description, ROUND(COUNT(*) * 100.0 / SUM(COUNT(*)) OVER (PARTITION BY player_name, pitch_name), 2) || '%' AS proportion
     
     FROM 
         game_data
@@ -105,8 +107,12 @@ GROUP BY
         player_name, 
         pitch_name, 
         bb_type, ROUND(CAST(COUNT(*) AS FLOAT) / SUM(COUNT(*)) OVER (PARTITION BY player_name, pitch_name) * 100, 2) || '%' AS proportion
+    
     FROM 
        game_data
+    
+    WHERE 
+       game_date = '2024-06-06'
     
     GROUP BY 
         player_name, pitch_name, bb_type
