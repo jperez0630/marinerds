@@ -19,52 +19,57 @@ title: June 6th, 2024
         player_name,Percent_Thrown
 ```
 
-```sql pitch_speed_agg
-SELECT 
-    player_name, pitch_name, AVG(release_speed) AS "Avg_Release_Speed", MIN(release_speed) AS "Min_Release_Speed", MAX(release_speed) AS "Max_Release_Speed, COUNT(release_speed) AS count
+```sql pitch_speed
+    SELECT 
+        player_name, 
+        pitch_name, 
+        AVG(release_speed) AS "Avg_Release_Speed", 
+        MIN(release_speed) AS "Min_Release_Speed", 
+        MAX(release_speed) AS "Max_Release_Speed, COUNT(release_speed) AS count
 
-FROM 
-    game_data
+    FROM 
+        game_data
 
-WHERE 
-    game_date = '2024-06-06'
+    WHERE 
+        game_date = '2024-06-06'
 
-GROUP BY 
-    player_name, pitch_name
+    GROUP BY 
+        player_name, pitch_name
 ```
 
 ```sql pitch_zone
     SELECT 
-    player_name, 
-    pitch_name, 
-    zone, 
-    ROUND(COUNT(*) * 100.0 / SUM(COUNT(*)) OVER (PARTITION BY player_name, pitch_name), 2) AS proportion
+        player_name, 
+        pitch_name, 
+        zone, 
+        ROUND(COUNT(*) * 100.0 / SUM(COUNT(*)) OVER (PARTITION BY player_name, pitch_name), 2) AS proportion
 
-FROM 
-    game_data
+    FROM 
+        game_data
 
-WHERE game_date = '2024-06-06'
+    WHERE 
+        game_date = '2024-06-06'
 
-GROUP BY 
-    player_name, pitch_name, zone
+    GROUP BY 
+        player_name, pitch_name, zone
 
 ```
 
 ```sql pitch_speed
-SELECT 
-    player_name, pitch_name, AVG(release_speed) AS mean, 
-    MIN(release_speed) AS min, 
-    MAX(release_speed) AS max, 
-    COUNT(release_speed) AS count
+    SELECT 
+        player_name, pitch_name, AVG(release_speed) AS mean, 
+        MIN(release_speed) AS min, 
+        MAX(release_speed) AS max, 
+        COUNT(release_speed) AS count
 
-FROM 
-    game_data
+    FROM 
+        game_data
 
-WHERE 
-    game_date = '2024-06-06'
+    WHERE 
+        game_date = '2024-06-06'
 
-GROUP BY 
-    player_name, pitch_name
+    GROUP BY 
+        player_name, pitch_name
 ```
 
 ```sql pitch_spin
@@ -80,7 +85,7 @@ GROUP BY
         game_data 
     
     WHERE 
-    game_date = '2024-06-06'
+        game_date = '2024-06-06'
 
     GROUP BY 
         player_name, pitch_name
@@ -109,10 +114,10 @@ GROUP BY
         bb_type, ROUND(CAST(COUNT(*) AS FLOAT) / SUM(COUNT(*)) OVER (PARTITION BY player_name, pitch_name) * 100, 2) || '%' AS proportion
     
     FROM 
-       game_data
+        game_data
     
     WHERE 
-       game_date = '2024-06-06'
+        game_date = '2024-06-06'
     
     GROUP BY 
         player_name, pitch_name, bb_type
@@ -125,30 +130,30 @@ GROUP BY
         events, ROUND(CAST(COUNT(*) AS FLOAT) / SUM(COUNT(*)) OVER (PARTITION BY player_name, pitch_name) * 100, 2) || '%' AS proportion
     
     FROM 
-       game_data
+        game_data
     
     WHERE 
-       game_date = '2024-06-06'
+        game_date = '2024-06-06'
     
     GROUP BY 
         player_name, pitch_name, events
 ```
 
 ```sql launch_speed
-SELECT 
-    player_name, pitch_name, AVG(launch_speed) AS mean, 
-    MIN(launch_speed) AS min, 
-    MAX(launch_speed) AS max, 
-    COUNT(launch_speed) AS count
+    SELECT 
+        player_name, pitch_name, AVG(launch_speed) AS mean, 
+        MIN(launch_speed) AS min, 
+        MAX(launch_speed) AS max, 
+        COUNT(launch_speed) AS count
 
-FROM 
-    game_data
+    FROM 
+        game_data
 
-WHERE 
-    game_date = '2024-06-06'
+    WHERE 
+        game_date = '2024-06-06'
 
-GROUP BY 
-    player_name, pitch_name
+    GROUP BY 
+        player_name, pitch_name
 ```
 
 ## Recap<br>
