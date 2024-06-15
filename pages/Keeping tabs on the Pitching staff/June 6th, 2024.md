@@ -134,8 +134,27 @@ GROUP BY
         player_name, pitch_name, events
 ```
 
+```sql launch_speed
+SELECT 
+    player_name, pitch_name, AVG(launch_speed) AS mean, 
+    MIN(launch_speed) AS min, 
+    MAX(launch_speed) AS max, 
+    COUNT(launch_speed) AS count
+
+FROM 
+    game_data
+
+WHERE 
+    game_date = '2024-06-06'
+
+GROUP BY 
+    player_name, pitch_name
+```
+
 ## Recap<br>
-Bryan Woo Tang Clan, once again, was nothing to fuck with. He threw 67% 4-Seam Fastballs, averaging 94.3, bottoming out at 92.7 and topping out at 96. The majority of his pitches were located in the upper portion of the strike zone. It's interesting to see how little he is moving his 4-seamer around. Despite this, it was only hit into play 12.28%. The only other pitch thrown with any major statistical significance was his 2-Seamer. That pitch ended up in the center of the plate 21% of the time; therefore, it was hit into play at a higher rate than the 4-Seamer. 
+
+### Starter<br>
+Bryan Woo Tang Clan, once again, was nothing to fuck with. He threw 67% 4-Seam Fastballs, averaging 94.3, bottoming out at 92.7 and topping out at 96. The majority of his pitches were located in the upper portion of the strike zone. It's interesting to see how little he is moving his 4-seamer around. Despite this, it was only hit into play 12.28%. The only other pitch thrown with any major statistical significance was his 2-Seamer. That pitch ended up in the center of the plate 21% of the time; therefore, it was hit into play at a higher rate than the 4-Seamer, which makes since as it's intended to induce ground balls.  
 
 <DataTable data={pitch_type_perc} groupBy=player_name groupsOpen=false>
  	<Column id=player_name/> 
@@ -203,6 +222,14 @@ Bryan Woo Tang Clan, once again, was nothing to fuck with. He threw 67% 4-Seam F
     <Column id=proportion totalAgg=""/>
 </DataTable>
 
+<DataTable data={launch_speed} groupBy=player_name groupsOpen=false>
+ 	<Column id=player_name/> 
+	<Column id=pitch_name totalAgg=""/> 
+	<Column id=mean totalAgg=""/>
+    <Column id=min totalAgg=""/>
+    <Column id=max totalAgg=""/>
+    <Column id=count totalAgg=""/>
+</DataTable>
 
 
 
