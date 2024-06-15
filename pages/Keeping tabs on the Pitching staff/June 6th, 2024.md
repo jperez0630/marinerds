@@ -200,7 +200,7 @@ Bryan Woo Tang Clan, once again, was nothing to fuck with. He threw 67% 4-Seam F
 <DataTable data={hit_type} groupBy=player_name groupsOpen=false>
  	<Column id=player_name/> 
 	<Column id=pitch_name totalAgg=""/> 
-	<Column id=hit_type totalAgg=""/>
+	<Column id=Hit_Type totalAgg=""/>
     <Column id=proportion totalAgg=""/>
 </DataTable>
 
