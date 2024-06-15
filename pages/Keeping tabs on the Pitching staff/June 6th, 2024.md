@@ -59,9 +59,9 @@ title: June 6th, 2024
     SELECT 
         player_name, 
         pitch_name, 
-        ROUND(AVG(release_spin_rate), 2) AS mean, 
-        MIN(release_spin_rate) AS min, 
-        MAX(release_spin_rate) AS max, 
+        ROUND(AVG(release_spin_rate), 2) AS "Avg_Pitch_Spin", 
+        MIN(release_spin_rate) AS "Min_Pitch_Spin", 
+        MAX(release_spin_rate) AS "Max_Pitch_Spin", 
         COUNT(release_spin_rate) AS count 
     
     FROM 
@@ -182,9 +182,9 @@ Bryan Woo Tang Clan, once again, was nothing to fuck with. He threw 67% 4-Seam F
 <DataTable data={pitch_spin} groupBy=player_name groupsOpen=false>
  	<Column id=player_name/> 
 	<Column id=pitch_name totalAgg=""/> 
-	<Column id=mean totalAgg=""/>
-    <Column id=min totalAgg=""/>
-    <Column id=max totalAgg=""/>
+	<Column id=Avg_Pitch_Spin totalAgg=""/>
+    <Column id=Min_Pitch_Spin totalAgg=""/>
+    <Column id=Max_Pitch_Spin totalAgg=""/>
     <Column id=count totalAgg=""/>
 </DataTable>
 
