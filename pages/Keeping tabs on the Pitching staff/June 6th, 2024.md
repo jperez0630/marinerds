@@ -90,11 +90,12 @@ title: June 6th, 2024
         player_name, pitch_name, description
 ```
 
-```sql bb_type
+```sql hit_type
     SELECT 
         player_name, 
         pitch_name, 
-        bb_type, ROUND(CAST(COUNT(*) AS FLOAT) / SUM(COUNT(*)) OVER (PARTITION BY player_name, pitch_name) * 100, 2) || '%' AS proportion
+        bb_type as "Pitch_Type", 
+        ROUND(CAST(COUNT(*) AS FLOAT) / SUM(COUNT(*)) OVER (PARTITION BY player_name, pitch_name) * 100, 2) || '%' AS proportion
     
     FROM 
         game_data
@@ -196,10 +197,10 @@ Bryan Woo Tang Clan, once again, was nothing to fuck with. He threw 67% 4-Seam F
     <Column id=proportion totalAgg=""/>
 </DataTable>
 
-<DataTable data={bb_type} groupBy=player_name groupsOpen=false>
+<DataTable data={pitch_type} groupBy=player_name groupsOpen=false>
  	<Column id=player_name/> 
 	<Column id=pitch_name totalAgg=""/> 
-	<Column id=bb_type totalAgg=""/>
+	<Column id=pitch_type totalAgg=""/>
     <Column id=proportion totalAgg=""/>
 </DataTable>
 
