@@ -78,7 +78,8 @@ title: June 6th, 2024
     SELECT 
         player_name, 
         pitch_name, 
-        description, ROUND(COUNT(*) * 100.0 / SUM(COUNT(*)) OVER (PARTITION BY player_name, pitch_name), 2) || '%' AS proportion
+        description as "Pitch_Result", 
+        ROUND(COUNT(*) * 100.0 / SUM(COUNT(*)) OVER (PARTITION BY player_name, pitch_name), 2) || '%' AS proportion
     
     FROM 
         game_data
@@ -194,7 +195,7 @@ Bryan Woo Tang Clan, once again, was nothing to fuck with. He threw 67% 4-Seam F
 <DataTable data={pitch_result} groupBy=player_name groupsOpen=false>
  	<Column id=player_name/> 
 	<Column id=pitch_name totalAgg=""/> 
-	<Column id=description totalAgg=""/>
+	<Column id=Pitch_Result totalAgg=""/>
     <Column id=proportion totalAgg=""/>
 </DataTable>
 
