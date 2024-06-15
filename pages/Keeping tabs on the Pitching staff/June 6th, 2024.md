@@ -53,6 +53,7 @@ title: June 6th, 2024
 
     GROUP BY 
         player_name, pitch_name, zone
+```
 
 ```sql pitch_spin
     SELECT 
