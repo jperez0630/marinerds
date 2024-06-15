@@ -191,6 +191,14 @@ Bryan Woo Tang Clan, once again, was nothing to fuck with. He threw 67% 4-Seam F
     <Column id=count totalAgg=""/>
 </DataTable>
 
+<DataTable data={launch_speed} groupBy=player_name groupsOpen=false>
+ 	<Column id=player_name/> 
+	<Column id=pitch_name totalAgg=""/> 
+	<Column id=Avg_Launch_Speed totalAgg=""/>
+    <Column id=Min_Launch_Speed totalAgg=""/>
+    <Column id=Max_Launch_Speed totalAgg=""/>
+    <Column id=count totalAgg=""/>
+</DataTable>
 
 <DataTable data={pitch_result} groupBy=player_name groupsOpen=false>
  	<Column id=player_name/> 
@@ -213,14 +221,6 @@ Bryan Woo Tang Clan, once again, was nothing to fuck with. He threw 67% 4-Seam F
     <Column id=proportion totalAgg=""/>
 </DataTable>
 
-<DataTable data={launch_speed} groupBy=player_name groupsOpen=false>
- 	<Column id=player_name/> 
-	<Column id=pitch_name totalAgg=""/> 
-	<Column id=Avg_Launch_Speed totalAgg=""/>
-    <Column id=Min_Launch_Speed totalAgg=""/>
-    <Column id=Max_Launch_Speed totalAgg=""/>
-    <Column id=count totalAgg=""/>
-</DataTable>
 
 
 
