@@ -94,7 +94,7 @@ title: June 6th, 2024
     SELECT 
         player_name, 
         pitch_name, 
-        bb_type as "Pitch_Type", 
+        bb_type as "Hit_Type", 
         ROUND(CAST(COUNT(*) AS FLOAT) / SUM(COUNT(*)) OVER (PARTITION BY player_name, pitch_name) * 100, 2) || '%' AS proportion
     
     FROM 
