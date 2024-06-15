@@ -124,9 +124,9 @@ title: June 6th, 2024
 
 ```sql launch_speed
     SELECT 
-        player_name, pitch_name, AVG(launch_speed) AS mean, 
-        MIN(launch_speed) AS min, 
-        MAX(launch_speed) AS max, 
+        player_name, pitch_name, AVG(launch_speed) AS "Avg_Launch_Speed", 
+        MIN(launch_speed) AS "Min_Launch_Speed", 
+        MAX(launch_speed) AS "Max_Launch_Speed", 
         COUNT(launch_speed) AS count
 
     FROM 
@@ -213,9 +213,9 @@ Bryan Woo Tang Clan, once again, was nothing to fuck with. He threw 67% 4-Seam F
 <DataTable data={launch_speed} groupBy=player_name groupsOpen=false>
  	<Column id=player_name/> 
 	<Column id=pitch_name totalAgg=""/> 
-	<Column id=mean totalAgg=""/>
-    <Column id=min totalAgg=""/>
-    <Column id=max totalAgg=""/>
+	<Column id=Avg_Launch_Speed totalAgg=""/>
+    <Column id=Min_Launch_Speed totalAgg=""/>
+    <Column id=Max_Launch_Speed totalAgg=""/>
     <Column id=count totalAgg=""/>
 </DataTable>
 
