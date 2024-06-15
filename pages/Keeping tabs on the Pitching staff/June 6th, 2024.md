@@ -25,7 +25,7 @@ title: June 6th, 2024
         pitch_name, 
         AVG(release_speed) AS "Avg_Release_Speed", 
         MIN(release_speed) AS "Min_Release_Speed", 
-        MAX(release_speed) AS "Max_Release_Speed, 
+        MAX(release_speed) AS "Max_Release_Speed", 
         COUNT(release_speed) AS count
 
     FROM 
