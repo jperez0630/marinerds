@@ -21,7 +21,7 @@ title: June 6th, 2024
 
 ```sql pitch_speed_agg
 SELECT 
-    player_name, pitch_name, AVG(release_speed) AS mean, MIN(release_speed) AS min, MAX(release_speed) AS max, COUNT(release_speed) AS count
+    player_name, pitch_name, AVG(release_speed) AS "Avg_Release_Speed", MIN(release_speed) AS "Min_Release_Speed", MAX(release_speed) AS "Max_Release_Speed, COUNT(release_speed) AS count
 
 FROM 
     game_data
@@ -185,9 +185,9 @@ Bryan Woo Tang Clan, once again, was nothing to fuck with. He threw 67% 4-Seam F
 <DataTable data={pitch_speed} groupBy=player_name groupsOpen=false>
  	<Column id=player_name/> 
 	<Column id=pitch_name totalAgg=""/> 
-	<Column id=mean totalAgg=""/>
-    <Column id=min totalAgg=""/>
-    <Column id=max totalAgg=""/>
+	<Column id=Avg_Release_Speed totalAgg=""/>
+    <Column id=Min_Release_Speed totalAgg=""/>
+    <Column id=Max_Release_Speed totalAgg=""/>
     <Column id=count totalAgg=""/>
 </DataTable>
 
