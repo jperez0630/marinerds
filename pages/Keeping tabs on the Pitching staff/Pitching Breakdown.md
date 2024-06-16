@@ -25,4 +25,5 @@ title: Pitching Breakdown
     x=player_name
     y=Avg_Pitch_Spin
     series=pitch_name
+    type=grouped
 />
