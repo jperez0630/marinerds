@@ -22,8 +22,5 @@ title: Pitching Breakdown
 <BarChart 
     data={pitch_spin_agg}
     x=player_name
-    y1=Avg_Pitch_Spin
-    y2=Min_Pitch_Spin
-    y3=Max_Pitch_Spin
-    type=grouped
+    y=Avg_Pitch_Spin
 />
