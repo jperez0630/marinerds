@@ -35,7 +35,7 @@ title: Pitching Breakdown
     
 
     GROUP BY 
-        player_name
+        player_name, pitch_name
 ```
 
 ```sql speed_spin_scatter
@@ -52,7 +52,7 @@ title: Pitching Breakdown
         pitch_name = {inputs.pitch_name.value}
 
     GROUP BY 
-        player_name
+        player_name, pitch_name
 ```
 
 
