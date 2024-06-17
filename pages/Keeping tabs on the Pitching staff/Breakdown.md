@@ -18,31 +18,31 @@ title: Pitching Breakdown
 />
 
 ```sql pitch_result
-SELECT player_name, pitch_name, bb_type, events, COUNT(*) * 1.0 / SUM(COUNT(*)) OVER (PARTITION BY player_name, pitch_name, bb_type) AS proportion
-FROM game_data
-GROUP BY player_name, pitch_name, bb_type, events
+    SELECT player_name, pitch_name, bb_type, events, COUNT(*) * 1.0 / SUM(COUNT(*)) OVER (PARTITION BY player_name, pitch_name, bb_type) AS proportion
+    FROM game_data
+    GROUP BY player_name, pitch_name, bb_type, events
 ```
 
 
-    ```sql pitch_speed_agg
-        SELECT 
-            player_name,
-            pitch_name,
-            ROUND(AVG(release_speed), 2) AS "Avg_Release_Speed", 
-            MIN(release_speed) AS "Min_Pitch_Speed", 
-            MAX(release_speed) AS "Max_Pitch_Speed", 
-            COUNT(release_speed) AS count 
-        
-        FROM 
-            game_data 
-        
-        WHERE 
-            pitch_name = '${inputs.pitch_names.value}'
-        
+```sql pitch_speed_agg
+    SELECT 
+        player_name,
+        pitch_name,
+        ROUND(AVG(release_speed), 2) AS "Avg_Release_Speed", 
+        MIN(release_speed) AS "Min_Pitch_Speed", 
+        MAX(release_speed) AS "Max_Pitch_Speed", 
+        COUNT(release_speed) AS count 
+    
+    FROM 
+        game_data 
+    
+    WHERE 
+        pitch_name = '${inputs.pitch_names.value}'
+    
 
-        GROUP BY 
-            player_name, pitch_name
-    ```
+    GROUP BY 
+        player_name, pitch_name
+```
 
 ```sql launch_speed_agg
     SELECT 
