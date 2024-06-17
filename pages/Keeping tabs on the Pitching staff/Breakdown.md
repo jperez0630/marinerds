@@ -133,7 +133,7 @@ title: Pitching Breakdown
         player_name, pitch_type
 ```
 
-<DataTable data={pitch_zone} groupBy=player_name groupsOpen=false>
+<DataTable data={pitch_result} groupBy=player_name groupsOpen=false>
  	<Column id=player_name/> 
 	<Column id=pitch_name totalAgg=""/> 
 	<Column id=bb_type totalAgg=""/>
