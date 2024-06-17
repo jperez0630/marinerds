@@ -38,6 +38,26 @@ title: Pitching Breakdown
         player_name, pitch_name
 ```
 
+```sql launch_speed_agg
+    SELECT 
+        player_name,
+        pitch_name,
+        ROUND(AVG(launch_speed), 2) AS "Avg_Launch_Speed", 
+        MIN(launch_speed) AS "Min_Launch_Speed", 
+        MAX(launch_speed) AS "Max_Launch_Speed", 
+        COUNT(launch_speed) AS count 
+    
+    FROM 
+        game_data 
+    
+    WHERE 
+        pitch_name = '${inputs.pitch_names.value}'
+    
+
+    GROUP BY 
+        player_name, pitch_name
+```
+
 
 
 ```sql pitch_spin_agg
@@ -97,6 +117,13 @@ title: Pitching Breakdown
     data={pitch_speed_agg}
     x=player_name
     y=Avg_Release_Speed
+    swapXY=true
+/>
+
+<BarChart 
+    data={launch_speed_agg}
+    x=player_name
+    y=Avg_Launch_Speed
     swapXY=true
 />
 
