@@ -21,18 +21,16 @@ title: Pitching Breakdown
     SELECT 
         player_name, 
         pitch_name, 
-        pitch_type, 
         bb_type, 
         events, 
-        COUNT(*) * 1.0 / SUM(COUNT(*)) OVER (PARTITION BY player_name, pitch_name, pitch_type, bb_type) AS proportion
+        COUNT(*) * 1.0 / SUM(COUNT(*)) OVER (PARTITION BY player_name, pitch_name, bb_type) AS proportion
     
     FROM 
         game_data
     
     GROUP BY 
         player_name, 
-        pitch_name, 
-        pitch_type, 
+        pitch_name,  
         bb_type, 
         events
     ```
