@@ -4,15 +4,15 @@ title: Pitching Breakdown
 
 ```sql pitch_names_dropdown
     SELECT 
-        pitch_names
+        pitch_name
     FROM
         game_data
 ```
 
 <Dropdown 
     data={pitch_names_dropdown} 
-    name=pitch_names 
-    value=pitch_names 
+    name=pitch_name 
+    value=pitch_name 
     title="Select a Pitch Name" 
     defaultValue="Slider"
 />
