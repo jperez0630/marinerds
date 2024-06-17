@@ -17,26 +17,46 @@ title: Pitching Breakdown
     defaultValue="Slider"
 />
 
-
-```sql pitch_speed_agg
+```sql pitch_result
     SELECT 
-        player_name,
-        pitch_name,
-        ROUND(AVG(release_speed), 2) AS "Avg_Release_Speed", 
-        MIN(release_speed) AS "Min_Pitch_Speed", 
-        MAX(release_speed) AS "Max_Pitch_Speed", 
-        COUNT(release_speed) AS count 
+        player_name, 
+        pitch_name, 
+        pitch_type, 
+        bb_type, 
+        events, 
+        COUNT(*) * 1.0 / SUM(COUNT(*)) OVER (PARTITION BY player_name, pitch_name, pitch_type, bb_type) AS proportion
     
     FROM 
-        game_data 
+        game_data
     
-    WHERE 
-        pitch_name = '${inputs.pitch_names.value}'
-    
-
     GROUP BY 
-        player_name, pitch_name
-```
+        player_name, 
+        pitch_name, 
+        pitch_type, 
+        bb_type, 
+        events
+    ```
+
+
+    ```sql pitch_speed_agg
+        SELECT 
+            player_name,
+            pitch_name,
+            ROUND(AVG(release_speed), 2) AS "Avg_Release_Speed", 
+            MIN(release_speed) AS "Min_Pitch_Speed", 
+            MAX(release_speed) AS "Max_Pitch_Speed", 
+            COUNT(release_speed) AS count 
+        
+        FROM 
+            game_data 
+        
+        WHERE 
+            pitch_name = '${inputs.pitch_names.value}'
+        
+
+        GROUP BY 
+            player_name, pitch_name
+    ```
 
 ```sql launch_speed_agg
     SELECT 
@@ -112,6 +132,14 @@ title: Pitching Breakdown
     GROUP BY 
         player_name, pitch_type
 ```
+
+<DataTable data={pitch_zone} groupBy=player_name groupsOpen=false>
+ 	<Column id=player_name/> 
+	<Column id=pitch_name totalAgg=""/> 
+	<Column id=bb_type totalAgg=""/>
+    <Column id=events totalAgg=""/>
+    <Column id=proportion totalAgg=""/>
+</DataTable>
 
 <BarChart 
     data={pitch_speed_agg}
