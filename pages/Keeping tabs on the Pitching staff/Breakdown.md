@@ -118,6 +118,7 @@ title: Pitching Breakdown
     x=player_name
     y=Avg_Release_Speed
     swapXY=true
+    title="Average Release Speed"
 />
 
 <BarChart 
