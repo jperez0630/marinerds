@@ -134,6 +134,7 @@ title: Pitching Breakdown
     x=player_name
     y=Avg_Pitch_Spin
     swapXY=true
+    title="Average Spin Rate"
 />
 
 <ScatterPlot 
@@ -141,6 +142,8 @@ title: Pitching Breakdown
     x=Avg_Release_Speed
     y=Avg_Spin_Rate
     series=player_name
+    title="Release Speed Compared to Spin Rate"
+    
 />
 
  
