@@ -126,6 +126,7 @@ title: Pitching Breakdown
     x=player_name
     y=Avg_Launch_Speed
     swapXY=true
+    title="Average Launch Speed"
 />
 
 <BarChart 
