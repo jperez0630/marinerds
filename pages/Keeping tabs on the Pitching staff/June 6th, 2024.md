@@ -224,6 +224,38 @@ The bullpen were lights-out as well, throwing mostly 4-Seamers, except for Voth,
     <Column id=proportion totalAgg=""/>
 </DataTable>
 
+<ECharts config={
+    {
+      title: {
+        text: 'Treemap Example',
+        left: 'center'
+      },
+        tooltip: {
+            formatter: '{b}: {c}'
+        },
+      series: [
+        {
+          type: 'treemap',
+          visibleMin: 300,
+          label: {
+            show: true,
+            formatter: '{b}'
+          },
+          itemStyle: {
+            borderColor: '#fff'
+          },
+          roam: false,
+          nodeClick: false,
+          data: [...test_data],
+          breadcrumb: {
+            show: false
+          }
+        }
+      ]
+      }
+    }
+/>
+
 
 
 
