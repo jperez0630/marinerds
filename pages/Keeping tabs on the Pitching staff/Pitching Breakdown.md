@@ -31,7 +31,7 @@ title: Pitching Breakdown
         game_data 
     
     WHERE 
-        pitch_name in ${inputs.pitch_names.value}
+        pitch_name in ${inputs.pitch_name.value}
     
 
     GROUP BY 
@@ -49,7 +49,7 @@ title: Pitching Breakdown
         game_data
 
     WHERE 
-        pitch_name in ${inputs.pitch_names_dropdown.value}
+        pitch_name in ${inputs.pitch_name.value}
 
     GROUP BY 
         player_name
