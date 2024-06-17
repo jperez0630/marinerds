@@ -11,7 +11,7 @@ title: Pitching Breakdown
 
 <Dropdown 
     data={pitch_names_dropdown} 
-    name=pitch_name 
+    name=pitch_names 
     value=pitch_name 
     title="Select a Pitch Name" 
     defaultValue="Slider"
@@ -31,7 +31,7 @@ title: Pitching Breakdown
         game_data 
     
     WHERE 
-        pitch_name = {inputs.pitch_name.value}
+        pitch_name = {inputs.pitch_names.value}
     
 
     GROUP BY 
@@ -49,7 +49,7 @@ title: Pitching Breakdown
         game_data
 
     WHERE 
-        pitch_name = {inputs.pitch_name.value}
+        pitch_name = {inputs.pitch_names.value}
 
     GROUP BY 
         player_name, pitch_name
