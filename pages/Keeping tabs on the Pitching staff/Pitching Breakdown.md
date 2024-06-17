@@ -55,6 +55,23 @@ title: Pitching Breakdown
         player_name, pitch_name
 ```
 
+```sql pitch_result_scatter
+    SELECT
+        player_name,
+        pitch_name,
+        COUNT(bb_type)
+    
+    FROM 
+        game_data
+
+    WHERE 
+        pitch_name = '${inputs.pitch_names.value}'
+
+    GROUP BY 
+        player_name, pitch_type
+```
+
+
 
 
 <BarChart 
@@ -69,3 +86,5 @@ title: Pitching Breakdown
     y=Avg_Spin_Rate
     series=player_name
 />
+
+ 
