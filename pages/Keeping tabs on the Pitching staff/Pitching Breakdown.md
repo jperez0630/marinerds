@@ -18,6 +18,28 @@ title: Pitching Breakdown
 />
 
 
+```sql pitch_speed_agg
+    SELECT 
+        player_name,
+        pitch_name,
+        ROUND(AVG(release_speed), 2) AS "Avg_Release_Speed", 
+        MIN(release_speed) AS "Min_Pitch_Speed", 
+        MAX(release_speed) AS "Max_Pitch_Speed", 
+        COUNT(release_speed) AS count 
+    
+    FROM 
+        game_data 
+    
+    WHERE 
+        pitch_name = '${inputs.pitch_names.value}'
+    
+
+    GROUP BY 
+        player_name, pitch_name
+```
+
+
+
 ```sql pitch_spin_agg
     SELECT 
         player_name,
@@ -71,13 +93,18 @@ title: Pitching Breakdown
         player_name, pitch_type
 ```
 
-
-
+<BarChart 
+    data={pitch_speed_agg}
+    x=player_name
+    y=Avg_Release_Speed
+    swapXY=true
+/>
 
 <BarChart 
     data={pitch_spin_agg}
     x=player_name
     y=Avg_Pitch_Spin
+    swapXY=true
 />
 
 <ScatterPlot 
