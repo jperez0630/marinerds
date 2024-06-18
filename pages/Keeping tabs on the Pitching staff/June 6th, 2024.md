@@ -186,7 +186,7 @@ group by 1
 
 
 <BarChart 
-    data={pitch_type_perc}
+    data={pitch_type_perc_bar_chart}
     x=player_name
     y=Percent_Thrown
     swapXY=true
