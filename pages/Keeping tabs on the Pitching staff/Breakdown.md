@@ -7,8 +7,8 @@ title: Pitching Breakdown
     SELECT 
         player_name, 
         pitch_name, 
-        bb_type, 
-        events, 
+        bb_type as "Hit_Type", 
+        events as "Hit_Result", 
         ROUND(CAST(COUNT(*) AS FLOAT) / SUM(COUNT(*)) OVER (PARTITION BY player_name, pitch_name, bb_type) * 100, 2) AS proportion
     
     FROM 
@@ -170,8 +170,8 @@ title: Pitching Breakdown
 <DataTable data={pitch_result} groupBy=player_name groupsOpen=false>
  	<Column id=player_name/> 
 	<Column id=pitch_name totalAgg=""/> 
-	<Column id=bb_type totalAgg=""/>
-    <Column id=events totalAgg=""/>
+	<Column id=Hit_Type totalAgg=""/>
+    <Column id=Hit_Result totalAgg=""/>
     <Column id=proportion totalAgg=""/>
 </DataTable>
 
