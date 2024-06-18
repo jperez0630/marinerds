@@ -34,7 +34,7 @@ title: Pitching Breakdown
     name=pitch_names 
     value=pitch_name 
     title="Select a Pitch Name" 
-    defaultValue="Slider"
+    defaultValue="4-Seam Fastball"
 />
 
 ```sql pitch_speed_agg
