@@ -156,7 +156,6 @@ The bullpen was lights-out as well, throwing mostly 4-Seamers, except for Voth, 
     y=Percent_Thrown
     swapXY=true
     series=pitch_name
-    sort=false
     type=grouped
 />
 
