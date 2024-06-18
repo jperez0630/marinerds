@@ -4,9 +4,21 @@ title: Pitching Breakdown
 
 
 ```sql pitch_result
-    SELECT player_name, pitch_name, bb_type, events, ROUND(CAST(COUNT(*) AS FLOAT) / SUM(COUNT(*)) OVER (PARTITION BY player_name, pitch_name, bb_type) * 100, 2) AS proportion
-    FROM game_data
-    GROUP BY player_name, pitch_name, bb_type, events
+    SELECT 
+        player_name, 
+        pitch_name, 
+        bb_type, 
+        events, 
+        ROUND(CAST(COUNT(*) AS FLOAT) / SUM(COUNT(*)) OVER (PARTITION BY player_name, pitch_name, bb_type) * 100, 2) AS proportion
+    
+    FROM 
+        game_data
+    
+    WHERE 
+        bb_type is NOT NULL
+    
+    GROUP BY 
+        player_name, pitch_name, bb_type, events
 ```
 
 
