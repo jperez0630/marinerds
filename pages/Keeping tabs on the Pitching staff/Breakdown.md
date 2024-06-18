@@ -154,4 +154,12 @@ title: Pitching Breakdown
     
 />
 
+<DataTable data={pitch_result} groupBy=player_name groupsOpen=false>
+ 	<Column id=player_name/> 
+	<Column id=pitch_name totalAgg=""/> 
+	<Column id=bb_type totalAgg=""/>
+    <Column id=events totalAgg=""/>
+    <Column id=proportion totalAgg=""/>
+</DataTable>
+
  
