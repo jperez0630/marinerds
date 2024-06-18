@@ -167,6 +167,7 @@ group by 1
     name=player_name_selector
     data={player_names}
     value=player_name
+    title="Select Player"
 />
 
 ```sql pitch_type_perc_bar_chart
