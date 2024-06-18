@@ -2,6 +2,13 @@
 title: Pitching Breakdown
 ---
 
+```sql pitch_result
+    SELECT player_name, pitch_name, bb_type, events, COUNT(*) * 1.0 / SUM(COUNT(*)) OVER (PARTITION BY player_name, pitch_name, bb_type) AS proportion
+    FROM game_data
+    GROUP BY player_name, pitch_name, bb_type, events
+```
+
+
 ```sql pitch_names_dropdown
     SELECT 
         pitch_name
