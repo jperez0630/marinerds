@@ -193,7 +193,7 @@ def get_mariners_staff_data():
 df_mariners_staff = get_mariners_staff_data()
 
 def get_game_data():
-    data = statcast(start_dt='2024-06-12', end_dt='2024-06-12', team='SEA')
+    data = statcast(start_dt='2024-06-13', end_dt='2024-06-13', team='SEA')
     return data
 
 df_game_data = get_game_data()
