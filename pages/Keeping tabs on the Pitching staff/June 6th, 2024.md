@@ -150,6 +150,16 @@ Bryan Woo Tang Clan, once again, was nothing to fuck with. Giving up a big fat g
 ### Bullpen<br>
 The bullpen was lights-out as well, throwing mostly 4-Seamers, except for Voth, who leaned on his Sweeper. That pitch, by the way, seems to be ground-ball dynamo. 33% of Voth's Sweepers were grounders and weak grounders at that, averaging a launch speed of 83.2 mph with nary a hard-hit ball to speak of. They all moved their pitches around very well and stayed away from the heart of the plate, by in large.
 
+<BarChart 
+    data={pitch_type_perc}
+    x=player_name
+    y=Percent_Thrown
+    series=pitch_name
+    sort=false
+    type=grouped
+/>
+
+
 <DataTable data={pitch_type_perc} groupBy=player_name groupsOpen=false>
  	<Column id=player_name/> 
 	<Column id=pitch_name totalAgg=""/> 
