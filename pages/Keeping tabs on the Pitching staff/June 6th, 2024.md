@@ -153,7 +153,13 @@ The bullpen was lights-out as well, throwing mostly 4-Seamers, except for Voth, 
 ```sql player_names
 select 
     player_name
-from game_data
+
+from 
+    game_data
+
+WHERE 
+    game_date = '2024-06-06'
+
 group by 1
 ```
 
