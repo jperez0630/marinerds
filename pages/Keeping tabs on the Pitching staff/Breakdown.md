@@ -17,13 +17,6 @@ title: Pitching Breakdown
     defaultValue="Slider"
 />
 
-```sql pitch_result
-    SELECT player_name, pitch_name, bb_type, events, COUNT(*) * 1.0 / SUM(COUNT(*)) OVER (PARTITION BY player_name, pitch_name, bb_type) AS proportion
-    FROM game_data
-    GROUP BY player_name, pitch_name, bb_type, events
-```
-
-
 ```sql pitch_speed_agg
     SELECT 
         player_name,
@@ -119,13 +112,7 @@ title: Pitching Breakdown
         player_name, pitch_type
 ```
 
-<DataTable data={pitch_result} groupBy=player_name groupsOpen=false>
- 	<Column id=player_name/> 
-	<Column id=pitch_name totalAgg=""/> 
-	<Column id=bb_type totalAgg=""/>
-    <Column id=events totalAgg=""/>
-    <Column id=proportion totalAgg=""/>
-</DataTable>
+
 
 <BarChart 
     data={pitch_speed_agg}
