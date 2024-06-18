@@ -199,6 +199,7 @@ group by 1
     swapXY=true
     series=pitch_name
     type=grouped
+    title="Percent of Pitch Thrown"
 />
 
 
