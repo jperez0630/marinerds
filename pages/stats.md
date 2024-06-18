@@ -134,6 +134,7 @@ value=Run_Differential
             x={inputs.team_batting_column_scatter_selector_x.value}
             y={inputs.team_batting_column_scatter_selector_y.value}
             size={inputs.team_batting_column_scatter_selector_size.value}
+            scaleTo=2
             series=Team
         />  
 
