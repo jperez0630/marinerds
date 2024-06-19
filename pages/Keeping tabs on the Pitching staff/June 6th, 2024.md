@@ -162,14 +162,13 @@ WHERE
 
 group by 1
 ```
-
+<Value data={player_names} />
 
 
 <Dropdown
     name=player_name_selector
     data={player_names}
     value=player_name
-    defaultValue=$<Value data={player_names} />
     title="Select Player"
 />
 
