@@ -211,7 +211,9 @@ group by 1
 	<Column id=Percent_Thrown totalAgg=""/> 
 </DataTable>
 
+### Strike Zone Chart<br>
 
+Use the chart and table below to track pitch location
 
 ![Zones](/zones.png)
 
