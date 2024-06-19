@@ -236,6 +236,8 @@ Use the chart and table below to track pitch location
     <Column id=count totalAgg=""/>
 </DataTable>
 
+### Pitch Spin Table
+
 <DataTable data={pitch_spin} groupBy=player_name groupsOpen=false>
  	<Column id=player_name/> 
 	<Column id=pitch_name totalAgg=""/> 
@@ -244,6 +246,8 @@ Use the chart and table below to track pitch location
     <Column id=Max_Pitch_Spin totalAgg=""/>
     <Column id=count totalAgg=""/>
 </DataTable>
+
+### Launch Speed Table
 
 <DataTable data={launch_speed} groupBy=player_name groupsOpen=false>
  	<Column id=player_name/> 
@@ -254,6 +258,8 @@ Use the chart and table below to track pitch location
     <Column id=count totalAgg=""/>
 </DataTable>
 
+### Pitch Result Table
+
 <DataTable data={pitch_result} groupBy=player_name groupsOpen=false>
  	<Column id=player_name/> 
 	<Column id=pitch_name totalAgg=""/> 
@@ -261,12 +267,16 @@ Use the chart and table below to track pitch location
     <Column id=proportion totalAgg=""/>
 </DataTable>
 
+### Hit Type Table
+
 <DataTable data={hit_type} groupBy=player_name groupsOpen=false>
  	<Column id=player_name/> 
 	<Column id=pitch_name totalAgg=""/> 
 	<Column id=Hit_Type totalAgg=""/>
     <Column id=proportion totalAgg=""/>
 </DataTable>
+
+### Hit Result Table
 
 <DataTable data={hit_result} groupBy=player_name groupsOpen=false>
  	<Column id=player_name/> 
