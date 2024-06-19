@@ -225,6 +225,8 @@ Use the chart and table below to track pitch location
     <Column id=proportion totalAgg=""/>
 </DataTable>
 
+### Pitch Speed Table
+
 <DataTable data={pitch_speed} groupBy=player_name groupsOpen=false>
  	<Column id=player_name/> 
 	<Column id=pitch_name totalAgg=""/> 
