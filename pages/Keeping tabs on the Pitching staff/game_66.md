@@ -145,10 +145,10 @@ title: June 7th, 2024
 ## Recap<br><br>
 
 ### Starter<br>
-Bryan Woo Tang Clan, once again, was nothing to fuck with. Giving up a big fat goose-egg. He threw 67% 4-Seam Fastballs, averaging 94.3 mph, bottoming out at 92.7 mph and topping out at 96 mph. The majority of his pitches were located in the upper portion of the strike zone. It's interesting to see how little he is moving his 4-seamer around. Despite this, it was only hit into play 12.28%. The only other pitch thrown with any major statistical significance was his Sinker. That pitch ended up in the center of the plate 21% of the time, resulted in just as many fly balls as ground balls,  so it seems he needs to work on getting it to bite a little bit more to be a more effective pitch.<br>
+Unfortunately, anytime is not Miller time as the M's starter surrendered 7 runs on 6 hits and 3 walks over 5 innings. He threw mostly 4-Seamers(43.2%) and Sinkers(25%) with a healthy dose of Split-Fingers and Sweepers(14.8% and 13.6% respectively). The majority of his pitches to right handed bats were up and in, down and away, middle of the plate and middle away. Given that he has a 4-Seamer with a spin rate that rivals the planet Mercury and a better than average velocity, seems like he should lean on it a little bit more and utilize the top of the strike zone a bit more. Looks like what it really came down to was command.  He threw more balls than strikes overall, having an especially hard time getting his breaking balls over for stikes.  
 
 ### Bullpen<br>
-The bullpen was lights-out as well, throwing mostly 4-Seamers, except for Voth, who leaned on his Sweeper. That pitch, by the way, seems to be ground-ball dynamo. 33% of Voth's Sweepers were grounders and weak grounders at that, averaging a launch speed of 83.2 mph with nary a hard-hit ball to speak of. They all moved their pitches around very well and stayed away from the heart of the plate, by in large.
+The bullpen in this game was ineffectual. Scattering singles, triples and walks over 4 to the tune of 3 earned runs.  One of the few bright spots was Thornton who did not surrender a base-runner
 
 ```sql player_names
 select 
