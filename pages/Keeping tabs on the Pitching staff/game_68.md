@@ -145,10 +145,10 @@ title: June 9th, 2024
 ## Recap<br><br>
 
 ### Starter<br>
-Castillo wasn't the stopper that we know he can be today. Unfortunately, he surrendered 5 ER on 6 Hits and a walk.  He was a little too much in the heart of the plate with 20% of his 4-Seamers and 21.4% of his change-ups being center-cut.  His slider was top-shelf, however, yielding no base-runners.
+Kirby vacuumed up the Royals today—I got a million of ‘em, don’t worry—giving up just 1 ER on 5 hits and no walks in 7 innings.  Definition of a Quality Start, which was sorely needed. He mixed his pitches pretty well going mostly Slider, Sinker, 4-Seamer.  Speaking of his slider, it was biting like Charlie “Bit My Finger”, diving down-and-in to right-handed batters.  He stayed away from the heart of the plate for the most part and his propensity to keep it low in the zone led to a plethora of weak ground balls, which would be a terrible name for a meatball recipe. Kudos to Kirby.
 
 ### Bullpen<br>
-Another meh outing from the bullpen in garbage time. Giving up 3 Earned Runs in 3 innings. Too many doubles, too many walks, too many base-runners. Period.  
+The bullpen, again, was not the bastion that we’ve come to expect, conspiring with the defense to give up 4 runs.  The long ball was the primary nemesis today. Way too many hard-hit balls for comfort.  They did manage to prevent any walks, which was probably the difference between winning and losing.  
 
 ```sql player_names
 select 
