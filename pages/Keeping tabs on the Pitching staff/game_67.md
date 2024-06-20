@@ -145,10 +145,10 @@ title: June 8th, 2024
 ## Recap<br><br>
 
 ### Starter<br>
-Unfortunately, anytime is not Miller time as the M's starter surrendered 7 runs on 6 hits and 3 walks over 5 innings. He threw mostly 4-Seamers(43.2%) and Sinkers(25%) with a healthy dose of Split-Fingers and Sweepers(14.8% and 13.6% respectively). The majority of his pitches to right handed bats were up and in, down and away, middle of the plate and middle away. Given that he has a 4-Seamer with a spin rate that rivals the planet Mercury and a better than average velocity, seems like he should lean on it a little bit more and utilize the top of the strike zone a bit more. Looks like what it really came down to was command.  He threw more balls than strikes overall, having an especially hard time getting his breaking balls over for stikes.  
+Castillo wasn't the stopper that we know he can be today. Unfortunately, he surrendered 5 ER on 6 Hits and a walk.  He was a little too much in the heart of the plate with 20% of his 4-Seamers and 21.4% of his change-ups being center-cut.  His slider was top-shelf, however, yielding no base-runners.
 
 ### Bullpen<br>
-The bullpen in this game was ineffectual. Scattering singles, triples and walks over 4 to the tune of 3 earned runs.  One of the few bright spots was Thornton who did not surrender a base-runner
+Another meh outing from the bullpen in garbage time. Giving up 3 Earned Runs in 3 innings. Too many doubles, too many walks, too many base-runners. Period.  
 
 ```sql player_names
 select 
