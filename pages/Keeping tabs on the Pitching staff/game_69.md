@@ -145,11 +145,12 @@ title: June 10th, 2024
 ## Recap<br><br>
 
 ### Starter<br>
-Kirby vacuumed up the Royals today—I got a million of ‘em, don’t worry—giving up just 1 ER on 5 hits and no walks in 7 innings.  Definition of a Quality Start, which was sorely needed. He mixed his pitches pretty well going mostly Slider, Sinker, 4-Seamer.  Speaking of his slider, it was biting like Charlie “Bit My Finger”, diving down-and-in to right-handed batters.  He stayed away from the heart of the plate for the most part and his propensity to keep it low in the zone led to a plethora of weak ground balls, which would be a terrible name for a meatball recipe. Kudos to Kirby.
+Lanky Logan Gilbert delivered another solid effort today, giving up 3 runs in 6 innings.  Gilbert eats innings like Fat Bastard devours haggis. Logan likes to mix it up and he did so with alacrity, throwing mostly Cutters, Sliders and 4-Seamers.  He did an excellent job of staying out of the heart of the plate with all his pitches. To right-handers, his 4-Seamer was mostly up-and-away and down-and-away; his Curveball bit hard toward the batter’s shoe-tops; the Cutter ran like a buzz saw up-and-in; the Slider dive-bombed down-and-in and down-and-away; and, finally, his Split-Finger crashed primarily down-and-away.  Whew! I’m exhausted just writing about it. I can’t even contemplate how he moves the ball around so affectively with so many different pitches.
+Another interesting aspect of Logan is that he doesn’t get hit that often but when he does, he gets hit hard.  For example, the average exit velocity for his Split-Finger was 107.2 but it was only hit one time.  The majority of that pitch yielded Balls and Swinging-Strikes, which resulted in a clever game of cat and mouse.
+
 
 ### Bullpen<br>
-The bullpen, again, was not the bastion that we’ve come to expect, conspiring with the defense to give up 4 runs.  The long ball was the primary nemesis today. Way too many hard-hit balls for comfort.  They did manage to prevent any walks, which was probably the difference between winning and losing.  
-
+The bullpen did a better job of limiting runs than in the recent past, Bowman was taken deep but other than that, it was a solid effort.
 ```sql player_names
 select 
     player_name
