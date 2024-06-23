@@ -2,9 +2,9 @@
 title: Marinerds Blog 
 ---
 
-# Viewing Baseball through Compass Rose Colored Glasses
+## Viewing Baseball through Compass Rose Colored Glasses
 
-## Greetings baseball fans and long suffering Seattle Mariners faithful.<br>Wecome to the inaugural edition of the of the Marinerds BLOG<br>
+### Greetings baseball fans and long suffering Seattle Mariners faithful.<br>Wecome to the inaugural edition of the of the Marinerds BLOG<br>
 
 
 In the grand scheme of things, with all the competing interests out there, perhaps the world isn't exactly pining for another sports blog.
@@ -44,7 +44,7 @@ peppering my articles with insipid nautical terminology. Of this, I do vow!<br>
 Thank you for your precious time and I hope you will spare some more time to read further as the season or seasons progress.
 
 
-## A brief word...
+### A brief word...
 
 I would be remiss if I did not mention something about the tools I'm using to create this little blog of mine.<br> 
 
