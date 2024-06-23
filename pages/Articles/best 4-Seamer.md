@@ -12,7 +12,7 @@ title: Who has the best 4-Seam Fastball?
     GROUP BY 
         player_name, pitch_name
     ORDER BY 
-        player_name, pitch_name
+        Percent_Thrown
 ```
 
 ```sql pitch_speed_agg
