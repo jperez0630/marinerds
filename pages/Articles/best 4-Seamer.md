@@ -60,7 +60,7 @@ When it comes to this category
 <BarChart 
     data={four_seamer_perc}
     x=player_name
-    y=Percent_Thrown
+    y=proportion
     swapXY=true
     title="Percentage of 4-Seam Fastballs"
 />
