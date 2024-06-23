@@ -2,7 +2,7 @@
 title: Who has the best 4-Seam Fastball?
 ---
 
-```sql four_seamer_perc
+```sql pitch_thrown_perc
     SELECT 
         player_name, pitch_name, COUNT(*) * 1.0 / SUM(COUNT(*)) OVER (PARTITION BY player_name) AS "Percent_Thrown"
     
@@ -13,6 +13,18 @@ title: Who has the best 4-Seam Fastball?
         player_name, pitch_name
     ORDER BY 
         Percent_Thrown
+```
+
+```sql four_seamer_perc
+    SELECT 
+        player_name, 
+        pitch_name, 
+        ANY_VALUE(proportion) AS "4-Seam Fastball Perc" 
+    
+    FROM 
+        ${pitch_thrown_perc}
+    WHERE pitch_name = '4-Seam Fastball'
+    GROUP BY player_name, pitch_name
 ```
 
 ```sql pitch_speed_agg
@@ -43,26 +55,13 @@ So, what makes a good 4-Seamer so pivotal? If located well and accompanied with 
 First off, let’s look at utilization.  I believe those that use the 4-Seamer more than others should be granted special consideration over those that do not.  Afterall, we want to not only award success, we want to recognize consistent success. And this is how you know that my wife is a happy woman.<br>
 When it comes to this category 
 
-```sql pitch_name_drop_down
-    select 
-        pitch_name
-    from game_data
-    WHERE pitch_name = '4-Seam Fastball'
-    group by 1
-```
 
-<Dropdown
-    name=pitch_name_selector
-    data={pitch_name_drop_down}
-    value=pitch_name
-/>
 
 <BarChart 
     data={four_seamer_perc}
     x=player_name
     y=Percent_Thrown
     swapXY=true
-    series = "pitch_name"
     title="Percentage of 4-Seam Fastballs"
 />
 
