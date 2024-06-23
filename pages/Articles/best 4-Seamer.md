@@ -19,7 +19,7 @@ title: Who has the best 4-Seam Fastball?
     SELECT 
         player_name, 
         pitch_name, 
-        ANY_VALUE(proportion) AS "4-Seam Fastball Perc" 
+        ANY_VALUE(Percent_Thrown) AS "4-Seam Fastball Perc" 
     
     FROM 
         ${pitch_thrown_perc}
