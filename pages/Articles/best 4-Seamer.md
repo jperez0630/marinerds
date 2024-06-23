@@ -4,7 +4,7 @@ title: Who has the best 4-Seam Fastball?
 
 ```sql four_seamer_perc
     SELECT 
-        player_name, pitch_name, COUNT(*) * 1.0 / SUM(COUNT(*)) OVER (PARTITION BY player_name) AS "Percent Thrown"
+        player_name, pitch_name, COUNT(*) * 1.0 / SUM(COUNT(*)) OVER (PARTITION BY player_name) AS "Percent_Thrown"
     
     FROM 
         game_data
