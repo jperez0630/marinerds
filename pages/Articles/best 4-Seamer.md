@@ -7,7 +7,7 @@ title: Who has the best 4-Seam Fastball?
         player_name, pitch_name, COUNT(*) * 1.0 / SUM(COUNT(*)) OVER (PARTITION BY player_name) AS "Percent Thrown"
     
     FROM 
-        df_statcast
+        game_data
 
     GROUP BY 
         player_name, pitch_name
