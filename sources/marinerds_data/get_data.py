@@ -1,9 +1,11 @@
-from pybaseball import statcast,pitching_stats,batting_stats, team_game_logs, team_batting, team_pitching, schedule_and_record
+from pybaseball import statcast,pitching_stats,batting_stats, team_game_logs, team_batting, team_pitching, schedule_and_record, cache
 import time, datetime
 import pandas as pd
 import os
 from pathlib import Path
 import duckdb
+
+cache.enable()
 
 con = duckdb.connect(f'{Path.cwd()}/marinerds_data.duckdb')
 local_con = con.cursor()
@@ -193,7 +195,7 @@ def get_mariners_staff_data():
 df_mariners_staff = get_mariners_staff_data()
 
 def get_game_data():
-    data = statcast(start_dt='2024-06-20', end_dt='2024-06-20', team='SEA')
+    data = statcast(start_dt='2024-03-28', end_dt='2024-06-21', team='SEA')
     return data
 
 df_game_data = get_game_data()
@@ -241,10 +243,11 @@ SELECT * FROM df_team_pitching_stats_columns
 ''')
 
 local_con.sql('''
-INSERT INTO game_data SELECT * FROM df_game_data
+CREATE OR REPLACE TABLE game_data AS
+SELECT * FROM df_game_data
 ''')
 
-# local_con.sql('''
-# CREATE OR REPLACE TABLE pitch_name_columns AS
-# SELECT * FROM df_pitch_name_columns
-# ''')
+local_con.sql('''
+CREATE OR REPLACE TABLE pitch_name_columns AS
+SELECT * FROM df_pitch_name_columns
+''')
