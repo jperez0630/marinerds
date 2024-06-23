@@ -244,7 +244,7 @@ local_con.sql('''
 INSERT INTO game_data SELECT * FROM df_game_data
 ''')
 
-local_con.sql('''
-CREATE OR REPLACE TABLE pitch_name_columns AS
-SELECT * FROM df_pitch_name_columns
-''')
+# local_con.sql('''
+# CREATE OR REPLACE TABLE pitch_name_columns AS
+# SELECT * FROM df_pitch_name_columns
+# ''')
