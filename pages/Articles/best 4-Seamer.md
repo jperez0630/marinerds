@@ -47,7 +47,7 @@ When it comes to this category
     select 
         pitch_name
     from game_data
-    WHERE pitch_name = '4-Seam-Fastball'
+    WHERE pitch_name = '4-Seam Fastball'
     group by 1
 ```
 
