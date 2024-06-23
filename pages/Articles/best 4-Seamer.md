@@ -4,7 +4,7 @@ title: Who has the best 4-Seam Fastball?
 
 ```sql pitch_thrown_perc
     SELECT 
-        player_name, pitch_name, COUNT(*) * 1.0 / SUM(COUNT(*)) OVER (PARTITION BY player_name) AS "Percent_Thrown"
+        player_name, pitch_name, COUNT(*) * 1.0 / SUM(COUNT(*)) OVER (PARTITION BY player_name) AS proportion
     
     FROM 
         game_data
@@ -19,7 +19,7 @@ title: Who has the best 4-Seam Fastball?
     SELECT 
         player_name, 
         pitch_name, 
-        ANY_VALUE(Percent_Thrown) AS "4-Seam Fastball Perc" 
+        ANY_VALUE(proportion) AS proportion
     
     FROM 
         ${pitch_thrown_perc}
