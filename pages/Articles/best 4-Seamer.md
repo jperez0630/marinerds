@@ -43,19 +43,6 @@ So, what makes a good 4-Seamer so pivotal? If located well and accompanied with 
 First off, let’s look at utilization.  I believe those that use the 4-Seamer more than others should be granted special consideration over those that do not.  Afterall, we want to not only award success, we want to recognize consistent success. And this is how you know that my wife is a happy woman.<br>
 When it comes to this category 
 
-```sql pitch_type_filter
-    select 
-        pitch_name
-    
-    from 
-        game_data
-    
-    WHERE
-        pitch_name = '4-Seam Fastball' 
-
-    group by 
-        1
-```
 
 <BarChart 
     data={4_seamer_perc}
