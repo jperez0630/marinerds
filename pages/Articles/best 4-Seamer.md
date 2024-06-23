@@ -53,7 +53,7 @@ When it comes to this category
 
 <Dropdown
     name=pitch_name_selector
-    data={pitch_name_drop-down}
+    data={pitch_name_drop_down}
     value=pitch_name
 />
 
