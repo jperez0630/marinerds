@@ -62,7 +62,7 @@ When it comes to this category
     x=player_name
     y=Percent_Thrown
     swapXY=true
-    series = "4-Seam Fastball"
+    series = "pitch_name"
     title="Percentage of 4-Seam Fastballs"
 />
 
