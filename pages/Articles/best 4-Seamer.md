@@ -52,10 +52,7 @@ Ah, the 4-Seam Fastball.  Also known as the 4-Seamer and the Rising Fastball.  I
 
 ### Give Us This Day our Daily Heater<br>
 So, what makes a good 4-Seamer so pivotal? If located well and accompanied with requisite velocity, it is nearly unhittable. However, hurling a ball as hard as you can consistency exactly where you want it is tantamount to not pissing on the toilet seat while doing jumping-jacks. It's not easy folks. With that being said, we're going to take a look at the M's Staff and figure out who has the best 4-Seam-Fastball.  
-First off, let’s look at utilization.  I believe those that use the 4-Seamer more than others should be granted special consideration over those that do not.  Afterall, we want to not only award success, we want to recognize consistent success. And this is how you know that my wife is a happy woman.<br>
-When it comes to this category 
-
-
+First off, let’s look at utilization.  I believe those that use the 4-Seamer more than others should be granted special consideration over those that do not.  Afterall, we want to not only award success, we want to recognize consistent success. 
 
 <BarChart 
     data={four_seamer_perc}
@@ -64,6 +61,9 @@ When it comes to this category
     swapXY=true
     title="Percentage of 4-Seam Fastballs"
 />
+
+### Tyson Who?
+According to the chart above, Tyson Miller really loves to throw the heater. Tyson who? Anyhow, in a little bit we'll figure out if he throws it a lot because he's good at it or if he just doesn't have any dependable alternatives.  That goes for all M's pitchers. Bryan Woo throws it the most amongst starters so, naturally, he'll be expected to have a good one, maybe even better than Logan Gilbert, who throws it the least among starters.  Also, it’s interesting that Stanek throws the 4-Seamer 30% more than Munos considering they both are capable of triple digit velocity.
 
 
 <BarChart 
