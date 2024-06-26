@@ -201,6 +201,17 @@ def get_game_data():
 df_game_data = get_game_data()
 
 
+def get_zone_results_data():
+    groupby_zone = df_game_data.loc[df_game_data['pitch_name'] == '4-Seam Fastball'].groupby(['player_name', 'pitch_name', 'zone']).size().reset_index(name='zone_percentage')
+    groupby_zone['zone_percentage'] = groupby_zone['zone_percentage'] / groupby_zone.groupby(['player_name', 'pitch_name'])['zone_percentage'].transform('sum')
+    groupby_zone.sort_values(by=['player_name', 'pitch_name', 'zone_percentage'], ascending=False, inplace=True)
+    groupby_zone['zone_percentage'] = groupby_zone['zone_percentage'].map('{:.2%}'.format)
+    groupby_zone_events = df_game_data.loc[df_game_data['pitch_name'] == '4-Seam Fastball'].groupby(['player_name', 'pitch_name', 'zone'])['events'].value_counts(normalize=True).reset_index(name='hit_result')
+    groupby_zone_events['hit_result'] = groupby_zone_events['hit_result'].astype(float).map('{:.2%}'.format)
+    merge_zone_results = pd.merge(groupby_zone, groupby_zone_events, on=['player_name', 'pitch_name', 'zone'])
+    return merge_zone_results
+ 
+df_groupby_zone_result = get_zone_results_data()
 
 local_con.sql('''
 CREATE OR REPLACE TABLE mariners_pitching_data AS
@@ -250,4 +261,9 @@ SELECT * FROM df_game_data
 local_con.sql('''
 CREATE OR REPLACE TABLE pitch_name_columns AS
 SELECT * FROM df_pitch_name_columns
+''')
+
+local_con.sql('''
+CREATE OR REPLACE TABLE zone_results AS
+SELECT * FROM df_groupby_zone_result
 ''')
