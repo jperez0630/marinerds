@@ -94,5 +94,7 @@ hit_result: a breakdown of the results of each pitch<br><br>
  	<Column id=player_name/> 
 	<Column id=pitch_name totalAgg=""/> 
 	<Column id=zone totalAgg=""/>
-    <Column id=hit_result totalAgg=""/>
+    <Column id=zone_percentage totalAgg=""/>
+    <Column id=events totalAgg=""/>
+    <Column id=events_result totalAgg=""/>
 </DataTable>
