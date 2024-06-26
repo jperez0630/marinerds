@@ -47,7 +47,7 @@ title: Who has the best 4-Seam Fastball?
         player_name, pitch_name
 ```
 
-```sql zone_result
+```sql zone_results
     select * from zone_results
 ```
 
