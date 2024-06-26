@@ -5,7 +5,7 @@ import os
 from pathlib import Path
 import duckdb
 
-cache.enable()
+ 
 
 con = duckdb.connect(f'{Path.cwd()}/marinerds_data.duckdb')
 local_con = con.cursor()
