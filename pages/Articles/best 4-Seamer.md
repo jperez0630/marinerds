@@ -78,3 +78,9 @@ They don't call it "fastball" for nothing. With the bags full and nobody out, so
 
 We definitely have some flame-throwers on the M’s staff, highlighted by Munoz and Stanek who average around 98.5 MPH on their 4-Seamers. Conspicuously absent are Matt Brash and Greggory Santos who are capable of raising the heat-index significantly, but have missed significant time with injuries.<br>
 Logan Gilbert leads the way among starters at 96 MPH, which is quite unfair given his gangly limbs afford him an extension of seven and half feet.  That means that he releases the ball closer to the batter than say a more squat pitcher, thus providing the hitter with less reaction time. Bryan Woo brings up the rear among starters, averaging 94.4. And then there is Tyson Miller who trails way behind at 90.1.  Who the hell is this guy?<br>
+
+### Location. Location. Location.
+It doesn’t just apply to real estate people.  A fastball thrown to the wrong spot can quickly transform into a meatball that the hitter gobbles up. For this exercise, I’ve included a diagram that splits the strike zone and periphery into zones.  In addition, I’ll be going over a table of each player that shows:
+zone_percentage: how often the pitcher throws to certain zone
+hit_result: a breakdown of the results of each pitch 
+![Zones](/zones.png)
