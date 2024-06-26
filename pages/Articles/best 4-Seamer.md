@@ -82,5 +82,6 @@ Logan Gilbert leads the way among starters at 96 MPH, which is quite unfair give
 ### Location. Location. Location.
 It doesn’t just apply to real estate people.  A fastball thrown to the wrong spot can quickly transform into a meatball that the hitter gobbles up. For this exercise, I’ve included a diagram that splits the strike zone and periphery into zones.  In addition, I’ll be going over a table of each player that shows:
 zone_percentage: how often the pitcher throws to certain zone
-hit_result: a breakdown of the results of each pitch<br> 
+hit_result: a breakdown of the results of each pitch<br><br>
+
 ![Zones](/zones.png)
