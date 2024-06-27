@@ -83,6 +83,19 @@ They don't call it "fastball" for nothing. With the bags full and nobody out, so
 We definitely have some flame-throwers on the M’s staff, highlighted by Munoz and Stanek who average around 98.5 MPH on their 4-Seamers. Conspicuously absent are Matt Brash and Greggory Santos who are capable of raising the heat-index significantly, but have missed significant time with injuries.<br>
 Logan Gilbert leads the way among starters at 96 MPH, which is quite unfair given his gangly limbs afford him an extension of seven and half feet.  That means that he releases the ball closer to the batter than say a more squat pitcher, thus providing the hitter with less reaction time. Bryan Woo brings up the rear among starters, averaging 94.4. And then there is Tyson Miller who trails way behind at 90.1.  Who the hell is this guy?<br>
 
+### You Gotta Spin it to Win it
+Baseball spin contributes to the lateral or sideways movement of a baseball as it travels to the plate.  A Four-Seamer typically possesses a combination of backspin and sidespin, and the average spin rate is around 2275 MHP give or take.  The spin of the ball contributes to something called the Magnus Effect. I don’t know who this Magnus guy was, but, apparently, he was a smart dude.  Basically, the rule of thumb is: the more the ball spins the less vertical break it has. Why is that important?  Well, a ball that is thrown with more spin than average will fight the force of gravity to a greater extent and stay up longer.  A good example is a high-fastball that is popped-up because the hitter, who expects more downward break gets under the ball.    
+Don’t believe me? Allow me to elaborate.<br>
+insert chart here
+
+Above are two tables.  The first table shows the average spin rate of each pitcher’s 4-Seam Fastball.  Notice that, among starters, Bryce Miller is ranked first, with a significantly higher spin rate than average and Logan Gilbert is ranked last with a significantly lower spin rate than average.<br>
+
+The second chart shows the distribution of bb_type (fly-ball, ground-ball, popup or line-drive).  Notice that Gilbert’s ground-ball rate is twice that of Bryce Millers. This illustrates how two extreme spin rates can mess with a hitters timing to either induce fly-balls or ground-balls.<br>
+
+Which extreme is better? It kind of depends.  As of 6/24/24. Bryce Miller’s home and away ERA is 1.82 vs 6.28.  Why? Because of the good ol’ marine layer which turns home runs into lazy fly balls in T-Mobile Park.  Logan Gilberts splits are much less dramatic: 2.66 vs 2.75.  So, if you’re at home you want Miller but if you’re on the road, you definitely want Gilbert. 
+
+
+
 ### Location. Location. Location.
 It doesn’t just apply to real estate people.  A fastball thrown to the wrong spot can quickly transform into a meatball that the hitter gobbles up. For this exercise, I’ve included a diagram that splits the strike zone and periphery into zones.  In addition, I’ll be going over a table of each player that shows:
 zone_percentage: how often the pitcher throws to certain zone
