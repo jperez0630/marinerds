@@ -51,6 +51,25 @@ title: Who has the best 4-Seam Fastball?
     select * from zone_results
 ```
 
+```sql pitch_spin_average
+    SELECT 
+        player_name, 
+        pitch_name, 
+        ROUND(AVG(release_spin_rate), 2) AS "average_release_spin_rate"
+    
+    FROM 
+        game_data
+    
+    WHERE 
+        pitch_name = '4-Seam Fastball'
+    
+    GROUP BY 
+        player_name, pitch_name
+    
+    ORDER BY 
+        average_release_spin_rate DESC
+```
+
 ### Butter your Bread with a 4-Seamer Instead
 Ah, the 4-Seam Fastball.  Also known as the 4-Seamer and the Rising Fastball.  It is named thus based on how the ball is gripped by a pitcher and due to the fact that the batter sees 4 seams as the ball spins toward the plate. It is an essential part of a pitcher’s arsenal and having a good one can be the difference between spending most of your MLB career traveling on a chartered plane as opposed to a chartered bus.  Just how bread and butter is it? As of 6/21/24 the 4-Seamer comprises 35% of the pitches thrown by the M’s staff.  That’s 15% more than any other pitch.  
 
@@ -86,9 +105,10 @@ Logan Gilbert leads the way among starters at 96 MPH, which is quite unfair give
 ### You Gotta Spin it to Win it
 Baseball spin contributes to the lateral or sideways movement of a baseball as it travels to the plate.  A Four-Seamer typically possesses a combination of backspin and sidespin, and the average spin rate is around 2275 MHP give or take.  The spin of the ball contributes to something called the Magnus Effect. I don’t know who this Magnus guy was, but, apparently, he was a smart dude.  Basically, the rule of thumb is: the more the ball spins the less vertical break it has. Why is that important?  Well, a ball that is thrown with more spin than average will fight the force of gravity to a greater extent and stay up longer.  A good example is a high-fastball that is popped-up because the hitter, who expects more downward break gets under the ball.    
 Don’t believe me? Allow me to elaborate.<br>
-insert chart here
 
-Above are two tables.  The first table shows the average spin rate of each pitcher’s 4-Seam Fastball.  Notice that, among starters, Bryce Miller is ranked first, with a significantly higher spin rate than average and Logan Gilbert is ranked last with a significantly lower spin rate than average.<br>
+<DataTable data={pitch_spin_average}/>
+
+Above are two tables. The first table shows the average spin rate of each pitcher’s 4-Seam Fastball. Notice that, among starters, Bryce Miller is ranked first, with a significantly higher spin rate than average and Logan Gilbert is ranked last with a significantly lower spin rate than average.<br>
 
 The second chart shows the distribution of bb_type (fly-ball, ground-ball, popup or line-drive).  Notice that Gilbert’s ground-ball rate is twice that of Bryce Millers. This illustrates how two extreme spin rates can mess with a hitters timing to either induce fly-balls or ground-balls.<br>
 
