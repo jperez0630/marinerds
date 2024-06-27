@@ -100,6 +100,7 @@ hit_result: a breakdown of the results of each pitch<br><br>
 </DataTable>
 
 Starting with those that use the 4-Seamer the most to those that use it the least, we’ll see how well the M’s pitchers are locating based on pitch results.<br>
+
 First off, we have our old friend Tyson Miller.  Just kidding.  Nobody cares about Tyson Miller<br>
 Next comes Stanek. The majority of his pitches (14.52%) are zone 11, 37.5% of those pitches are hit for singles.  Could be worse, I suppose, but it’s odd that he is getting hit so much up and out of what should be the strike zone.  Zone 12 looks better, showing a single only 8.33% of the time.  Nice to see he’s not giving up extra-base hits with his most utilized locations.  Overall, though, too many walks across the board.<br>
 Now let’s take a look at Bryan “Woo Tang Clan”.  He likes to throw it to Zone 11, which would be up-and-away to righties.  No hits up there, but he’s given up walks 33% of the time.  His second preference is middle-middle or Zone 5.  He’s been remarkably effective or lucky based on whether you’re an optimist or pessimist, giving up only singles 9% of the time, with no extra-base-hits.  What stands out to me is that he doesn’t give up an extra base hit until you get down to Zone 3, which he only throws to 8.31% of the time.  Seems to be a weak spot for him, by the way.<br>
