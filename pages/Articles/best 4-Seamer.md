@@ -96,24 +96,8 @@ title: Who has the best 4-Seam Fastball?
     GROUP BY player_name, pitch_name
 ```
 
-```sql group_by_bb_type
-    SELECT 
-        pc.player_name, 
-        pc.pitch_name, 
-        pc.zone, 
-        ROUND((pc.zone_count::FLOAT / zt.total_count::FLOAT) * 100, 2) AS zone_percentage
-
-    FROM 
-        ${pitch_counts} pc
-    
-    JOIN 
-        zone_totals zt
-    
-    ON 
-        pc.player_name = zt.player_name AND pc.pitch_name = zt.pitch_name
-    
-    ORDER BY 
-        pc.player_name, pc.pitch_name, zone_percentage DESC;
+```sql gb_player_bb_type
+    SELECT * FROM gb_player_bb_type
 ```
 
 
@@ -157,13 +141,11 @@ Don’t believe me? Check out these tables and explanation below.<br>
 
 <DataTable data={pitch_spin_average}/>
 
-<DataTable data={group_by_bb_type} groupBy=player_name groupsOpen=false>
+<DataTable data={gb_player_bb_type} groupBy=player_name groupsOpen=false>
  	<Column id=player_name/> 
 	<Column id=pitch_name totalAgg=""/> 
-	<Column id=zone totalAgg=""/>
-    <Column id=zone_percentage totalAgg=""/>
-    <Column id=events totalAgg=""/>
-    <Column id=events_result totalAgg=""/>
+	<Column id=bb_type totalAgg=""/>
+    <Column id=pitch_result totalAgg=""/>
 </DataTable>
 
 Above are two tables. The first table shows the average spin rate of each pitcher’s 4-Seam Fastball. Notice that, among starters, Bryce Miller is ranked first, with a significantly higher spin rate than average and Logan Gilbert is ranked last with a significantly lower spin rate than average.<br>
