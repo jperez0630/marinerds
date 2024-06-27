@@ -195,7 +195,7 @@ def get_mariners_staff_data():
 df_mariners_staff = get_mariners_staff_data()
 
 def get_game_data():
-    data = statcast(start_dt='2024-03-28', end_dt='2024-06-24', team='SEA')
+    data = statcast(start_dt='2024-03-28', end_dt='2024-06-27', team='SEA')
     return data
 
 df_game_data = get_game_data()
@@ -212,6 +212,13 @@ def get_zone_results_data():
     return merge_zone_results
  
 df_groupby_zone_result = get_zone_results_data()
+
+def get_gb_bb_type():
+    data = df_game_data.loc[df_game_data['pitch_name'] == '4-Seam Fastball'].groupby(['player_name', 'pitch_name'])['bb_type'].value_counts(normalize=True).reset_index(name='pitch_result')
+    data['pitch_result'] = data['pitch_result'].astype(float).map('{:.2%}'.format)
+    return data
+
+df_gb_player_bb_type = get_gb_bb_type()
 
 local_con.sql('''
 CREATE OR REPLACE TABLE mariners_pitching_data AS
@@ -266,4 +273,9 @@ SELECT * FROM df_pitch_name_columns
 local_con.sql('''
 CREATE OR REPLACE TABLE zone_results AS
 SELECT * FROM df_groupby_zone_result
+''')
+
+local_con.sql('''
+CREATE OR REPLACE TABLE gb_player_bb_type AS
+SELECT * FROM df_gb_player_bb_type
 ''')

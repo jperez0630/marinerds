@@ -70,6 +70,53 @@ title: Who has the best 4-Seam Fastball?
         average_release_spin_rate DESC
 ```
 
+```sql pitch_counts
+    SELECT 
+        player_name, 
+        pitch_name, 
+        zone, 
+        COUNT(*) AS zone_count
+    
+    FROM 
+       game_data
+    
+    WHERE 
+        pitch_name = '4-Seam Fastball'
+    
+    GROUP BY 
+        player_name, pitch_name, zone
+```
+
+```sql zone_totals
+    SELECT 
+        player_name, 
+        pitch_name, 
+        SUM(zone_count) AS total_count
+    FROM ${pitch_counts}
+    GROUP BY player_name, pitch_name
+```
+
+```sql group_by_bb_type
+    SELECT 
+        pc.player_name, 
+        pc.pitch_name, 
+        pc.zone, 
+        ROUND((pc.zone_count::FLOAT / zt.total_count::FLOAT) * 100, 2) AS zone_percentage
+
+    FROM 
+        ${pitch_counts} pc
+    
+    JOIN 
+        zone_totals zt
+    
+    ON 
+        pc.player_name = zt.player_name AND pc.pitch_name = zt.pitch_name
+    
+    ORDER BY 
+        pc.player_name, pc.pitch_name, zone_percentage DESC;
+```
+
+
 ### Butter your Bread with a 4-Seamer Instead
 Ah, the 4-Seam Fastball.  Also known as the 4-Seamer and the Rising Fastball.  It is named thus based on how the ball is gripped by a pitcher and due to the fact that the batter sees 4 seams as the ball spins toward the plate. It is an essential part of a pitcher’s arsenal and having a good one can be the difference between spending most of your MLB career traveling on a chartered plane as opposed to a chartered bus.  Just how bread and butter is it? As of 6/21/24 the 4-Seamer comprises 35% of the pitches thrown by the M’s staff.  That’s 15% more than any other pitch.  
 
@@ -102,11 +149,22 @@ They don't call it "fastball" for nothing. With the bags full and nobody out, so
 We definitely have some flame-throwers on the M’s staff, highlighted by Munoz and Stanek who average around 98.5 MPH on their 4-Seamers. Conspicuously absent are Matt Brash and Greggory Santos who are capable of raising the heat-index significantly, but have missed significant time with injuries.<br>
 Logan Gilbert leads the way among starters at 96 MPH, which is quite unfair given his gangly limbs afford him an extension of seven and half feet.  That means that he releases the ball closer to the batter than say a more squat pitcher, thus providing the hitter with less reaction time. Bryan Woo brings up the rear among starters, averaging 94.4. And then there is Tyson Miller who trails way behind at 90.1.  Who the hell is this guy?<br>
 
-### You Gotta Spin it to Win it
-Baseball spin contributes to the lateral or sideways movement of a baseball as it travels to the plate.  A Four-Seamer typically possesses a combination of backspin and sidespin, and the average spin rate is around 2275 MHP give or take.  The spin of the ball contributes to something called the Magnus Effect. I don’t know who this Magnus guy was, but, apparently, he was a smart dude.  Basically, the rule of thumb is: the more the ball spins the less vertical break it has. Why is that important?  Well, a ball that is thrown with more spin than average will fight the force of gravity to a greater extent and stay up longer.  A good example is a high-fastball that is popped-up because the hitter, who expects more downward break gets under the ball.    
-Don’t believe me? Allow me to elaborate.<br>
+### You gotta spin it to win it.
+Baseball spin contributes to the lateral or sideways movement of a baseball as it travels to the plate.  A Four-Seamer typically possesses a combination of backspin and sidespin, and the average spin rate is around 2275 revolutions per minute (RPM), give or take.  The spin of the ball contributes to something called the Magnus Effect. I don’t know who this Magnus guy was, but, apparently, he was a smart dude.  Basically, the rule of thumb is: the more the ball spins the less vertical break it has. Why is that important?  Well, a ball that is thrown with more spin than average will fight the force of gravity to a greater extent and stay up longer.  A good example is a high-fastball that is popped-up because the hitter, who expects more downward break, gets under the ball.<br>    
+
+Don’t believe me? Check out these tables and explanation below.<br>
+
 
 <DataTable data={pitch_spin_average}/>
+
+<DataTable data={group_by_bb_type} groupBy=player_name groupsOpen=false>
+ 	<Column id=player_name/> 
+	<Column id=pitch_name totalAgg=""/> 
+	<Column id=zone totalAgg=""/>
+    <Column id=zone_percentage totalAgg=""/>
+    <Column id=events totalAgg=""/>
+    <Column id=events_result totalAgg=""/>
+</DataTable>
 
 Above are two tables. The first table shows the average spin rate of each pitcher’s 4-Seam Fastball. Notice that, among starters, Bryce Miller is ranked first, with a significantly higher spin rate than average and Logan Gilbert is ranked last with a significantly lower spin rate than average.<br>
 
@@ -116,9 +174,9 @@ Which extreme is better? It kind of depends.  As of 6/24/24. Bryce Miller’s ho
 
 
 
-### Location. Location. Location.
-It doesn’t just apply to real estate people.  A fastball thrown to the wrong spot can quickly transform into a meatball that the hitter gobbles up. For this exercise, I’ve included a diagram that splits the strike zone and periphery into zones.  In addition, I’ll be going over a table of each player that shows:
-zone_percentage: how often the pitcher throws to certain zone
+### Location Location Location
+It doesn’t just apply to real estate people.  A fastball thrown to the wrong spot can quickly transform into a meatball that the hitter gobbles up. For this exercise, I’ve included a diagram that splits the strike zone and periphery into zones. In addition, I’ll be going over a table of each player that shows:<br>
+zone_percentage: how often the pitcher throws to certain zone<br>
 hit_result: a breakdown of the results of each pitch<br><br>
 
 ![Zones](/zones.png)
