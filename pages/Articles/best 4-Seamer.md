@@ -46,6 +46,26 @@ title: Who has the best 4-Seam Fastball?
     GROUP BY 
         player_name, pitch_name
 ```
+```sql launch_speed_agg
+    SELECT 
+        player_name,
+        pitch_name,
+        ROUND(AVG(launch_speed), 2) AS "avg_launc_speed", 
+        MIN(launch_speed) AS "Min_Pitch_Speed", 
+        MAX(launch_speed) AS "Max_Pitch_Speed", 
+        COUNT(launch_speed) AS count 
+    
+    FROM 
+        game_data 
+    
+    WHERE 
+        pitch_name = '4-Seam Fastball'
+    
+
+    GROUP BY 
+        player_name, pitch_name
+```
+
 
 ```sql zone_results
     select * from zone_results
@@ -117,7 +137,7 @@ First off, let’s look at utilization.  I believe those that use the 4-Seamer m
 />
 
 ### Tyson Who?
-According to the chart above, Tyson Miller really loves to throw the heater. Tyson who? Anyhow, in a little bit we'll figure out if he throws it a lot because he's good at it or if he just doesn't have any dependable alternatives.  That goes for all M's pitchers. Bryan Woo throws it the most amongst starters so, naturally, he'll be expected to have a good one, maybe even better than Logan Gilbert, who throws it the least among starters.  Also, it’s interesting that Stanek throws the 4-Seamer 30% more than Munoz considering they both are capable of triple digit velocity.<br>
+According to the chart above, Tyson Miller really loves to throw the heater. Tyson who? Anyhow, in a little bit we'll figure out if he throws it a lot because he's good at it or if he just doesn't have any dependable alternatives.  That goes for all M's pitchers. Bryan Woo throws it the most amongst starters so, naturally, he'll be expected to have a good one, maybe even better than Logan Gilbert, who throws it the least among starters. Also, it’s interesting that Stanek throws the 4-Seamer 30% more than Munoz considering they both are capable of triple digit velocity.<br>
 
 ### Speed kills<br>
 They don't call it "fastball" for nothing. With the bags full and nobody out, sometimes you've got to rear back and just propel that ball of cowhide as fast as you can.  When the fox is in the hen house it doesn't serve to play cat and mouse.  How's that for a mixed metaphor?
@@ -132,6 +152,21 @@ They don't call it "fastball" for nothing. With the bags full and nobody out, so
 
 We definitely have some flame-throwers on the M’s staff, highlighted by Munoz and Stanek who average around 98.5 MPH on their 4-Seamers. Conspicuously absent are Matt Brash and Greggory Santos who are capable of raising the heat-index significantly, but have missed significant time with injuries.<br>
 Logan Gilbert leads the way among starters at 96 MPH, which is quite unfair given his gangly limbs afford him an extension of seven and half feet.  That means that he releases the ball closer to the batter than say a more squat pitcher, thus providing the hitter with less reaction time. Bryan Woo brings up the rear among starters, averaging 94.4. And then there is Tyson Miller who trails way behind at 90.1.  Who the hell is this guy?<br>
+
+Who has the best 4-Seam Fastball based on velocity? This is pretty cut and dry. For the starters Kirby edges out Gilbert based on usage and for the bullpen it's a tossup between Munoz and Stanek, but have to give it to Stanek again based on ussage.<br> 
+
+### Return to Sender<br>
+
+Text here <br>
+
+<BarChart 
+    data={launch_speed_agg}
+    x=player_name
+    y=Avg_Launch_Speed
+    swapXY=true
+    title="Average Release Speed"
+/>
+
 
 ### You gotta spin it to win it.
 Baseball spin contributes to the lateral or sideways movement of a baseball as it travels to the plate.  A Four-Seamer typically possesses a combination of backspin and sidespin, and the average spin rate is around 2275 revolutions per minute (RPM), give or take.  The spin of the ball contributes to something called the Magnus Effect. I don’t know who this Magnus guy was, but, apparently, he was a smart dude.  Basically, the rule of thumb is: the more the ball spins the less vertical break it has. Why is that important?  Well, a ball that is thrown with more spin than average will fight the force of gravity to a greater extent and stay up longer.  A good example is a high-fastball that is popped-up because the hitter, who expects more downward break, gets under the ball.<br>    
@@ -150,11 +185,9 @@ Don’t believe me? Check out these tables and explanation below.<br>
 
 Above are two tables. The first table shows the average spin rate of each pitcher’s 4-Seam Fastball. Notice that, among starters, Bryce Miller is ranked first, with a significantly higher spin rate than average and Logan Gilbert is ranked last with a significantly lower spin rate than average.<br>
 
-The second chart shows the distribution of bb_type (fly-ball, ground-ball, popup or line-drive).  Notice that Gilbert’s ground-ball rate is twice that of Bryce Millers. This illustrates how two extreme spin rates can mess with a hitters timing to either induce fly-balls or ground-balls.<br>
+The second chart shows the distribution of bb_type (fly-ball, ground-ball, popup or line-drive). Notice that Gilbert’s ground-ball rate is twice that of Bryce Millers. This illustrates how two extreme spin rates can mess with a hitters timing to either induce fly-balls or ground-balls.<br>
 
-Which extreme is better? It kind of depends.  As of 6/24/24. Bryce Miller’s home and away ERA is 1.82 vs 6.28.  Why? Because of the good ol’ marine layer which turns home runs into lazy fly balls in T-Mobile Park.  Logan Gilberts splits are much less dramatic: 2.66 vs 2.75.  So, if you’re at home you want Miller but if you’re on the road, you definitely want Gilbert. 
-
-
+So, who has the best Four-Seam Fastball based on Spin-Rate? It kind of depends.  As of 6/24/24. Bryce Miller’s home and away ERA is 1.82 vs 6.28.  Why such a large disparity? Because of the good ol’ marine layer, which turns what would be home runs in other parks into lazy fly balls in T-Mobile Park.  Logan Gilberts splits, since he induces a much lower percentage of fly-balls, are much less dramatic: 2.66 vs 2.75. So, if you’re at home you want Miller but if you’re on the road, you definitely want Gilbert.<br> 
 
 ### Location Location Location
 It doesn’t just apply to real estate people.  A fastball thrown to the wrong spot can quickly transform into a meatball that the hitter gobbles up. For this exercise, I’ve included a diagram that splits the strike zone and periphery into zones. In addition, I’ll be going over a table of each player that shows:<br>
@@ -194,7 +227,7 @@ He hasn’t been particularly good at painting the upper corners.  Zone 1   sees
 We’ll wrap this section up with Munoz, skipping over some bullpen guys.  Munoz primarily is up in zone 11 and gives up a single 20% of the time, which is startling considering his fastball averages 98.5 MPH and should be difficult to reach for right handers and up-and-in to lefties.  He doesn’t go low very often so batters seem to be hunting high 4-Seamers. <br>
 Munoz prefers the dynamic of going up-and-in or up-and away with his 4-Seamer and down with his slider.  When he does try to get down with his 4-Seamer, it’s not pretty. Zone 14 sees a walk 100% of the time and Zone 9 sees a single 100% of the time. He’s a little better when going down-and-away to right handers, but he rarely goes there.<br>
 
-So, who has the best 4-Seamer?  A little surprised Munos doesn’t have more success with it, considering the velocity he’s capable of, but he just doesn’t seem to be able to move it around like he should.  Gilbert uses his 4-Seamer the least. He manages to move it around fairly effectively but is not able to own the upper-half the way that is needed to have a dominant 4-Seamer.<br> 
+So, who has the best 4-Seamer based on location?  A little surprised Munos doesn’t have more success with it, considering the velocity he’s capable of, but he just doesn’t seem to be able to move it around like he should.  Gilbert uses his 4-Seamer the least, but he manages to move it around fairly effectively; however, he is not able to own the upper-half the way that is needed to have a dominant 4-Seamer.<br> 
 
-All and all, I have to give the nod to Kirby. He limits walks and extra-base hits and paints the corners like nobody’s business.   Woo is a close second, which is a good thing considering he throws it over 50% of the time.  He’s done a fantastic job of avoiding the extra-base hit for the most part and he’s good at painting the upper corners. The only thing is, he may be flirting with disaster being middle-middle as much as he is.<br>  
+All in all, I have to give the nod to Kirby. He limits walks and extra-base hits and paints the corners like nobody’s business. Woo is a close second, which is a good thing considering he throws it over 50% of the time.  He’s done a fantastic job of avoiding the extra-base hit for the most part and he’s good at painting the upper corners. The only thing is, he may be flirting with disaster being middle-middle as much as he is.<br>  
  
