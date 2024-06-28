@@ -151,6 +151,7 @@ They don't call it "fastball" for nothing. With the bags full and nobody out, so
 />
 
 We definitely have some flame-throwers on the M’s staff, highlighted by Munoz and Stanek who average around 98.5 MPH on their 4-Seamers. Conspicuously absent are Matt Brash and Greggory Santos who are capable of raising the heat-index significantly, but have missed significant time with injuries.<br>
+
 Logan Gilbert leads the way among starters at 96 MPH, which is quite unfair given his gangly limbs afford him an extension of seven and half feet.  That means that he releases the ball closer to the batter than say a more squat pitcher, thus providing the hitter with less reaction time. Bryan Woo brings up the rear among starters, averaging 94.4. And then there is Tyson Miller who trails way behind at 90.1.  Who the hell is this guy?<br>
 
 Who has the best 4-Seam Fastball based on velocity? This is pretty cut and dry. For the starters Kirby edges out Gilbert based on usage and for the bullpen it's a tossup between Munoz and Stanek, but have to give it to Stanek again based on ussage.<br> 
@@ -162,7 +163,7 @@ Text here <br>
 <BarChart 
     data={launch_speed_agg}
     x=player_name
-    y=Avg_Launch_Speed
+    y=avg_launch_speed
     swapXY=true
     title="Average Release Speed"
 />
