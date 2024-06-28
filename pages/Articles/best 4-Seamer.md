@@ -158,8 +158,8 @@ Logan Gilbert leads the way among starters at 96 MPH, which is quite unfair give
 Who has the best 4-Seam Fastball based on velocity? This is pretty cut and dry. For the starters Kirby edges out Gilbert based on usage and for the bullpen it's a tossup between Munoz and Stanek, but have to give it to Stanek again based on ussage.<br> 
 
 ### Return to Sender<br>
+Launch Speed or Exit Velocity, in a nutshell, is how fast a baseball travels when hit off a bat. Typically, the faster the ball travels the less chance it has of being fielded. Of course, this isn't always the case as screaming line drives sometimes, inexplicably, find a glove and softly hit popups somehow find the chinks in the defensive armor.    
 
-Text here <br>
 
 <BarChart 
     data={launch_speed_agg}
@@ -169,6 +169,7 @@ Text here <br>
     title="Average Launch Speed"
 />
 
+We won’t spend too much time on this particular subject. Suffice to say that Bryan Woo's 4 Seamer is the slowest, on average, hit ball among starters and Gabe Spier leads the way among relievers. Considering that every pitcher on the M’s staff has a launch speed significantly less than what is considered a hard-hit ball (95 MPH), the M’s staff, as a whole, is doing very well in this category.   
 
 ### You gotta spin it to win it.
 Baseball spin contributes to the lateral or sideways movement of a baseball as it travels to the plate.  A Four-Seamer typically possesses a combination of backspin and sidespin, and the average spin rate is around 2275 revolutions per minute (RPM), give or take.  The spin of the ball contributes to something called the Magnus Effect. I don’t know who this Magnus guy was, but, apparently, he was a smart dude.  Basically, the rule of thumb is: the more the ball spins the less vertical break it has. Why is that important?  Well, a ball that is thrown with more spin than average will fight the force of gravity to a greater extent and stay up longer.  A good example is a high-fastball that is popped-up because the hitter, who expects more downward break, gets under the ball.<br>    
