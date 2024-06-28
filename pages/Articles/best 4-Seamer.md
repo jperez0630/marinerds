@@ -120,6 +120,9 @@ title: Who has the best 4-Seam Fastball?
     SELECT * FROM gb_player_bb_type
 ```
 
+```sql gb_player_events
+    SELECT * FROM gb_player_events
+```
 
 ### Butter your Bread with a 4-Seamer Instead
 Ah, the 4-Seam Fastball.  Also known as the 4-Seamer and the Rising Fastball.  It is named thus based on how the ball is gripped by a pitcher and due to the fact that the batter sees 4 seams as the ball spins toward the plate. It is an essential part of a pitcher’s arsenal and having a good one can be the difference between spending most of your MLB career traveling on a chartered plane as opposed to a chartered bus.  Just how bread and butter is it? As of 6/21/24 the 4-Seamer comprises 35% of the pitches thrown by the M’s staff.  That’s 15% more than any other pitch.  
@@ -234,3 +237,13 @@ So, who has the best 4-Seamer based on location?  A little surprised Munos doesn
 
 All in all, I have to give the nod to Kirby. He limits walks and extra-base hits and paints the corners like nobody’s business. Woo is a close second, which is a good thing considering he throws it over 50% of the time.  He’s done a fantastic job of avoiding the extra-base hit for the most part and he’s good at painting the upper corners. The only thing is, he may be flirting with disaster being middle-middle as much as he is.<br>  
  
+### Proof is in the pudding<br>
+
+Velocity, exit velocity, spin-rate and location are all useful data but when it comes down to it, what we really want to get down to is effectiveness. Is the pitcher limiting walks, missing bats and is the the ball, when hit, going to where they are instead of where they ain't. Let's take a look at pitch results and see what stands out.<br>
+
+<DataTable data={gb_player_events} groupBy=player_name groupsOpen=false>
+ 	<Column id=player_name/> 
+	<Column id=pitch_name totalAgg=""/> 
+	<Column id=events totalAgg=""/>
+    <Column id=result_percent totalAgg=""/>
+</DataTable>

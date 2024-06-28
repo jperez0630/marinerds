@@ -220,6 +220,13 @@ def get_gb_bb_type():
 
 df_gb_player_bb_type = get_gb_bb_type()
 
+def get_gb_player_events():
+    data = df_game_data.loc[df_game_data['pitch_name'] == '4-Seam Fastball'].groupby(['player_name', 'pitch_name'])['events'].value_counts(normalize=True).reset_index(name='result_percent')
+    data['result_percent'] = data['result_percent'].astype(float).map('{:.2%}'.format)
+    return data
+
+df_gb_player_events = get_gb_player_events()
+
 local_con.sql('''
 CREATE OR REPLACE TABLE mariners_pitching_data AS
 SELECT * FROM df_mariners_staff
@@ -278,4 +285,9 @@ SELECT * FROM df_groupby_zone_result
 local_con.sql('''
 CREATE OR REPLACE TABLE gb_player_bb_type AS
 SELECT * FROM df_gb_player_bb_type
+''')
+
+local_con.sql('''
+CREATE OR REPLACE TABLE gb_player_events AS
+SELECT * FROM df_gb_player_events
 ''')
