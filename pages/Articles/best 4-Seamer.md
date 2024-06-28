@@ -50,7 +50,7 @@ title: Who has the best 4-Seam Fastball?
     SELECT 
         player_name,
         pitch_name,
-        ROUND(AVG(launch_speed), 2) AS "avg_launc_speed", 
+        ROUND(AVG(launch_speed), 2) AS "avg_launch_speed", 
         MIN(launch_speed) AS "Min_Pitch_Speed", 
         MAX(launch_speed) AS "Max_Pitch_Speed", 
         COUNT(launch_speed) AS count 
@@ -126,6 +126,7 @@ Ah, the 4-Seam Fastball.  Also known as the 4-Seamer and the Rising Fastball.  I
 
 ### Give Us This Day our Daily Heater<br>
 So, what makes a good 4-Seamer so pivotal? If located well and accompanied with requisite velocity, it is nearly unhittable. However, hurling a ball as hard as you can consistency exactly where you want it is tantamount to not pissing on the toilet rim while doing jumping-jacks. It's not easy folks. With that being said, we're going to take a look at the M's Staff and figure out who has the best 4-Seam-Fastball.  
+
 First off, let’s look at utilization.  I believe those that use the 4-Seamer more than others should be granted special consideration over those that do not.  Afterall, we want to not only award success, we want to recognize consistent success. 
 
 <BarChart 
@@ -165,7 +166,7 @@ Text here <br>
     x=player_name
     y=avg_launch_speed
     swapXY=true
-    title="Average Release Speed"
+    title="Average Launch Speed"
 />
 
 
