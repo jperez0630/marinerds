@@ -75,6 +75,7 @@ def get_mariner_game_logs():
 
 df_mariner_game_logs = get_mariner_game_logs()
 
+
 df_mariner_game_logs.loc[(
     df_mariner_game_logs[
         'Rslt_Outcome'

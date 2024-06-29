@@ -8,6 +8,8 @@ title: Who has the best 4-Seam Fastball?
     
     FROM 
         game_data
+    
+    --WHERE game_date <= '2024-06-29'
 
     GROUP BY 
         player_name, pitch_name
@@ -42,7 +44,9 @@ title: Who has the best 4-Seam Fastball?
     WHERE 
         pitch_name = '4-Seam Fastball'
     
-
+    --AND 
+    --    game_date = <= '2024-06-29'
+    
     GROUP BY 
         player_name, pitch_name
 ```
@@ -60,6 +64,9 @@ title: Who has the best 4-Seam Fastball?
     
     WHERE 
         pitch_name = '4-Seam Fastball'
+    
+    --AND 
+    --   game_date = <= '2024-06-29'
     
 
     GROUP BY 
@@ -83,6 +90,9 @@ title: Who has the best 4-Seam Fastball?
     WHERE 
         pitch_name = '4-Seam Fastball'
     
+    --AND 
+    --    game_date = <= '2024-06-29'
+    
     GROUP BY 
         player_name, pitch_name
     
@@ -102,6 +112,9 @@ title: Who has the best 4-Seam Fastball?
     
     WHERE 
         pitch_name = '4-Seam Fastball'
+    
+    WHERE 
+        game_date = <= '2024-06-29'
     
     GROUP BY 
         player_name, pitch_name, zone
