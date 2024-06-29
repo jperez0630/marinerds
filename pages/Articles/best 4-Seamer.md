@@ -191,9 +191,9 @@ Don’t believe me? Check out these tables and explanation below.<br>
 
 Above are two tables. The first table shows the average spin rate of each pitcher’s 4-Seam Fastball. Notice that, among starters, Bryce Miller is ranked first, with a significantly higher spin rate than average and Logan Gilbert is ranked last with a significantly lower spin rate than average.<br>
 
-The second chart shows the distribution of bb_type (fly-ball, ground-ball, popup or line-drive). Notice that Gilbert’s ground-ball rate is twice that of Bryce Millers. This illustrates how two extreme spin rates can mess with a hitters timing to either induce fly-balls or ground-balls.<br>
+The second chart shows the distribution of batted ball types (fly ball, ground ball, popup or line-drive). Notice that Gilbert’s ground ball rate is twice that of Bryce Millers. This illustrates how two extreme spin rates can mess with a hitters timing to either induce fly balls or ground balls.<br>
 
-So, who has the best Four-Seam Fastball based on Spin-Rate? It kind of depends.  As of 6/24/24. Bryce Miller’s home and away ERA is 1.82 vs 6.28.  Why such a large disparity? Because of the good ol’ marine layer, which turns what would be home runs in other parks into lazy fly balls in T-Mobile Park.  Logan Gilberts splits, since he induces a much lower percentage of fly-balls, are much less dramatic: 2.66 vs 2.75. So, if you’re at home you want Miller but if you’re on the road, you definitely want Gilbert.<br> 
+So, who has the best Four-Seam Fastball based on Spin-Rate? It kind of depends. As of 6/24/24. Bryce Miller’s home and away ERA is 1.82 vs 6.28.  Why such a large disparity? Because of the good ol’ marine layer, which turns what would be home runs in other parks into lazy fly balls in T-Mobile Park.  Logan Gilberts splits, since he induces a much lower percentage of fly-balls, are much less dramatic: 2.66 vs 2.75. So, if you’re at home you want Miller but if you’re on the road, you definitely want Gilbert.<br> 
 
 ### Location Location Location
 It doesn’t just apply to real estate people.  A fastball thrown to the wrong spot can quickly transform into a meatball that the hitter gobbles up. For this exercise, I’ve included a diagram that splits the strike zone and periphery into zones. In addition, I’ll be going over a table of each player that shows:<br>
@@ -239,7 +239,7 @@ All in all, I have to give the nod to Kirby. He limits walks and extra-base hits
  
 ### Proof is in the pudding<br>
 
-Velocity, exit velocity, spin-rate and location are all useful data but when it comes down to it, what we really want to get down to is effectiveness. Is the pitcher limiting walks, missing bats and is the the ball, when hit, going to where they are instead of where they ain't. Let's take a look at pitch results and see what stands out.<br>
+Velocity, Exit Velocity, Spin Rate and Location are all useful data but when it comes down to it, what we really want is to measure effectiveness. Is the pitcher limiting Walks, missing bats and is the ball, when hit, landing where they are instead of where they ain't. Let's take a look at pitch results and see what stands out.<br>
 
 <DataTable data={gb_player_events} groupBy=player_name groupsOpen=false>
  	<Column id=player_name/> 
@@ -247,3 +247,7 @@ Velocity, exit velocity, spin-rate and location are all useful data but when it 
 	<Column id=events totalAgg=""/>
     <Column id=result_percent totalAgg=""/>
 </DataTable>
+
+Regarding the relievers, it’s a bit of a mixed bag. Bauman’s Home Run and Walk Rate are higher than his Strikeout rate. Saucedo’s Walk Rate is 66.67%. There are too many Walks across the board. I really like Speir’s Strikeout rate of 40.91% but I don’t like the 13.64% Walk Rate.  I have to go with Munoz based on his relatively low Walk Rate and high strikeout rate.<br> 
+
+### 
