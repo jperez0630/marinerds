@@ -245,8 +245,8 @@ Now it’s time to bow down to Bauman. On second thought,  probably not.  In the
 Kirby follows the formula of preferring Zones 11 and 12. His strikeout rate is superb for both zones but there is a wide discrepancy in walks between the two zones.  He gives up a lot of hits when locating in zone 2, fortunately the majority are singles.  As you might expect, Kirby is good at painting the upper corners. Zone 1 sees a strikeout or field out 90% of the time and zone 4 sees a strikeout or field-out 70% of the time, which is extraordinary.<br>
 
 What really stands out with Kirby is his walk distribution.  44% of his walks come in Zone 11.  I’m guessing that’s him missing when trying to go up-and-away to righties.  He has no walks going down and away.  Of course, we’re talking about a miniscule number of walks to begin with.  It’s a stark difference between him and Castillo who seems to be trying to get hitters to chase the low Four-Seamer out of the zone.<br>
-We’ll quickly go over Spier. His most frequented zone, 12, sees a walk 50% of the time.  Far too much. He’s been good at limiting extra base hits, especially homers.<br>
-We’ll skip Hancock since he’s in the minors and has had limited innings.<br>
+
+In the interest of time, we’ll quickly go over Spier. His most frequented zone, 12, sees a walk 50% of the time.  Far too much. He’s been good at limiting extra base hits, especially homers.<br>
 
 That now takes us to Gilbert. He seems to move the 4-Seamer around more than any M’s pitcher.  His favorite spot is zone 11, where he gets a strikeout 75% of the time and a walk 25%.  No hits up there, which is interesting.  Here’s a statistical anomaly: he’s equal measure in zones 5,6 and 12 at 10%.  Too much in the mid-section of the plate, by my reckoning.<br> 
 He hasn’t been particularly good at painting the upper corners.  Zone 1  has a 18% homer rate. Fortunately, he only locates there around 8% of the time. He’s better in zone 3 where he only pitches 5% of time and gives up doubles at an 11% clip.  He prefers to paint the lower half of the zone more than any other M’s pitcher so far.<br>   
@@ -271,6 +271,8 @@ Velocity, exit velocity, spin rate and location are all useful data but when it 
 
 
 When it comes to the starters, there is a lot to like. Castillo and Kirby’s 32% strikeout rate. Kirby’s miniscule walk rate of 3.4%.  The fact that Woo gives up an extra-base hit no more than 1.43% of the time. <br>
-Regarding the relievers, it’s a bit of a mixed bag. Bauman’s Home Run and Walk Rate are higher than his strikeout rate. Saucedo’s walk Rate is 66.67%. There are too many walks full stop.<br>
+
+Regarding the relievers, it’s a bit of a mixed bag. Bauman’s home run and walk Rate are higher than his strikeout rate. Saucedo’s walk Rate is 66.67%. There are too many walks full stop. 
+
 Who has the best 4-Seamer based on results? For limiting extra-base hits, I have to go with Woo. 
 
