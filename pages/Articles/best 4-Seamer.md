@@ -213,8 +213,8 @@ So, who has the best Four-Seam Fastball based on Spin-Rate? It kind of depends. 
 
 ### Location Location Location
 It doesn’t just apply to real estate people.  A fastball thrown to the wrong spot can quickly transform into a meatball that the hitter gobbles up. For this exercise, I’ve included a diagram that splits the strike zone and periphery into zones. In addition, I’ll be going over a table of each player that shows:<br>
-zone_percentage: how often the pitcher throws to certain zone<br>
-hit_result: a breakdown of the results of each pitch<br><br>
+    zone percentage: how often the pitcher throws to certain zone<br>
+    hit result: a breakdown of the results of each pitch<br><br>
 
 
 ![Zones](/zones.png)
