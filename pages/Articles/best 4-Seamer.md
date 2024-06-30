@@ -242,7 +242,7 @@ On down the line we go.  Castillo, like everyone else so far, likes to paint the
 
 Now it’s time to bow down to Bauman. On second thought,  probably not.  In the interest of time, we’ll go over him expeditiously.  He likes Zone 11 and 14 quite a bit but has far too many walks.  Zone 9 is a very effective location for him.  He needs to stay away from Zones 4 and 6, where he’s giving up a homer 33% of the time.<br>
 
-Kirby follows the formula of preferring Zones 11 and 12.   His strikeout rate is superb for both zones but there is a wide discrepancy in walks between the two zones.  He gives up a lot of hits when locating in zone 2, fortunately the majority are singles.  As you might expect, Kirby is good at painting the upper corners. Zone 1 sees a strikeout or field out 90% of the time and zone 4 sees a strikeout or field-out 70% of the time, which is extraordinary.<br>
+Kirby follows the formula of preferring Zones 11 and 12. His strikeout rate is superb for both zones but there is a wide discrepancy in walks between the two zones.  He gives up a lot of hits when locating in zone 2, fortunately the majority are singles.  As you might expect, Kirby is good at painting the upper corners. Zone 1 sees a strikeout or field out 90% of the time and zone 4 sees a strikeout or field-out 70% of the time, which is extraordinary.<br>
 
 What really stands out with Kirby is his walk distribution.  44% of his walks come in Zone 11.  I’m guessing that’s him missing when trying to go up-and-away to righties.  He has no walks going down and away.  Of course, we’re talking about a miniscule number of walks to begin with.  It’s a stark difference between him and Castillo who seems to be trying to get hitters to chase the low Four-Seamer out of the zone.<br>
 We’ll quickly go over Spier. His most frequented zone, 12, sees a walk 50% of the time.  Far too much. He’s been good at limiting extra base hits, especially homers.<br>
@@ -260,7 +260,7 @@ All in all, I have to give the nod to Kirby. He limits walks and extra-base hits
 
  
 ### Proof is in the pudding<br>
-Velocity, Exit Velocity, Spin Rate and Location are all useful data but when it comes down to it, what we really want is to measure effectiveness. Is the pitcher limiting walks, missing bats and is the ball, when hit, landing where they are instead of where they ain't. Let's take a look at pitch results and see what stands out.<br>
+Velocity, exit velocity, spin rate and location are all useful data but when it comes down to it, what we really want is to measure effectiveness. Is the pitcher limiting walks, missing bats and is the ball, when hit, landing where they are instead of where they ain't. Let's take a look at pitch results and see what stands out.<br>
 
 <DataTable data={gb_player_events} groupBy=player_name groupsOpen=false>
  	<Column id=player_name/> 
@@ -269,6 +269,8 @@ Velocity, Exit Velocity, Spin Rate and Location are all useful data but when it 
     <Column id=result_percent totalAgg=""/>
 </DataTable>
 
-Regarding the relievers, it’s a bit of a mixed bag. Bauman’s Home Run and Walk Rate are higher than his Strikeout rate. Saucedo’s Walk Rate is 66.67%. There are too many Walks across the board. I really like Speir’s Strikeout rate of 40.91% but I don’t like the 13.64% Walk Rate.  I have to go with Munoz based on his relatively low Walk Rate and high strikeout rate.<br> 
 
-### 
+When it comes to the starters, there is a lot to like. Castillo and Kirby’s 32% strikeout rate. Kirby’s miniscule walk rate of 3.4%.  The fact that Woo gives up an extra-base hit no more than 1.43% of the time. <br>
+Regarding the relievers, it’s a bit of a mixed bag. Bauman’s Home Run and Walk Rate are higher than his strikeout rate. Saucedo’s walk Rate is 66.67%. There are too many walks full stop.<br>
+Who has the best 4-Seamer based on results? For limiting extra-base hits, I have to go with Woo. 
+
