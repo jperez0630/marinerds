@@ -67,6 +67,13 @@ value=Run_Differential
 
 <br>
 
+<LineChart 
+    data={rbi_rolling_avg}  
+    x=Date
+    y=rbi_rolling_avg
+    title="RBI Rolling Average"
+/>
+
 <Tabs>
     <Tab label="Team Batting">
         <Dropdown
@@ -140,12 +147,7 @@ value=Run_Differential
 
         This Line graph shows the Moving Average for Runs Batted In. The window size is 5; therefore each point represents the average score the Mariners have produced over multiple 5 game sets  
 
-        <LineChart 
-            data={rbi_rolling_avg}  
-            x=Date
-            y=rbi_rolling_avg
-            title="RBI Rolling Average"
-        />
+
     </Tab>
     <Tab label="Team Pitching">
         <Dropdown
