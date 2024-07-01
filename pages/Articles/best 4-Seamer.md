@@ -270,11 +270,11 @@ Velocity, exit velocity, spin rate and location are all useful data but when it 
 </DataTable>
 
 
-When it comes to the starters, there is a lot to like. Castillo and Kirby’s 32% strikeout rate. Kirby’s miniscule walk rate of 3.4% and the fact that Woo gives up an extra-base hit no more than 1.43% of the time. <br>
+When it comes to the starters, there is a lot to like. Castillo and Kirby’s 32% strikeout rate. Kirby’s miniscule walk rate of 3.4% and the fact that Woo gives up an extra-base hit no more than 1.43% of the time.<br>
 
 Regarding the relievers, it’s a bit of a mixed bag. Bauman’s home run and walk Rate are higher than his strikeout rate. Saucedo’s walk Rate is 66.67%. There are too many walks full stop. On the bright side, Thornton is getting an out 65% of the time with his 4-Seamer.<>  
 
-Who has the best 4-Seamer based on results? For limiting extra-base hits, this goes to Woo. Munoz is head-and-shoulders above the rest among relievers with his 29.73% strikeout rate and decent walk rate of 8.11%<br>
+Who has the best 4-Seamer based on results? For limiting extra-base hits, this goes to Woo. Munoz is head-and-shoulders above the rest among relievers with his 29.73% strikeout rate and decent walk rate of 8.11%.<br>
 
 ### Final Verdict
 The Mariners have some elite 4-Seam slingers, that much cannot be denied.  Munoz has maybe the most unhittable 4-Seamer when located properly.  Logan Gilbert gets a double play out of his almost as often as he gives up a home run and he really moves it around very well.  Castillo, if he could just cut down on his walks, would be a strong candidate for best 4-Seamer.<br>
