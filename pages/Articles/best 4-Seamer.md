@@ -282,8 +282,8 @@ The Mariners have some elite 4-Seam slingers, that much cannot be denied.  Munoz
 Based on his ridiculously low extra-base hits allowed, I wanted to go with Woo, but the fact that he has been hurt so much this year has really limited his innings.<br>  
 So, who has the best 4-Seam Fastball overall? For having stellar command, plus velocity, slightly above average spin and exceptional results to boot, let’s crown George Kirby as  having the best 4-Seam Fastball on the M’s Staff.<br>
 
-## Puttin a bow on it
-Definitely fun seeing how well the M’s utilize the 4-Seamer.  The plan is to do a similar exercise with the Sinker and Slider as well 
+## Putting a bow on it
+Definitely fun seeing how well the M’s utilize the 4-Seamer.  The plan is to do a similar exercise with the Sinker and Slider as well. 
 Until next time.<br>  
 
 Go M’s!
