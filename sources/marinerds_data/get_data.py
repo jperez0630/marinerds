@@ -17,6 +17,8 @@ def get_most_recent_date():
     yesterday = yesterday.strftime("%Y-%m-%d")
     return yesterday
 
+yesterday = get_most_recent_date()
+
 def get_team_pitching_stats():
     data = team_pitching(2024)
     return data
@@ -197,7 +199,7 @@ def get_mariners_staff_data():
 df_mariners_staff = get_mariners_staff_data()
 
 def get_game_data():
-    data = statcast(start_dt='2024-03-28', end_dt='2024-06-27', team='SEA')
+    data = statcast(start_dt='2024-03-28', end_dt=yesterday, team='SEA')
     return data
 
 df_game_data = get_game_data()
