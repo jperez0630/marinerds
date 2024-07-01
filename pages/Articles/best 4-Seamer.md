@@ -272,7 +272,19 @@ Velocity, exit velocity, spin rate and location are all useful data but when it 
 
 When it comes to the starters, there is a lot to like. Castillo and Kirby’s 32% strikeout rate. Kirby’s miniscule walk rate of 3.4% and the fact that Woo gives up an extra-base hit no more than 1.43% of the time. <br>
 
-Regarding the relievers, it’s a bit of a mixed bag. Bauman’s home run and walk Rate are higher than his strikeout rate. Saucedo’s walk Rate is 66.67%. There are too many walks full stop. On the bright side, Thornton is getting and out 65% of the time with his 4-Seamer.  
+Regarding the relievers, it’s a bit of a mixed bag. Bauman’s home run and walk Rate are higher than his strikeout rate. Saucedo’s walk Rate is 66.67%. There are too many walks full stop. On the bright side, Thornton is getting an out 65% of the time with his 4-Seamer.<>  
 
-Who has the best 4-Seamer based on results? For limiting extra-base hits, I have to go with Woo. Munoz is head-and-shoulders above the rest among relievers with his 29.73% strikeout rate and decent walk rate of 8.11%
+Who has the best 4-Seamer based on results? For limiting extra-base hits, this goes to Woo. Munoz is head-and-shoulders above the rest among relievers with his 29.73% strikeout rate and decent walk rate of 8.11%<br>
+
+### Final Verdict
+The Mariners have some elite 4-Seam slingers, that much cannot be denied.  Munoz has maybe the most unhittable 4-Seamer when located properly.  Logan Gilbert gets a double play out of his almost as often as he gives up a home run and he really moves it around very well.  Castillo, if he could just cut down on his walks, would be a strong candidate for best 4-Seamer.<br>
+Based on his ridiculously low extra-base hits allowed, I wanted to go with Woo, but the fact that he has been hurt so much this year has really limited his innings.<br>  
+So, who has the best 4-Seam Fastball overall? For having stellar command, plus velocity, slightly above average spin and exceptional results to boot, let’s crown George Kirby as  having the best 4-Seam Fastball on the M’s Staff.<br>
+
+## Puttin a bow on it
+Definitely fun seeing how well the M’s utilize the 4-Seamer.  The plan is to do a similar exercise with the Sinker and Slider as well 
+Until next time.<br>  
+
+Go M’s! 
+
 
