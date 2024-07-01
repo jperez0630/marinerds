@@ -273,7 +273,7 @@ Velocity, exit velocity, spin rate and location are all useful data but when it 
 
 When it comes to the starters, there is a lot to like. Castillo and Kirby’s 32% strikeout rate. Kirby’s miniscule walk rate of 3.4% and the fact that Woo gives up an extra-base hit no more than 1.43% of the time.<br>
 
-Regarding the relievers, it’s a bit of a mixed bag. Bauman’s home run and walk Rate are higher than his strikeout rate. Saucedo’s walk Rate is 66.67%. There are too many walks full stop. On the bright side, Thornton is getting an out 65% of the time with his 4-Seamer.<>  
+Regarding the relievers, it’s a bit of a mixed bag. Bauman’s home run and walk Rate are higher than his strikeout rate. Saucedo’s walk Rate is 66.67%. There are too many walks full stop. On the bright side, Thornton is getting an out 65% of the time with his 4-Seamer.<br>  
 
 Who has the best 4-Seamer based on results? For limiting extra-base hits, this goes to Woo. Munoz is head-and-shoulders above the rest among relievers with his 29.73% strikeout rate and decent walk rate of 8.11%.<br>
 
@@ -286,6 +286,4 @@ So, who has the best 4-Seam Fastball overall? For having stellar command, plus v
 Definitely fun seeing how well the M’s utilize the 4-Seamer.  The plan is to do a similar exercise with the Sinker and Slider as well 
 Until next time.<br>  
 
-Go M’s! 
-
-Test.
+Go M’s!
