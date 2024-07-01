@@ -112,7 +112,7 @@ value=Run_Differential
         Here we are looking at the correlation between On Base Percentage (OBP) and the the amount of runs a team has scored (R).<br>
         What is striking here is the lockstep connection between the two.<br>
         Feel free to adjust the dropdowns to devise your own scenarios<br>
-        Note: I will be changing this to runs per game to give a more accurate account
+        
 
 
         <ScatterPlot 
