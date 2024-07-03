@@ -6,7 +6,7 @@ title: Marinerds Blog
 
 ### Greetings baseball fans and long suffering Seattle Mariners faithful.<br>
 
-Wecome to the inaugural edition of the of the Marinerds BLOG. In the grand scheme of things, with all the competing interests out there, perhaps the world isn't exactly pining for another sports blog.
+Wecome to the inaugural edition of the of the Marinerds Blog. In the grand scheme of things, with all the competing interests out there, perhaps the world isn't exactly pining for another sports blog.
 Be that as it may, I'm going to take advantage of what I feel is a lull in quality distractions right now. In fact, the way I see it, 
 Marvel can't make a decent movie to save its proverbial life. The vast majority of popular music is indecipherable noise. 
 Books? Who reads books anymore? TV, once a huge time suck, now ruined by the proliferation of streaming services that have managed to 
