@@ -67,6 +67,8 @@ value=Run_Differential
 
 <br>
 
+This Line graph shows the 5 Day moving Average for the Mariners Runs Batted in.
+
 <LineChart 
     data={rbi_rolling_avg}  
     x=Date
@@ -145,7 +147,7 @@ value=Run_Differential
             series=Team
         />  
 
-        This Line graph shows the Moving Average for Runs Batted In. The window size is 5; therefore each point represents the average score the Mariners have produced over multiple 5 game sets  
+          
 
 
     </Tab>

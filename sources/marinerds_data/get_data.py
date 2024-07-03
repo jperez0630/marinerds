@@ -6,26 +6,39 @@ from pathlib import Path
 import duckdb
 
 
- 
+#Part 1: Establish connection to duckdb database, wich is stored in a file named marinerds_data.duckdb 
+# This file contains a database with multiple tables that are uploaded to the evidence.app through VSCode
 
 con = duckdb.connect(f'{Path.cwd()}/marinerds_data.duckdb')
 local_con = con.cursor()
 
 
-def get_most_recent_date():
+
+def get_date_yesterday():
+    '''
+    This function provides previous day's date in string format
+    '''
     yesterday = datetime.date.today() - datetime.timedelta(days=1)
     yesterday = yesterday.strftime("%Y-%m-%d")
     return yesterday
 
-yesterday = get_most_recent_date()
+yesterday = get_date_yesterday()
+
 
 def get_team_pitching_stats():
+    '''
+    Function that pulls in data regarding MLB team pitching statistics
+    '''
     data = team_pitching(2024)
     return data
 
-df_team_pitching_stats =   get_team_pitching_stats()
+df_team_pitching_stats =  get_team_pitching_stats()
+
 
 def get_team_pitching_columns():
+    '''
+    This function returns a list of columns from the 
+    '''
     data = df_team_pitching_stats.columns.to_frame().reset_index()
     truncated_data = data[['index']].copy()
     return truncated_data
