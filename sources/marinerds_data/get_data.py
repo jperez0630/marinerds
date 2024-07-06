@@ -37,7 +37,8 @@ df_team_pitching_stats =  get_team_pitching_stats()
 
 def get_team_pitching_columns():
     '''
-    This function returns a list of columns from the 
+    This function returns a list of columns from df_team_pitching_stats data frame. 
+    This is used in a drop-down for Team Pitching Stats
     '''
     data = df_team_pitching_stats.columns.to_frame().reset_index()
     truncated_data = data[['index']].copy()
@@ -48,6 +49,9 @@ df_team_pitching_stats_columns = get_team_pitching_columns()
 
 
 def get_team_batting_stats():
+    '''
+    Pulls in data regarding MLB team batting
+    '''
     data = team_batting(2024)
     return data
 
@@ -55,6 +59,10 @@ df_team_batting_stats = get_team_batting_stats()
 
 
 def get_team_batting_columns():
+    '''
+    This function returns a list of columns from df_team_batting_stats data frame. 
+    This is used in a drop-down for Team Batting Stats
+    '''
     data = df_team_batting_stats.columns.to_frame().reset_index()
     truncated_data = data[['index']].copy()
     return truncated_data
@@ -63,6 +71,10 @@ df_team_batting_stats_columns = get_team_batting_columns()
 
 
 def get_rolling_avg(stat):
+    '''
+    This takes the data from the mariners game logs and calculates the
+    5 day rolling average of Runs Batted In.
+    '''
     batting_logs = team_game_logs(2024, "SEA")
     batting_logs['Date'] = batting_logs['Date'].str.replace(r'\s\(\d+\)', '', regex=True)
     batting_logs['Date'] = pd.to_datetime(batting_logs['Date'] + ' 2024')
