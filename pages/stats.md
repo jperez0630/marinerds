@@ -167,13 +167,13 @@ This Line graph shows the 5 Day moving Average for the Mariners Runs Batted in.
         title="Team Pitching Stats"
     />
         <ScatterPlot 
-        data={team_batting_data} 
-        x={inputs.team_batting_column_scatter_selector_x.value}
-        y={inputs.team_batting_column_scatter_selector_y.value}
+        data={team_pitching_data} 
+        x={'OBP'}
+        y={'R'}
         series=Team
         xAxisTitle=true 
         yAxisTitle=true
-        title="Team Batting Scatter Chart"
+        title="Team Pitching Scatter Chart"
         />
 
     </Tab>
