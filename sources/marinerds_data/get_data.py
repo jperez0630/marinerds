@@ -70,20 +70,20 @@ def get_team_batting_columns():
 df_team_batting_stats_columns = get_team_batting_columns()
 
 
-def get_rolling_avg(stat):
-    '''
-    This takes the data from the mariners game logs and calculates the
-    5 day rolling average of Runs Batted In.
-    '''
-    batting_logs = team_game_logs(2024, "SEA")
-    batting_logs['Date'] = batting_logs['Date'].str.replace(r'\s\(\d+\)', '', regex=True)
-    batting_logs['Date'] = pd.to_datetime(batting_logs['Date'] + ' 2024')
-    batting_logs['rbi_rolling_avg'] = batting_logs[stat].rolling(window=5).mean()
-    data = batting_logs[['Date','rbi_rolling_avg']]
-    return data
+# def get_rolling_avg(stat):
+#     '''
+#     This takes the data from the mariners game logs and calculates the
+#     5 day rolling average of Runs Batted In.
+#     '''
+#     batting_logs = team_game_logs(2024, "SEA")
+#     batting_logs['Date'] = batting_logs['Date'].str.replace(r'\s\(\d+\)', '', regex=True)
+#     batting_logs['Date'] = pd.to_datetime(batting_logs['Date'] + ' 2024')
+#     batting_logs['rbi_rolling_avg'] = batting_logs[stat].rolling(window=5).mean()
+#     data = batting_logs[['Date','rbi_rolling_avg']]
+#     return data
 
-df_rbi_rolling_avg = get_rolling_avg('RBI')
-df_obp_rolling_avg = get_rolling_avg('OBP')
+# df_rbi_rolling_avg = get_rolling_avg('RBI')
+# df_obp_rolling_avg = get_rolling_avg('OBP')
 
 
 def get_mariner_game_logs():
@@ -114,6 +114,21 @@ df_mariner_game_logs.loc[(
     ] <= 3
 )
 ]
+
+
+def get_rolling_avg(df, stat):
+    '''
+    This takes the data from the mariners game logs and calculates the
+    5 day rolling average of Runs Batted In.
+    '''
+    
+    df['rbi_rolling_avg'] = df[stat].rolling(window=5).mean()
+    data = df[['Date','rbi_rolling_avg']].copy()
+    return data
+
+df_rbi_rolling_avg = get_rolling_avg(df_mariner_game_logs, 'RBI')
+df_obp_rolling_avg = get_rolling_avg(df_mariner_game_logs, 'OBP')
+
 
 def get_pitch_name_columns():
     data = df_mariner_game_logs.columns.to_frame().reset_index()
