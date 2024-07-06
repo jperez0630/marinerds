@@ -168,8 +168,8 @@ This Line graph shows the 5 Day moving Average for the Mariners Runs Batted in.
     />
         <ScatterPlot 
         data={team_pitching_data} 
-        x={'Hard%'}
-        y={'R'}
+        x={'R'}
+        y={'Hard%'}
         series=Team
         xAxisTitle=true 
         yAxisTitle=true
