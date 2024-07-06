@@ -166,10 +166,28 @@ This Line graph shows the 5 Day moving Average for the Mariners Runs Batted in.
         y={inputs.team_pitching_column_selector.value}
         title="Team Pitching Stats"
     />
+
+        <Dropdown
+            data={team_pitching_columns} 
+            name=team_pitching_column_scatter_selector_x
+            value=index
+            defaultValue='R'
+            title="X Axis Dropdown for Scatter/Bubble Chart" 
+        />
+
+        <Dropdown
+            data={team_pitching_columns} 
+            name=team_pitching_column_scatter_selector_y
+            value=index
+            defaultValue='HardHit%%'
+            title="Y Axis Dropdown for Scatter/Bubble Chart" 
+        />
+
+
         <ScatterPlot 
         data={team_pitching_data} 
-        x={'R'}
-        y={'Hard%'}
+        x={inputs.team_pitching_column_scatter_selector_x.value}
+        y={inputs.team_pitching_column_scatter_selector_y.value}
         series=Team
         xAxisTitle=true 
         yAxisTitle=true
