@@ -171,7 +171,7 @@ This Line graph shows the 5 Day moving Average for the Mariners Runs Batted in.
             data={team_pitching_columns} 
             name=team_pitching_column_scatter_selector_x
             value=index
-            defaultValue='R'
+            defaultValue='WHIP'
             title="X Axis Dropdown for Scatter/Bubble Chart" 
         />
 
@@ -179,7 +179,7 @@ This Line graph shows the 5 Day moving Average for the Mariners Runs Batted in.
             data={team_pitching_columns} 
             name=team_pitching_column_scatter_selector_y
             value=index
-            defaultValue='HardHit%'
+            defaultValue='ERA'
             title="Y Axis Dropdown for Scatter/Bubble Chart" 
         />
 
