@@ -239,7 +239,10 @@ def get_mariners_staff_data():
 df_mariners_staff = get_mariners_staff_data()
 
 def get_game_data():
-    data = statcast(start_dt='2024-03-28', end_dt='2024-06-29', team='SEA')
+    '''
+    This is grabbing data regarding speed, location, spin and results from pitching data for the series of Articles: Who has the best stuff?
+    '''
+    data = statcast(start_dt='2024-03-28', end_dt='2024-07-11', team='SEA')
     return data
 
 df_game_data = get_game_data()
