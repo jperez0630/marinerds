@@ -280,7 +280,7 @@ Who has the best 4-Seamer based on results? For limiting extra-base hits, this g
 ### Final Verdict
 The Mariners have some elite 4-Seam slingers, that much cannot be denied.  Munoz has maybe the most unhittable 4-Seamer when located properly.  Logan Gilbert gets a double play out of his almost as often as he gives up a home run and he really moves it around very well.  Castillo, if he could just cut down on his walks, would be a strong candidate for best 4-Seamer.<br>
 Based on his ridiculously low extra-base hits allowed, I wanted to go with Woo, but the fact that he has been hurt so much this year has really limited his innings.<br>  
-So, who has the best 4-Seam Fastball overall? For having stellar command, plus velocity, slightly above average spin and exceptional results to boot, let’s crown George Kirby as  having the best 4-Seam Fastball on the M’s Staff.<br>
+So, who has the best 4-Seam Fastball overall? For having stellar command, plus velocity, slightly above average spin and exceptional results to boot, let’s crown George Kirby as having the best 4-Seam Fastball on the M’s Staff.<br>
 
 ## Putting a bow on it
 Definitely fun seeing how well the M’s utilize the 4-Seamer.  The plan is to do a similar exercise with the Sinker and Slider as well. 
